@@ -1,7 +1,7 @@
 ---
 layout: module
-title: Labor Day
+title: Fall Break
 type: holiday
 draft: 1
-due_date: 2023-09-04
+due_date: 2023-10-10
 ---

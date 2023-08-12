@@ -8,22 +8,18 @@ layout: default
 <!-- had to increase secondsPerDay from 86400 to 86500 to get this to work. So weird.-->
 {% assign secondsPerDay = 86500 %}
 {% assign num_weeks = dateEnd | minus: dateStart | divided_by: secondsPerDay | divided_by: 7 %}
-<!-- This for loop is a hack. It generates MWF dates between a date range -->
+<!-- This for loop is a hack. It generates Tu/Th dates between a date range -->
 {% assign dates = "" | split: ',' %}
 {% for i in (0..num_weeks) %} 
-    {% assign multiplier = i | times: 7 %}
+    {% assign multiplier = i | times: 7 | plus: 1 %}
 
     {% assign diff = secondsPerDay | times: multiplier %}
-    {% assign mon = dateStart | plus: diff | date: "%Y-%m-%d" %}
-
+    {% assign tu = dateStart | plus: diff | date: "%Y-%m-%d" %}
     {% assign multiplier = multiplier | plus: 2 %}
     {% assign diff = secondsPerDay | times: multiplier %}
-    {% assign wed = dateStart | plus: diff | date: "%Y-%m-%d" %}
-
-    {% assign multiplier = multiplier | plus: 2 %}
-    {% assign diff = secondsPerDay | times: multiplier %}
-    {% assign fri = dateStart | plus: diff | date: "%Y-%m-%d" %}
-    {% assign dates = dates | push: mon  | push: wed | push: fri %}
+    {% assign th = dateStart | plus: diff | date: "%Y-%m-%d" %}
+   
+    {% assign dates = dates | push: tu | push: th %}
    
 {% endfor %}
 
@@ -82,7 +78,7 @@ layout: default
                 <th>
                 {% assign mod = diffDays | modulo: 7 %}
 
-                {% if mod == 1 %}
+                {% if mod == 2 %}
                     Week {{week}}
                 {% endif %}
                 <span class="due-date">

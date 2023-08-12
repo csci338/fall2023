@@ -4,7 +4,7 @@ title: "Introduction to JavaScript"
 type: module
 num: 10
 draft: 1
-due_date: 2023-10-23
+due_date: 2023-10-24
 ---
 
 This week, we're going to learn about some of the building blocks of programming (data and data types, expressions, operators, and templates).

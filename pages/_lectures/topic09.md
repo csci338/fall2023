@@ -4,7 +4,7 @@ title: "Advanced CSS Techniques"
 type: module
 num: 9
 draft: 1
-due_date: 2023-10-04
+due_date: 2023-10-17
 ---
 
 To round out our HTML & CSS instruction, we'll be going over some advanced CSS techniques -- to further enhance your visual designs. 

@@ -4,7 +4,7 @@ title: "Loops"
 type: module
 draft: 1
 num: 13
-due_date: 2023-11-13
+due_date: 2023-11-14
 ---
 
 <img class="module-image" src="/fall2023/assets/images/lectures/loops.gif" /> In this lesson, we’re going to go over while loops and for loops -- ways of allowing your program to repeat code for a specified number of iterations. Being able to repeat code blocks (also know as "looping" or "iterating") is very powerful, and will allow you to easily perform repetitive tasks in a variety of different contexts: playing songs, drawing pictures, building animations, doing data processing, and so forth. Please do the assigned readings -- they will help you get a solid foundation of JavaScript loops.
