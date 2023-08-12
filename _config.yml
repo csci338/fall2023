@@ -1,0 +1,53 @@
+title: "CSCI 185: Fall 2023"
+subtitle: "Introduction to Programming for the Web"
+email: vanwars@unca.edu
+baseurl: "/fall2023"
+term_start_date: "2023-08-21"
+term_end_date: "2023-12-17"
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: jekyllrb
+github_username:  jekyll
+
+timezone: "America/New_York"
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+exclude: 
+  - _lectures/draft
+  - _assignments/draft
+  - course-files/administrative
+  - course-files/build
+  - course-files/homework/drafts
+  - course-files/tutorials/drafts
+  - course-files/lectures/drafts
+  - course-files/practice_exams/drafts
+  - course-files/projects/drafts
+collections:
+  activities:
+    output: true
+    sort_by: ordering
+    permalink: /activities/:name
+  assignments:
+    output: true
+    sort_by: ordering
+    permalink: /assignments/:name
+  lectures:
+    output: true
+    sort_by: lecture_date
+    permalink: /lectures/:name
+  quizzes:
+    output: true
+    sort_by: lecture_date
+    permalink: /assignments/:name
+
+collections_dir: pages
+
+sass:
+  style: compact
+  sass_dir: _sass
+
+deadline_reminder: true
+
+
