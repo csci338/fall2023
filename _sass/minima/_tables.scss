@@ -25,10 +25,6 @@ table {
         }
     }
 
-    td:first-child, th:first-child {
-        min-width: 80px;
-    }
-
     thead tr:first-child {
         border-bottom: solid 1px #444;
     }
@@ -61,6 +57,16 @@ table {
         text-align: left;
     }
 }
+
+.schedule table {
+    td:first-child, th:first-child {
+        max-width: 60px;
+    }
+    td:nth-child(2), th:nth-child(2) {
+        max-width: 80px;
+    }
+}
+
 table.rubric-short {
     td:nth-child(1), th:nth-child(1) {
         width: 40px;
@@ -86,18 +92,18 @@ table.rubric {
 
 .assignments {
     td:nth-child(1), th:nth-child(1) {
-        width: 60px !important;
+        // width: 60px !important;
         font-weight: 500;
     }
 }
 
 .readings, .schedule, .labs {
-    td:nth-child(2), th:nth-child(2) {
-        min-width: 80px;
-    }
-    td:nth-child(2), th:nth-child(2) {
-        min-width: 100px;
-    }
+    // td:nth-child(2), th:nth-child(2) {
+    //     min-width: 80px;
+    // }
+    // td:nth-child(2), th:nth-child(2) {
+    //     min-width: 100px;
+    // }
     td:nth-child(3), th:nth-child(3) {
         min-width: 310px;
     }

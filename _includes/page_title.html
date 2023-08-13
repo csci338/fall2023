@@ -22,7 +22,7 @@
         </h1>
         <div class="subtitle">
             {% if page.due_date %}
-                Week {{ week }}: {{ page.due_date  | date: "%a, %b %-d" }}
+                {{ page.due_date  | date: "%a, %b %-d" }}
             {% endif %}
         </div>
     {% elsif page.type == "lab" %}

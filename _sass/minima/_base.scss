@@ -54,9 +54,9 @@ section, article {
     p, li {
         font-size: 16px;
         color: #5c5962;
-        line-height: 1.7em;
+        line-height: 1.6em;
         // line-height: 1.5em;
-        margin-top: 5px;
+        // margin-top: 5px;
     }
 }
 
@@ -249,9 +249,9 @@ header {
     grid-area: top;
     background: $br2;
     height: 116px;
-    background: linear-gradient(90deg, $br2 0%, $br1 45%, $primary 80%);
-    // background: $br1;
-    // background: linear-gradient(90deg, $br1 48%, $primary 94%);
+    // background: linear-gradient(90deg, $br2 0%, $br1 45%, $primary 80%);
+    // background: $nightSky;
+    background: $br1;
     display: grid;
     grid-template-columns: 5fr 1fr;
     align-items: center;

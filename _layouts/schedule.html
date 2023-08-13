@@ -56,7 +56,11 @@ layout: default
         {% for date in dates %}
             {% assign topic = site.lectures | where: 'due_date', date | where: 'type', 'module' | last %}
             {% assign holiday = site.lectures | where: 'due_date', date | where: 'type', 'holiday' | last %}
+            {% assign deadline = site.lectures | where: 'due_date', date | where: 'type', 'deadline' | last %}
             {% assign lecture = main_listing | where: 'due_date', date | last %}
+            {% assign lab_start = site.assignments | where: 'start_date', date | where: 'type', 'lab' | last %}
+            {% assign assignments = site.assignments | where: 'due_date', date %}
+            
             <!-- Calculate the Week -->
             {% assign dateStart = site.term_start_date | date: '%s' %}
             {% assign lectureDate = date | date: '%s' %}
@@ -71,7 +75,7 @@ layout: default
                 {% assign num = num | plus : 1 %}
                 {% assign prefix = "Topic " | append: num %}
             {% endif %}
-            {% if holiday %}
+            {% if holiday or deadline %}
                 {% assign rowClass = "holiday" %}
             {% endif %}
             <tr class="{{rowClass}}">
@@ -118,23 +122,34 @@ layout: default
                             {{ lecture.title }} 
                         {% endif %}
                     </td>
+                {% elsif lab_start %}
+                    <!-- Display Lab -->
+                    {% assign classname = "lab" %}
+                    <td>{{ date | date: "%a, %m/%d" }}</td>
+                    <td>  
+                        {% if lab_start.draft == 1 %}
+                            <strong>{{ lab_start.abbreviation }}:</strong> {{ lab_start.title }}
+                        {% else %} 
+                            <a href="{{site.baseurl}}{{lab_start.url}}" class="{{classname}}">
+                                {{ lab_start.abbreviation }}
+                                <i class="fa fa-link"></i>
+                            </a> {{ lab_start.title }}
+                        {% endif %} 
+                    </td>
                 {% else %}
                     <!-- If no lecture -->
                     <td>{{ date | date: "%a, %m/%d" }}</td>
                     <td></td>
                 {% endif %}
                 <td>
-                    {% assign assignments = site.assignments | where: 'due_date', date %}
                     {% for assignment in assignments %}
-                        {% assign classname = "pj" %}
+                        {% assign classname = "lab" %}
                         {% if assignment.type == "homework" %}
                             {% assign classname = "hw" %}
                         {% endif %} 
-                        {% if assignment.type == "tutorial" %}
-                            {% assign classname = "lab" %}
-                        {% endif %} 
-                        
-                        {% if assignment.draft == 1 %}
+                        {% if assignment.type == "lab" %}   
+                            {{ assignment.abbreviation }}
+                        {% elsif assignment.draft == 1 %}
                             <strong>{{ assignment.abbreviation }}:</strong> {{ assignment.title }}
                         {% else %} 
                             <a href="{{site.baseurl}}{{assignment.url}}" class="{{classname}}">

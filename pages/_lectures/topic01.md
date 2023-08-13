@@ -1,6 +1,6 @@
 ---
 layout: two-column
-title: Intro to the Course
+title: Intro to Software Engineering
 type: module
 num: 1
 draft: 0

@@ -2,14 +2,13 @@
 layout: syllabus
 title: Syllabus
 permalink: /syllabus/
-course: "CSCI 185: Intro to Computer Programming for the Web"
+course: "CSCI 338: Software Engineering"
 term: "Fall 2023"
-prerequisites: "None"
+prerequisites: "CSCI 202 and CSCI 235"
 office_hours: "WF 5pm - 6pm (in person), Rhoades Robinson Hall, Rm. 220 or by appointment."
 professor: "Dr. Sarah Van Wart (she / her)"
 professor_email: svanwart@unca.edu
-time_location: "MWF 3:30-4:45PM, Zeis Hall, Rm. 203"
-notes: "Students may receive credit for ONLY ONE of the following courses: CSCI 182, 183 or 185."
+time_location: "Tu/Th 9:55 AM - 11:35 AM, Zeis Hall, Rm. 203"
 ---
 
 <style>
@@ -26,32 +25,13 @@ notes: "Students may receive credit for ONLY ONE of the following courses: CSCI 
     }
 </style>
 
+> ## Course Catalog Description
+> CSCI 338 is project-oriented course in which students working in teams complete one or more projects encompassing software design and development. Students will develop their communication skills by writing project requirements, creating and evaluating prototypes, interfacing with end users, and developing and implementing test plans. Prerequisites: CSCI 202 with a grade of C or higher and CSCI 235. Fall and Spring.
+
+
 ## About the Course
-CSCI 185 is an introduction to web design and web development, and assumes no prior knowledge. In this course, you will gain experience with some of the skills and strategies of modern web design and development, including:
+CSCI 338 covers selected topics in software engineering, including.
 
-{:.compact}
-* Exploring some principles of web architecture.
-* Learning the building blocks of programming -- data types, variables, functions, control flow, and events.
-* Writing a variety of interesting programs that a web browser can understand -- using HTML, CSS, & JavaScript.
-* Working with git and GitHub to publish and share files to the Internet.
-* Using the fetch API to build "data-driven" web interfaces.
-* Exploring some third-party JavaScript libraries and widgets (e.g. interactive maps, carousels, photo galleries, etc.).
-* Learning some basic principles of interface design (UX/UI), including how to make websites accessible for people with disabilities.
-* Considering some of the social, ethical, and legal implications of websites.
-
-> ### What this course does NOT cover
-> This course does not cover:
-> * Server-side programming (e.g., storing and retrieving custom datasets; authentication and security; using cloud-based tools like AWS, Heroku, etc.).
-> * Some of the popular web application frameworks that are widely used in industry (e.g., React, Vue, jQuery)
-> * Making native apps (iOS via Swift; Android via Java)
-> * SCSS and SASS (languages that transpile to CSS), CoffeeScript, TypeScript (languages that transpile to JavaScript)
->
-> If you are interested in these ideas, please check out CSCI344!
-
-### About Web Design & Development
-Websites are living documents that require multiple forms of expertise to design and build. Some of the most important considerations fall outside of what is typically considered computer science, such as understanding the needs of the users and organizations and the potential implications of design decisions; or crafting clean, engaging visual designs. Other, equally important considerations are much more technical -- writing code with HTML, CSS, and JavaScript, thinking about how information travels over the Internet, and learning new frameworks, architectural styles, and design patterns. Moreover, as web techniques/technologies continue to evolve, it is also import to "learn how to learn" about new technologies, including interpreting technical documentation, modifying and adapting sample code, and thinking about whether or not to use an external library (versus building something from scratch). Developing these competencies involves cultivating a variety of practices and dispositions (versus acquiring some fixed body of knowledge).
-
-Taking this course means committing – for 16 weeks – to practicing your emergent coding skills, experimenting with how you want to convey information to make it engaging and digestable, turning in weekly assignments, committing to doing homework, being present in class for individual and group activities, and most importantly, persevering when things get confusing / difficult and asking questions. Your enjoyment and success in this course depends on your commitment to showing up, engaging, and practicing your developing skills and ideas.
 
 ## Course Format
 The course includes a mix of lectures, in-class activities, tutorials, quizzes, homework, and projects. It is your responsibility to keep up-to-date on class material and announcements, as the schedule is subject to change. This includes material presented and announcements made in class, via email, or on Moodle.

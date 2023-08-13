@@ -1,6 +1,6 @@
 ---
 layout: two-column
-title: IDK
+title: Culture, Teamwork, and Collaboration
 num: 2
 type: module
 draft: 0

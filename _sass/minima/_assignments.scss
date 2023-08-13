@@ -81,10 +81,10 @@
         background: $clay;
     }
     .lec, .lec:hover, a.lec {
-        background: $br3;
+        background: $nightSky;
     }
     .lab, .lab:hover {
-        background: $forest;
+        background: $br1;
         // font-weight: 600;
     }
     .ec, .ec:hover {
@@ -283,7 +283,7 @@ table.schedule-simple {
         }
     }
     h2 {
-        border-bottom: solid 1px $lightgrey;
+        border-bottom: solid 1px #DDD;
         color: $primary;
     }
     h3 {
