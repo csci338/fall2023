@@ -6,8 +6,10 @@ course: "CSCI 338: Software Engineering"
 term: "Fall 2023"
 prerequisites: "CSCI 202 and CSCI 235"
 office_hours: "WF 5pm - 6pm (in person), Rhoades Robinson Hall, Rm. 220 or by appointment."
-professor: "Dr. Sarah Van Wart (she / her)"
-professor_email: svanwart@unca.edu
+professor1: "Dr. Sarah Van Wart (she / her)"
+professor2: "Dr. Semmy Purewal"
+professor1_email: svanwart@unca.edu
+professor2_email: TBD
 time_location: "Tu/Th 9:55 AM - 11:35 AM, Zeis Hall, Rm. 203"
 ---
 
@@ -30,8 +32,7 @@ time_location: "Tu/Th 9:55 AM - 11:35 AM, Zeis Hall, Rm. 203"
 
 
 ## About the Course
-CSCI 338 covers selected topics in software engineering, including....
-
+TODO.
 
 ## Course Format
 The course includes a mix of lectures, in-class activities, labs, assigned readings, and homework. It is your responsibility to keep up-to-date on class material and announcements, as the schedule is subject to change. This includes material presented and announcements made in class, via email, or on Moodle.

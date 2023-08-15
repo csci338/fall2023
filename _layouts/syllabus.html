@@ -26,8 +26,13 @@
                         <td>{{ page.course }}</td>
                       </tr>
                       <tr>
-                        <td><strong>Professor</strong></td>
-                        <td>{{ page.professor }} - {{ page.professor_email }}</td>
+                        <td><strong>Instructors</strong></td>
+                        <td>
+                            <ul>
+                                <li>{{ page.professor1 }} - {{ page.professor1_email }}. Instructor of Record.</li>
+                                <li>{{ page.professor2 }} - {{ page.professor2_email }}</li>
+                            </ul>
+                        </td>
                       </tr>
                       <tr>
                         <td><strong>Prerequisites</strong></td>
