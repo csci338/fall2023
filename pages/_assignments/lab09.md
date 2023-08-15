@@ -1,14 +1,14 @@
 ---
 layout: assignment-two-column
-title: Lab 9
+title: Infrastructure as Code Lab?
 type: lab
 draft: 0
 points: 6
 abbreviation: Lab 9
 show_schedule: 1
 num: 9
-start_date: 2023-10-26
-due_date: 2023-10-29
+start_date: 2023-11-02
+due_date: 2023-11-05
 
 ---
 TBD

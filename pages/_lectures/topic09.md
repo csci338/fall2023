@@ -1,10 +1,10 @@
 ---
 layout: module
-title: Topic 9
+title: Build Systems
 type: module
 num: 9
-draft: 1
-due_date: 2023-10-17
+draft: 0
+due_date: 2023-10-31
 ---
 
 TBD

@@ -1,10 +1,10 @@
 ---
 layout: module
-title: Topic 12
+title: Last Day of Class
 type: module
-draft: 1
+draft: 0
 num: 12
-due_date: 2023-11-07
+due_date: 2023-12-05
 ---
 
 TBD

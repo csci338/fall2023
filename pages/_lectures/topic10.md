@@ -1,10 +1,10 @@
 ---
 layout: module
-title: Topic 10
+title: "Continuous Integration / Continuous Delivery"
 type: module
+draft: 0
 num: 10
-draft: 1
-due_date: 2023-10-24
+due_date: 2023-11-07
 ---
 
 TBD

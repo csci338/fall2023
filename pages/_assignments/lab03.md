@@ -1,6 +1,6 @@
 ---
 layout: assignment-two-column
-title: "Testing: Test-Driven Development + JavaScript"
+title: "Test-Driven Development with JavaScript: Part I"
 type: lab
 draft: 0
 points: 6
@@ -23,8 +23,17 @@ due_date: 2023-09-10
 * Think about the kinds of things you want to test for (missing data, wrong data types, data out of range).
 
 ### Software Construction
+* Reading a requirements doc and figuring out how to translate to an implementation plan.
 * Introduce functional programming
 * Introduce the idea of good API design. What's the right level of abstraction?
+
+## Questions
+* Is Mocha the right testing framework to use?
+
+## Ideas for a "Toy Context"
+* Make a JavaScript wrapper for querying and displaying artists, tracks, and albums.
+    * Part I: No server queries. Just make the widgets to display the information + unit tests.
+    * Part II: Do the fetch calls and then display the widget + unit & integration tests.
 
 ## Readings
 1. Installing Mocha: [https://mochajs.org/#installation](https://mochajs.org/#installation)

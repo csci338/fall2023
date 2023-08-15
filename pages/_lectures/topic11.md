@@ -1,10 +1,10 @@
 ---
 layout: module
-title: Topic 11
+title: User Testing and Getting Feedback?
 type: module
-draft: 1
+draft: 0
 num: 11
-due_date: 2023-10-31
+due_date: 2023-11-14
 ---
 
 TBD

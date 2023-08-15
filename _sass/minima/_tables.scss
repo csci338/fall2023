@@ -60,10 +60,20 @@ table {
 
 .schedule table {
     td:first-child, th:first-child {
-        max-width: 60px;
+        width: 80px;
     }
     td:nth-child(2), th:nth-child(2) {
-        max-width: 80px;
+        width: 100px;
+    }
+}
+
+.assignments table {
+    td:first-child, th:first-child {
+        width: 80px;
+    }
+    td:nth-child(2), th:nth-child(2) {
+        width: 80px;
+        min-width: 60px !important;
     }
 }
 

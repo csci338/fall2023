@@ -30,31 +30,23 @@ time_location: "Tu/Th 9:55 AM - 11:35 AM, Zeis Hall, Rm. 203"
 
 
 ## About the Course
-CSCI 338 covers selected topics in software engineering, including.
+CSCI 338 covers selected topics in software engineering, including....
 
 
 ## Course Format
-The course includes a mix of lectures, in-class activities, tutorials, quizzes, homework, and projects. It is your responsibility to keep up-to-date on class material and announcements, as the schedule is subject to change. This includes material presented and announcements made in class, via email, or on Moodle.
+The course includes a mix of lectures, in-class activities, labs, assigned readings, and homework. It is your responsibility to keep up-to-date on class material and announcements, as the schedule is subject to change. This includes material presented and announcements made in class, via email, or on Moodle.
 
 ### Class Participation and In-Class Exercises (15%)
-We will use our scheduled class time to go over web design and development concepts, do practice problems together and make sure your questions get answered. Class meetings will be in person. Organizationally, most topics will span about a week (see the [course schedule](../)). Most class sessions have accompanying readings.
+We will use our scheduled class time to discuss software engineering concepts (blah blah)...
 
-* I will take attendance during every class session. You may miss three class sessions -- no questions asked -- without a grade penalty. Any additional absences (beyond the three "freebies") will impact your participation grade (and more to the point, your capacity to productively engage with the class).
+* I will take attendance during every class session (blah blah)...
 
-### Tutorials (15%)
-Most Fridays, we will complete a coding / design "tutorial." Tutorials are intended to help you:
-1. Become familiar with the types of strategies you might use to approach problems (which will be closely related to the homework / projects).
-1. Get comfortable writing lots of programs (practice makes perfect!)
-1. Assess what you know and don't know, so that you can make a plan to review various ideas and/or attend office hours.
+### Labs (40%)
+Text here
 
-### Homework & Projects (50%)
-You will be given regular homework assignments that are intended to give you additional practice with the course ideas beyond the tutorials. They are each designed to take between 4-6 hours to complete, so leave yourself enough time!
+### Homework (40%)
+Text here
 
-### Quizzes (10%)
-There will be 3 quizzes, which are intended to ensure that you understand the web design and programming and concepts relevant to the course. Your final exam score can replace one of your quiz scores if you did poorly on a quiz.
-
-### Final Exam (10%)
-There will be a cumulative final exam that will be administered during your regularly scheduled final exam slot.
 
 ## Expectations
 * You will come to class prepared and ready to engage in an intellectual discussion about the readings.
@@ -73,90 +65,18 @@ As this is a programming course, you will be using the free software programs li
 * <a href="https://code.visualstudio.com/download" target="_blank">Visual Studio Code</a>
 * <a href="https://github.com/git-guides/install-git" target="_blank">Git and Github</a>
 
-This software is also installed on all of the classroom computers.
 
 ### Course References
-I have compiled a list of web-based reference materials on the course website:
-
-{:.compact}
-* [HTML Resources](/fall2023/html-reference)
-* [CSS Resources](/fall2023/css-reference)
-* [JavaScript Resources](/fall2023/javascript-reference)
-* [Design Resources](/fall2023/design-reference)
-* [Accessibility Resources](/fall2023/accessibility-reference)
-
-Before each class, you may be assigned some pre-recorded videos, readings, or tutorial links from this resource guide, which will cover specific concepts and ideas that we will be practicing during lecture. Please set aside time to review these materials, as they will make the assignments and projects easier!
-
-## Getting Questions Answered
-
-### Office Hours
-Sarah's office hours are every Wednesday and Friday from 4-5PM. If you cannot make this time, please email me to schedule a time to meet.
-
-### What questions can I ask?
-During our office hours, all questions are welcomed, including (but are not limited to):
-
-{:.compact}
-* I don't know where to start in this week's homework. Can you help?
-* My GitHub page is broken -- help!
-* My code's not working. How do I debug it.
-* I didn't understand X idea in lecture / tutorial this week. Can we discuss it?
-* What courses should I take next after CSCI 185?
-* What kinds of web-related careers and opportunities are out there?
-
-You may also talk to me about concerns about your progress in the course, personal matters related to your participation in the course, larger grade concerns, advice about future courses, majors and internships, etc.
-
+* Google SWE Book
 
 ## Grading
-Your course grade is calculated based on homework and projects, quizzes, tutorials, and attendance / participation:
+TBD. Also, should we have an exam or some assessment tool that asks students about process / decision-making / principles?
 
 {:.small}
-| **Homework and Projects** | 50% |
-| **Tutorials** | 15% |
-| **Attendance & Participation** | 15% |
-| **Quizzes** | 10% |
-| **Final Exam** | 10% |
+| **Homeworks** | 40% |
+| **Labs** | 40% |
+| **Attendance & Participation** | 20% |
 
-Final grades are assigned on a fixed scale: 93-100 is 
-an A, 90-92.99 is an A-, 87-89.99 is a B+, etc. Some other logistics:
-
-1. Final course grades will not be rounded or curved.
-1. There will not be a final exam, but final exam time will be used for the quiz.
-
-> ### NOTE: Leniency is built into the course
-> * You can drop your lowest tutorial score. 
-> * You may miss **three** class sessions without your participation grade being affected.
-> * You may resubmit assignments with a 10% penalty.
-> * Your final exam score may replace one of your quiz scores.
->
-> Use this leniency wisely. I will not grant additional exceptions unless the circumstances are exceptional, and this will need to be done in coordination with Dean of Student's office.
-
-### Homework & Project Grading
-Homework will be due approximately every other week at 11:59pm on the specified date. Homework will be graded according to a published rubric that will be given when the assignment is released. 
-
-#### Late Policy
-* Homework and project assignments must be submitted before the due time. Late work will be accepted within 30 days of the due date/time, with a 20% late penalty. No homework will be accepted if it is submitted after 30 days have passed.
- 
-#### Resubmission Policy
-If you did not successfully complete the objectives of the homework / project, you may correct your errors and resubmit. However, your grade will be penalized 10% with each subsequent attempt. 
-Some example scenarios:
-* **Scenario 1:** I earn 60% on my homework assignment and decide to resubmit. I earn a 90% on my second attempt. My final HW score is an 80%.
-* **Scenario 2:** I earn an 80% on HW1 but turn it in late (so 20% late penalty applied = 60%). I decide to resubmit and earn an 100% on my second attempt. But, 20% penalty + 10% resubmit penalty applied, so I earn a 70%.
-
-### Tutorial Grading
-Tutorials will be graded according to the following scale (from 0-3 points):
-
-| 0pts | Not attempted | Assignment not submitted. |
-| 1pt | Check Minus | Assignment attempted but less than half of it was completed correctly. |
-| 2pts | Check | Most of the assignment was completed; works as expected. |
-| 3pts | Check Plus | assignment completed. Works as expected. |
-
-Tutorials are due by 11:59PM on Friday (but I recommend that you just submit them at the end of class). I **do not accept late tutorials** because I post the solutions right away.
-
-### Quizzes & Final Exam
-There will be 2 quizzes and one final exam over the course of the semester. The purpose of these assessments is to ensure that you understand the programming and design concepts that we have been studying.
-
-### Regrading Policy
-I have been known to make the occasional grading error. If you have any grading questions/concerns, please email me within a week to resolve the issue.
 
 ## Course Policies
 
@@ -174,8 +94,8 @@ I have been known to make the occasional grading error. If you have any grading 
 ### Academic Honesty
 In the past, there have been a few unfortunate instances in which students have presented work other than their own. Here are some guidelines to help you understand what is and is not appropriate"
 
-#### Tutorials
-Helping other students with their in-class tutorial code is allowed and encouraged, but each student should type their own solution unless otherwise specified in the Tutorial instructions.
+#### Labs
+Helping other students with their in-class labs  is allowed and encouraged, but each student should type their own solution unless otherwise specified in the lab instructions.
 
 #### Homework and Project Work
 You are allowed and encouraged to discuss general approaches to solving problems, but all work you submit must be your own. Working “together” and presenting variants of the same file is not acceptable. Here are some specific guidelines to make sure you don’t cross the line:

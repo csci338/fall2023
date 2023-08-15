@@ -1,11 +1,10 @@
 ---
 layout: module
-title: Topic 8
+title: Agile Engineering Practices
 type: module
 num: 8
-draft: 1
-due_date: 2023-10-12
-
+draft: 0
+due_date: 2023-10-24
 ---
 
 TBD

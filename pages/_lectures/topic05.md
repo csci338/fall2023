@@ -1,18 +1,20 @@
 ---
 layout: module
-title: Topic 5
+title: Code Reviews & Code Quality
 type: module
 num: 5
-draft: 1
-due_date: 2023-10-03
+draft: 0
+due_date: 2023-09-26
 ---
 
 TBD
 
 ## Assigned Readings
 
-1. A
-2. B
+1. Ch8. Style Guides
+1. Ch9. Code Review
+1. Ch16. Version Control & Branch Management
+1. GitHub reading
 
 ## Slides
 Slides will be posted before class.
