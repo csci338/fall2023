@@ -21,25 +21,23 @@ catalog_description: "CSCI 338 is project-oriented course in which students work
 TODO.
 
 ## Course Format
-The course format includes a mix of assigned readings, lectures, labs, and homework. We will generally try to use our Tuesday class time to discuss the "big ideas" around a software engineering topic, and our Thursday class time to complete hands-on labs. 
+The course format includes a mix of assigned readings, lectures, labs, and homework. We will generally try to use our Tuesday class time to discuss a "big idea" in software engineering, and our Thursday class time to complete hands-on labs. It is your responsibility to keep up-to-date on class material and announcements, as the schedule is subject to change. This includes material presented and announcements made in class, via email, or on Moodle.
 
-It is your responsibility to keep up-to-date on class material and announcements, as the schedule is subject to change. This includes material presented and announcements made in class, via email, or on Moodle.
+### Class Participation
+Class meetings will be in person. Most class sessions have accompanying readings, which you will be expected to complete before class. Please do your best to be physically and mentally present, and to share your knowledge and experience with one another. 
 
-### Class Participation (20%)
-In this class, participation is defined as:
+### Homework
+Over the course of the semester, you will be working with your classmates on a collaborative software development project. During the first half of the semester, you will be assigned 1-2 features that you will need to implement and deploy to the class's shared codebase. During the second half of the semester, you will be working with one or more of your classmates to design, build, and test a feature that you come up with as a team. 
 
-1. [10%] Attendance – "Half of life is just showing up."
-2. [10%] Engaging with the course ideas and with your peers, including completing the readings and participating in the discussions and activities.
+Our hope is that the experience will help you develop more perspective around how software teams organize their work, make decisions, onboard new developers, introduce new features, etc.
 
-Please do your best to be physically and mentally present, and to share your knowledge and experience with one another. We will take attendance. You may miss **two** class sessions – no questions asked – without a grade penalty. Any additional absences (beyond your two “freebies”) will impact your participation grade (and more to the point, your capacity to productively engage with the class).
+### Labs
+Labs are intended to be completed during class on Thursdays (unless otherwise specified), so that we can help you with any questions (or configuration issues) you make have. Each lab is designed to give you practice with a tool, technique, or workflow relevant to building collaborative software.
 
-### Homework (40%)
-Over the course of the semester, we will all be working on a single software project that will have many moving parts. During the first half of the semester, you will be assigned 1-2 features that you will need to implement and deploy to the class codebase. Towards the second half of the semester, you will be working with one or more of your classmates to design, build, and test a feature that you come up with as a team. Through this process, our hope is that you will develop new insights into how software teams organize their work, including how new developers are onboarded onto software projects; how new features are created and introduced into the codebase; and perhaps even how to deprecate features safely when they are no longer needed.
+### Code Reviews
+Should we say something about how code reviews will work?
 
-### Labs (40%)
-We have designed each lab to give you experience working with a wide range of tools and technologies that are relavant to doing software engineering work in teams (see the schedule). The labs are intended to be completed during class on Thursdays (unless otherwise specified), so that we can help you with any questions (or configuration issues) that you're having.
-
-## Expectations
+## Course Expectations
 * You will come to class prepared and ready to engage in an intellectual discussion about the readings.
 * You will complete all assignments on time and with interest, engagement, and intellectual curiosity.
 * You will bring your unique expertise, perspectives, and experiences to class and share them with others, so that we might all gain from your perspectives.
@@ -50,26 +48,54 @@ We have designed each lab to give you experience working with a wide range of to
 ## Course Materials & Resources
 
 ### Software
-As this is a programming course, you will be using the free software programs listed below. This software will take about 3GB of space to install. Installing and configuring programming software can be a hassle, but it is part of the process of developing your working computing knowledge. I will help you. 
+As this is a programming course, you will be installing and configuring many free software programs, including the ones listed below. This software will probably require between 3-5GB of space on your hard drive. Installing and configuring programming software can be a hassle, but it is part of the process of developing your working computing knowledge. We will help you. 
 
 {:.compact}
 * <a href="https://code.visualstudio.com/download" target="_blank">Visual Studio Code</a>
-* <a href="https://github.com/git-guides/install-git" target="_blank">Git and Github</a>
+* <a href="https://github.com/git-guides/install-git" target="_blank">Git and the Github Client</a>
 
-
-### Course References
-* Google SWE Book
+### Book
+* We will be reading selected chapters from <a href="https://abseil.io/resources/swe-book" target="_blank">Software Engineering at Google</a>. There is a free copy of the book online, or you can order a hardcopy book. 
 
 ### Acknowledgements
 These course materials were developed collaboratively by Sarah Van Wart and Semmy Purewal.
 
 ## Grading
-TBD. Also, should we have an exam or some assessment tool that asks students about process / decision-making / principles?
+Your course grade is calculated based on homework, labs, and attendance / participation:
 
 {:.small}
-| **Homeworks** | 40% |
 | **Labs** | 40% |
+| **Homeworks** | 40% |
 | **Attendance & Participation** | 20% |
+
+### Labs
+Labs will be graded according to the following scale (from 0-3 points):
+
+| 0pts | Not attempted | Assignment not submitted. |
+| 1pt | Check Minus | Assignment attempted but less than half of it was completed correctly. |
+| 2pts | Check | Most of the assignment was completed; works as expected. |
+| 3pts | Check Plus | assignment completed. Works as expected. |
+
+**Late labs will not be accepted.**
+
+### Homework
+There will be roughly 6 homework assignments. Homework will be graded pass / fail. The workflow is as follows:
+1. You will submit your homework as a pull request (PR) on or before the due date.
+1. We will do a code review and either ask for changes or accept your changes. 
+    * If your PR is accepted, you're done.
+    * Otherwise, you will need to implement the requested changes and re-submit (which will initiate another code review cycle).
+ 
+Questions: 
+* What do w/late submissions?
+* How long should we give students to address / fix their code?
+
+### Participation
+In this class, participation is defined as:
+
+1. [10%] Attendance – "Half of life is just showing up."
+2. [10%] Engaging with the course ideas and with your peers, including completing the readings and participating in the discussions and activities.
+
+We will take attendance. You may miss **two** class sessions – no questions asked – without a grade penalty. Any additional absences (beyond your two “freebies”) will impact your participation grade (and more to the point, your capacity to productively engage with the class).
 
 
 ## Course Policies
@@ -80,41 +106,29 @@ TBD. Also, should we have an exam or some assessment tool that asks students abo
 * We may have the occasional remote class session.
 
 ### Academic Honesty
-In the past, there have been a few unfortunate instances in which students have presented work other than their own. Here are some guidelines to help you understand what is and is not appropriate"
+In the past, there have been a few unfortunate instances in which students have presented work other than their own. Here are some guidelines to help you understand what is and is not appropriate. Please do no hesitate to contact the instructors if you have any questions about these guidelines.
 
 #### Labs
-Helping other students with their in-class labs  is allowed and encouraged, but each student should type their own solution unless otherwise specified in the lab instructions.
+Helping other students with their in-class labs is allowed and encouraged, but each student should type their own solution unless otherwise specified in the lab instructions.
 
-#### Homework and Project Work
-You are allowed and encouraged to discuss general approaches to solving problems, but all work you submit must be your own. Working “together” and presenting variants of the same file is not acceptable. Here are some specific guidelines to make sure you don’t cross the line:
-* Do not exchange programs or program fragments in any form – on paper, via e-mail, or by other means.
-* While working with other students, it is perfectly acceptable to ‘look’ at each other’s code (perhaps while helping someone to debug), but you should NEVER be scribing (typing or writing) your own work while looking at someone else’s (on a computer screen, paper, whiteboard, etc.).
+#### Homework
+* You are allowed and encouraged to discuss general approaches to solving problems, but all work you submit must be your own (no "outsourcing").
 * Uploading materials from this course to websites that sell such content to students is prohibited by UNCA’s academic integrity policies, and may also put you at risk for violating copyright policies in UNCA’s Student Conduct Code.
 
-Contact Sarah Van Wart if you have any questions about what is appropriate.
+#### Using Outside Tools and Materials
+In this class, we encourage you to explore the broader Internet for tutorials, code samples, new coding techniques, libraries, etc. That said, you must *acknowledge all sources contributing to your work.*  If you receive any assistance from any source (Internet, peer, social media, ChatGPT, etc.), please describe your source and that source’s contribution(s). If you have any questions about this, please don't hesitate to contact me.
 
-#### Using the Broader Web for Code and Ideas
-In this class, I encourage you to explore the broader web for tutorials, code samples, new coding techniques, libraries, etc. After all, learning how to build websites is all about studying existing websites and how the work! That said, you must *acknowledge all sources contributing to your work.*  If you receive any assistance from any source (Internet, peer, social media, etc.), please describe your source and that source’s contribution(s). If you have any questions about this, please don't hesitate to contact me.
-
-Students violating the academic honesty policy on a test or exam will receive a grade of "F" in the course. Students violating the academic honesty policy on an assignment other than a test or exam will receive a grade of 0 on that assignment for the first offense, and will receive a grade of "F" in the course for the second offense. This will apply to all students involved in the violation, including both the source student and the copying student. It is your responsibility to ensure that your work is not used by other students.
+Students violating the academic honesty policy on an assignment will receive a grade of 0 on that assignment for the first offense, and will receive a grade of "F" in the course for the second offense. This will apply to all students involved in the violation, including both the source student and the copying student. It is your responsibility to ensure that your work is not used by other students.
 
 All cases of academic dishonesty will be reported to the Assistant Provost.
 
 
 ### Class Cancellation Policy
-If a class meeting is canceled or due dates are moved due to inclement weather or any other reason, I will inform you via campus email (ending with unca.edu).
+If a class meeting is canceled or due dates are moved due to inclement weather or any other reason, we will inform you via campus email (ending with unca.edu).
 
 
 
 ## University Policies
-### Acknowledgement of the COVID-19 Pandemic
-As a community in this time of uncertainty, we seek to uphold and embody our ideals of compassion, resilience, understanding, and flexibility for each other.  With that understanding, here are a list of course policies active for this semester:
-1. We all are expected to abide by our institution's [community expectations](https://coronavirus.unca.edu/return-to-campus/community-expectations/). If you are in a public space you are expected to wash your hands and maintain social distance from others. 
-2. COVID-19 vaccines are strongly encouraged for all students, faculty, and staff; surveillance testing is also available on campus.
-3. If you become ill: 
-    * Do not physically attend any classes.
-    * If emergency, dial 911. For non-emergency medical help contact [UNC Asheville Health and Counseling Center](https://healthandcounseling.unca.edu/) at (828) 251-6520, Monday-Friday 8:00am - 4:30pm. After hours call MAHEC at (828)257-4740.
-    * Reach out to your instructor as you are able.
 
 ### Office of Academic Accessibility 
 UNC-Asheville values the diversity of our student body as a strength and a critical component of our dynamic community. Students with disabilities or temporary injuries/conditions may require accommodations due to barriers in the structure of facilities, course design, technology used for curricular purposes, or other campus resources. Students who experience a barrier to full access to this class should let the professor know, and/or make an appointment to meet with the Office of Academic Accessibility as soon as possible. To make an appointment, call 828.232.5050; email academicaccess@unca.edu; visit [https://oaa.unca.edu/](https://oaa.unca.edu/) and click on "Schedule an Appointment"; or drop by the Academic Accessibility Office, room 008 in the One Stop suite (lower level of Ramsey Library). Learn more about the process of registering, and the services available through the Office of Academic Accessibility here: [https://oaa.unca.edu/](https://oaa.unca.edu/)
@@ -124,7 +138,7 @@ While students may disclose disability at any point in the semester, students wh
 ### Promoting Gender Equity, Addressing Sexual Misconduct
 UNC Asheville is dedicated to cultivating and maintaining a safe, respectful, and inclusive environment, free from harassment and discrimination. We strive to ensure that all have equal access to the educational and employment opportunities the University provides. If you or someone you know has been affected by sexual misconduct, including sexual or gender-based harassment, sexual assault, dating or domestic violence, or stalking, please know that help and support are available. UNC Asheville strongly encourages all members of the community to take action, seek support, and report incidents of sexual harassment to the Title IX Office. You may contact the Title IX Office or Heather Lindkvist, the Title IX Coordinator, directly at 828.232.5658 or at titleix@unca.edu. Learn more by visiting [titleix.unca.edu](https://titleix.unca.edu).
 
-As a faculty member, I am a “responsible employee” and private resource. This means that if you share any information or discuss an incident with me regarding sexual or gender-based harassment, I must disclose this information to the Title IX Coordinator. Our goal is to ensure you are aware of the range of options available to you and have access to the resources you may need. 
+As a faculty member, we are “responsible employees,” meaning that if you share any information or discuss an incident with us regarding sexual or gender-based harassment, we must disclose this information to the Title IX Coordinator. Our goal is to ensure you are aware of the range of options available to you and have access to the resources you may need. 
 
 If you wish to speak with a confidential resource, contact University Health and Counseling Services at 828.251.6520. Off-campus confidential resources include Our Voice (24-Hour Hotline at 828.255.7576) and HelpMate (24-Hour Hotline at 828.254.0516).
 

@@ -8,7 +8,7 @@
         {% include navigation.html %}
         {% capture schedule_simple %}{% include schedule-very-simple.html %}{% endcapture %}
         {% assign all_content = schedule_simple | append: content %}
-        <main>
+        <main class="syllabus">
             <aside>
                 {% include toc.html html=all_content class='side-menu' ordered=true %}
             </aside>

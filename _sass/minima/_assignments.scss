@@ -250,9 +250,15 @@ blockquote.quote {
         font-size: 3em;
     }
 }
-ul.schedule-simple, ol.schedule-simple {
+ul.schedule-simple, ol.schedule-simple, .syllabus article {
     li {
         margin-bottom: 5px;
+    }
+
+    ul ul li,
+    li ul li,
+    li ul li {
+        margin-bottom: 0px;
     }
 }
 
