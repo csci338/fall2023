@@ -12,6 +12,18 @@ due_date: 2023-09-10
 
 ---
 
+## Semmy Notes
+TDD: All you need is an assert. Defer framework decisions as long as possible (reduces risk).
+
+Before you do the framework, let’s get the basics.
+
+1. Assertions first…
+  * Set up state
+  * Run code
+  * Check the output and ensure it works
+2. Why would you want to use a testing framework (like Mocha)?
+
+
 ## Learning Goals
 ### JavaScript
 * Helping students get acquainted with JavaScript
