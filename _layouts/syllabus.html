@@ -6,7 +6,7 @@
     <body class="two-column">
         {% include header.html %}
         {% include navigation.html %}
-        {% capture schedule_simple %}{% include schedule-simple.html %}{% endcapture %}
+        {% capture schedule_simple %}{% include schedule-very-simple.html %}{% endcapture %}
         {% assign all_content = schedule_simple | append: content %}
         <main>
             <aside>
@@ -29,8 +29,8 @@
                         <td><strong>Instructors</strong></td>
                         <td>
                             <ul>
-                                <li>{{ page.professor1 }} - {{ page.professor1_email }}. Instructor of Record.</li>
-                                <li>{{ page.professor2 }} - {{ page.professor2_email }}</li>
+                                <li><strong>{{ page.professor1 }}</strong>. {{ page.professor1_title }}<br>{{ page.professor1_email }}</li>
+                                <li><strong>{{ page.professor2 }}</strong>. {{ page.professor2_title }}<br>{{ page.professor2_email }}</li>
                             </ul>
                         </td>
                       </tr>
@@ -46,25 +46,15 @@
                         <td><strong>Office Hours</strong></td>
                         <td>{{ page.office_hours }}</td>
                       </tr>
-                      <tr>
-                        <td><strong>Notes</strong></td>
-                        <td>{{ page.notes }}</td>
-                      </tr>
                     </tbody>
                 </table>
 
-                {% if page.include_covid_statement %}
+                {% if page.catalog_description %}
                     <blockquote class="blockquote-no-margin">
-                        <h2 id="learning-during-covid-19">Learning During COVID-19</h2>
-                        <p>The COVID-19 pandemic is still ongoing and will present new, unexpected challenges to our class and to our community at Northwestern. I want to acknowledge that things are difficult for many of us on multiple fronts. Some thoughts:</p>
-                        <ol>
-                        <li>Your health and well-being is always top priority. Please communicate with me if you have something going on so that we can figure out a path forward together.</li>
-                        <li>There are numerous resources at Northwestern that are in place to support stuednts with extenuating circumstances (e.g. CAPS, talking to your academic advisor, talking to the dean of students, etc.). I can help you navigate these paths if you need help.</li>
-                        </ol>
+                        <h2>Course Catalog Description</h2>
+                        <p>{{ page.catalog_description }}</p>
                     </blockquote>
                 {% endif %}
-
-
                 {% if page.include_schedule %}
                     {{ schedule_simple }}
                 {% endif %}

@@ -250,9 +250,28 @@ blockquote.quote {
         font-size: 3em;
     }
 }
+ul.schedule-simple, ol.schedule-simple {
+    li {
+        margin-bottom: 5px;
+    }
+}
+
 table.schedule-simple {
+    max-width: 700px;
+    // background-color: #F4F4F4;
+    border: solid transparent 0 !important;
+
+    thead tr:first-child {
+        border-bottom: solid #CCC 0px !important;
+        background: #DDD;
+        display: none;
+    }
+    tr {
+        border: solid transparent 0 !important;
+    }
     th, td {
-        padding: 4px;
+        padding: 4px 0px 4px 12px;
+        border: solid transparent 0;
     }
 }
 .schedule, .labs {
@@ -283,7 +302,7 @@ table.schedule-simple {
         }
     }
     h2 {
-        border-bottom: solid 1px #DDD;
+        // border-bottom: solid 1px #DDD;
         color: $primary;
     }
     h3 {

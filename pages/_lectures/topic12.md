@@ -1,6 +1,6 @@
 ---
 layout: module
-title: Last Day of Class
+title: Last Day of Class (TBD)
 type: module
 draft: 0
 num: 12

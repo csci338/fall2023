@@ -7,47 +7,37 @@ term: "Fall 2023"
 prerequisites: "CSCI 202 and CSCI 235"
 office_hours: "WF 5pm - 6pm (in person), Rhoades Robinson Hall, Rm. 220 or by appointment."
 professor1: "Dr. Sarah Van Wart (she / her)"
-professor2: "Dr. Semmy Purewal"
+include_schedule: 1
 professor1_email: svanwart@unca.edu
-professor2_email: TBD
+professor1_title: Instructor of Record
+professor2: "Dr. Semmy Purewal (he / his)"
+professor2_email: spurewal@unca.edu
+professor2_title: Engineer in Residence
 time_location: "Tu/Th 9:55 AM - 11:35 AM, Zeis Hall, Rm. 203"
+catalog_description: "CSCI 338 is project-oriented course in which students working in teams complete one or more projects encompassing software design and development. Students will develop their communication skills by writing project requirements, creating and evaluating prototypes, interfacing with end users, and developing and implementing test plans. Prerequisites: CSCI 202 with a grade of C or higher and CSCI 235. Fall and Spring."
 ---
-
-<style>
-    blockquote.update {
-        margin-top: 0;
-        background-color: rgba(198, 236, 174, 0.5);
-        border-color: rgb(148, 201, 169);
-    }
-    blockquote.update h2 {
-        border-color: rgb(148, 201, 169);
-    }
-    blockquote.update a:hover {
-        background-color: transparent;
-    }
-</style>
-
-> ## Course Catalog Description
-> CSCI 338 is project-oriented course in which students working in teams complete one or more projects encompassing software design and development. Students will develop their communication skills by writing project requirements, creating and evaluating prototypes, interfacing with end users, and developing and implementing test plans. Prerequisites: CSCI 202 with a grade of C or higher and CSCI 235. Fall and Spring.
-
 
 ## About the Course
 TODO.
 
 ## Course Format
-The course includes a mix of lectures, in-class activities, labs, assigned readings, and homework. It is your responsibility to keep up-to-date on class material and announcements, as the schedule is subject to change. This includes material presented and announcements made in class, via email, or on Moodle.
+The course format includes a mix of assigned readings, lectures, labs, and homework. We will generally try to use our Tuesday class time to discuss the "big ideas" around a software engineering topic, and our Thursday class time to complete hands-on labs. 
 
-### Class Participation and In-Class Exercises (15%)
-We will use our scheduled class time to discuss software engineering concepts (blah blah)...
+It is your responsibility to keep up-to-date on class material and announcements, as the schedule is subject to change. This includes material presented and announcements made in class, via email, or on Moodle.
 
-* I will take attendance during every class session (blah blah)...
+### Class Participation (20%)
+In this class, participation is defined as:
 
-### Labs (40%)
-Text here
+1. [10%] Attendance – "Half of life is just showing up."
+2. [10%] Engaging with the course ideas and with your peers, including completing the readings and participating in the discussions and activities.
+
+Please do your best to be physically and mentally present, and to share your knowledge and experience with one another. We will take attendance. You may miss **two** class sessions – no questions asked – without a grade penalty. Any additional absences (beyond your two “freebies”) will impact your participation grade (and more to the point, your capacity to productively engage with the class).
 
 ### Homework (40%)
-Text here
+Over the course of the semester, we will all be working on a single software project that will have many moving parts. During the first half of the semester, you will be assigned 1-2 features that you will need to implement and deploy to the class codebase. Towards the second half of the semester, you will be working with one or more of your classmates to design, build, and test a feature that you come up with as a team. Through this process, our hope is that you will develop new insights into how software teams organize their work, including how new developers are onboarded onto software projects; how new features are created and introduced into the codebase; and perhaps even how to deprecate features safely when they are no longer needed.
 
+### Labs (40%)
+We have designed each lab to give you experience working with a wide range of tools and technologies that are relavant to doing software engineering work in teams (see the schedule). The labs are intended to be completed during class on Thursdays (unless otherwise specified), so that we can help you with any questions (or configuration issues) that you're having.
 
 ## Expectations
 * You will come to class prepared and ready to engage in an intellectual discussion about the readings.
@@ -70,6 +60,9 @@ As this is a programming course, you will be using the free software programs li
 ### Course References
 * Google SWE Book
 
+### Acknowledgements
+These course materials were developed collaboratively by Sarah Van Wart and Semmy Purewal.
+
 ## Grading
 TBD. Also, should we have an exam or some assessment tool that asks students about process / decision-making / principles?
 
@@ -85,12 +78,6 @@ TBD. Also, should we have an exam or some assessment tool that asks students abo
 * No food, no drinks, and no water inside the classroom. If you need to eat or drink, please step outside the classroom (away from the computers) to do so.
 * Be respectful of others during classroom discussions and presentations.
 * We may have the occasional remote class session.
-
-### COVID Policies
-* **Masking.** Currently, there is no masking mandate at UNCA with the exception of healthcare settings and University shuttles. Please respect individuals’ personal decisions to either wear or not wear a mask in any given circumstance.
-    * ***Note:*** I may require masks in my office. I may also request that students voluntarily continue wearing masks in class, with the understanding that masking cannot be required.
-* **Social distancing.** There is no official policy regarding social distancing in the classroom. Please be sensitive to the fact that everyone’s comfort level will vary. Whenever possible, please keep several feet between yourself and a classmate. If a classmate requests more space, please do so kindly and without judgment or question. 
-* **Illness policy.** Please stay home if you are ill, and email me -- I will let you know how you can catch up / participate remotely.
 
 ### Academic Honesty
 In the past, there have been a few unfortunate instances in which students have presented work other than their own. Here are some guidelines to help you understand what is and is not appropriate"

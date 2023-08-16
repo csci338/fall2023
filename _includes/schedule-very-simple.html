@@ -1,0 +1,16 @@
+{% assign lectures = site.lectures | where: 'type', 'module' %}
+
+<h2 id="schedule">Weekly Topics</h2> 
+<p>Note that the schedule is dynamic and subject to change.</p>
+<ol class="schedule-simple">
+    {% for lecture in lectures %}
+        <li>
+            
+            {% if lecture.draft == 1 %}
+                {{ lecture.title }}
+            {% else %} 
+                <a href="{{site.baseurl}}{{lecture.url}}">{{ lecture.title }}</a>
+            {% endif %}
+        </li>
+    {% endfor %}
+</ol>

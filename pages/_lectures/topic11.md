@@ -1,6 +1,6 @@
 ---
 layout: module
-title: User Testing and Getting Feedback?
+title: User Testing and Getting Feedback
 type: module
 draft: 0
 num: 11
