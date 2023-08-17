@@ -1,6 +1,6 @@
 ---
 layout: assignment-two-column
-title: "AI Productivity Tools?"
+title: "AI Productivity Tools"
 type: lab
 draft: 0
 points: 6

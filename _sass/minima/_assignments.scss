@@ -250,7 +250,34 @@ blockquote.quote {
         font-size: 3em;
     }
 }
-ul.schedule-simple, ol.schedule-simple, .syllabus article {
+
+div.schedule-simple {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+
+    .group {
+        background-color: #F4F4F4;
+        padding: 10px;
+    }
+
+    .header {
+        grid-column: 1 / span 2;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    div.schedule-simple {
+        grid-template-columns: 1fr;
+        row-gap: 30px;
+
+        .header {
+            grid-column: 1 / span 1;
+        }
+    }
+}
+
+.schedule-simple ul, schedule-simple ol, .syllabus article {
     li {
         margin-bottom: 5px;
     }

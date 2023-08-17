@@ -1,6 +1,6 @@
 ---
 layout: assignment-two-column
-title: Infrastructure as Code Lab?
+title: Infrastructure as Code Lab
 type: lab
 draft: 0
 points: 6

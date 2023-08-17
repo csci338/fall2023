@@ -1,9 +1,9 @@
 ---
 layout: assignment-two-column
-title: "Test-Driven Development with JavaScript: Part I"
+title: Collaboration and Quality Control using GitHub
 type: lab
 draft: 0
-points: 6
+points: 3
 abbreviation: Lab 3
 show_schedule: 1
 num: 3
@@ -12,46 +12,22 @@ due_date: 2023-09-10
 
 ---
 
-## Semmy Notes
-TDD: All you need is an assert. Defer framework decisions as long as possible (reduces risk).
+## Thoughts
+* Maybe by this point, the basic infrastructure could be set up and everyone can be assigned their feature. Then, in this lab, they build a single function on their way to implementing the feature, where they go through the workflow.
 
-Before you do the framework, let’s get the basics.
+## Workflow Notes
+Asky Semmy. Here's how I've done it in the past.
 
-1. Assertions first…
-  * Set up state
-  * Run code
-  * Check the output and ensure it works
-2. Why would you want to use a testing framework (like Mocha)?
+### Student's job
+1. On local machine: pull down from upstream main (org's repo).
+1. Make a new local branch for feature
+1. When done, commit and push new branch to student's clone of repo.
+1. Make a PR
 
+### Code Reviewer's job:
+1. Review PR and either ask for changes or merge into main.
 
-## Learning Goals
-### JavaScript
-* Helping students get acquainted with JavaScript
-* Setting up npm, mocha, etc.
-
-### TDD
-* Write a failing test first.
-* Then implement the feature that fixes the failing test.
-* Think about the kinds of things you want to test for (missing data, wrong data types, data out of range).
-
-### Software Construction
-* Reading a requirements doc and figuring out how to translate to an implementation plan.
-* Introduce functional programming
-* Introduce the idea of good API design. What's the right level of abstraction?
-
-## Questions
-* Is Mocha the right testing framework to use?
-
-## Ideas for a "Toy Context"
-* Make a JavaScript wrapper for querying and displaying artists, tracks, and albums.
-    * Part I: No server queries. Just make the widgets to display the information + unit tests.
-    * Part II: Do the fetch calls and then display the widget + unit & integration tests.
-
-## Readings
-1. Installing Mocha: [https://mochajs.org/#installation](https://mochajs.org/#installation)
-1. Unit Testing Tutorial (TODO)
-1. Integration Testing Tutorial: [https://www.digitalocean.com/community/tutorials/how-to-test-a-node-js-module-with-mocha-and-assert](https://www.digitalocean.com/community/tutorials/how-to-test-a-node-js-module-with-mocha-and-assert)
-1. JavaScript primer: 
-    * Language Features
-    * Modules
-    * Debugging
+### Questions
+* Should we configure GitHub Actions / Workflows to run linter and unit tests? Yes I think?
+* Should we use the GitHub Issue Tracker? If so, is there a particular format that you'd suggest we use?
+* Should we make a practice codebase for the lab, or should we just have them work on the main course app as part of a homework assignment?

@@ -1,6 +1,6 @@
 ---
 layout: assignment-two-column
-title: Intro to React
+title: "Test-Driven Development with JavaScript: Part II"
 type: lab
 draft: 0
 points: 6
@@ -11,17 +11,17 @@ start_date: 2023-09-21
 due_date: 2023-09-24
 
 ---
-Introduce React framework. 
-* Note: about half the class has some experience w/React. The other half hasn't.
 
-## Topics to Cover
-* Intro to JSX
-* Components & the component hierarcy
-    * Using third-party components
-* Event Handlers
-* State management
-* Effects
-* Testing
-    * [Testing](https://legacy.reactjs.org/docs/testing.html)
-    * [Recipes](https://legacy.reactjs.org/docs/testing-recipes.html)
-    * [Environments](https://legacy.reactjs.org/docs/testing-environments.html)
+## Learning Goals
+
+### JavaScript
+* Introduce await / async + server-side data
+* Writing tests to work w/async function calls
+
+### Software Construction
+* Continue helping students think about right level of abstraction for API design
+
+## Ideas for a "Toy Context"
+* Make a JavaScript wrapper for querying and displaying artists, tracks, and albums.
+    * Part I: No server queries. Just make the widgets to display the information + unit tests.
+    * **Part II**: Do the fetch calls and then display the widget + unit & integration tests.
