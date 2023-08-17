@@ -6,7 +6,6 @@
     <body class="two-column">
         {% include header.html %}
         {% include navigation.html %}
-        {% capture schedule_simple %}{% include schedule-very-simple.html %}{% endcapture %}
         {% assign all_content = schedule_simple | append: content %}
         <main class="syllabus">
             <aside>
@@ -15,7 +14,7 @@
             <article>
                 {% include page_title.html %} 
 
-                <table>
+                <table class="course-overview">
                     <tbody>
                         <tr>
                           <td><strong>Term</strong></td>
@@ -28,10 +27,18 @@
                       <tr>
                         <td><strong>Instructors</strong></td>
                         <td>
-                            <ul>
-                                <li><strong>{{ page.professor1 }}</strong>. {{ page.professor1_title }}<br>{{ page.professor1_email }}</li>
-                                <li><strong>{{ page.professor2 }}</strong>. {{ page.professor2_title }}<br>{{ page.professor2_email }}</li>
-                            </ul>
+                            {% for instructor in page.instructors %}
+                                <strong>{{ instructor.name }} ({{ instructor.pronouns }})</strong>
+                                <ul>
+                                    <li>{{ instructor.title }}</li>
+                                    <li>{{ instructor.email }}
+                                        {% if instructor.location %}
+                                            &bull; {{ instructor.location  }}
+                                        {% endif %}
+                                    </li>
+                                    <li>Office Hours: {{ instructor.office_hours }}</li>
+                                </ul>
+                            {% endfor %}
                         </td>
                       </tr>
                       <tr>
@@ -43,22 +50,12 @@
                         <td>{{ page.time_location }}</td>
                       </tr>
                       <tr>
-                        <td><strong>Office Hours</strong></td>
-                        <td>{{ page.office_hours }}</td>
+                        <td><strong>UNCA Catalog Description</strong></td>
+                        <td>{{ page.catalog_description }}</td>
                       </tr>
                     </tbody>
                 </table>
-
-                {% if page.catalog_description %}
-                    <blockquote class="blockquote-no-margin">
-                        <h2>Course Catalog Description</h2>
-                        <p>{{ page.catalog_description }}</p>
-                    </blockquote>
-                {% endif %}
-                {% if page.include_schedule %}
-                    {{ schedule_simple }}
-                {% endif %}
-                                
+ 
                 {{ content }}
 
             </article>  

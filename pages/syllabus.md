@@ -5,20 +5,33 @@ permalink: /syllabus/
 course: "CSCI 338: Software Engineering"
 term: "Fall 2023"
 prerequisites: "CSCI 202 and CSCI 235"
-office_hours: "WF 5pm - 6pm (in person), Rhoades Robinson Hall, Rm. 220 or by appointment."
-professor1: "Dr. Sarah Van Wart (she / her)"
-include_schedule: 1
-professor1_email: svanwart@unca.edu
-professor1_title: Instructor of Record
-professor2: "Dr. Semmy Purewal (he / his)"
-professor2_email: spurewal@unca.edu
-professor2_title: Engineer in Residence
+professor1: "Dr. Sarah Van Wart"
 time_location: "Tu/Th 9:55 AM - 11:35 AM, Zeis Hall, Rm. 203"
-catalog_description: "CSCI 338 is project-oriented course in which students working in teams complete one or more projects encompassing software design and development. Students will develop their communication skills by writing project requirements, creating and evaluating prototypes, interfacing with end users, and developing and implementing test plans. Prerequisites: CSCI 202 with a grade of C or higher and CSCI 235. Fall and Spring."
+instructors:
+  - name: "Dr. Sarah Van Wart"
+    email: "svanwart@unca.edu"
+    pronouns: "she / her"
+    title: "Instructor of Record"
+    office_hours: "MWF 5pm - 6pm (in person) or by appointment"
+    location: "220 Rhoades Robinson Hall"
+  - name: "Dr. Semmy Purewal"
+    email: "spurewal@unca.edu"
+    pronouns: "he / his"
+    title: "Engineer in Residence"
+    office_hours: "By appointment"
+catalog_description: "CSCI 338 is project-oriented course in which students working in teams complete one or more projects encompassing software design and development. Students will develop their communication skills by writing project requirements, creating and evaluating prototypes, interfacing with end users, and developing and implementing test plans."
 ---
 
 ## About the Course
-TODO.
+Welcome to CSCI 338! Taking this course gives you the opportunity to work on a collaborative software development project while learning some of the tools, methods, and processes that are widely used in industry. We will be using some specific programming languages, frameworks, and libraries to explore various "big ideas" in software engineering. That said, the focus of this course is on selected **processes and tool for building software that is scalable and maintainable over time**, as circumstances change. Drawing from <a href="https://abseil.io/resources/swe-book" target="_blank">Software Engineering at Google</a> (the book we will use in this course) we will explore three categories of considerations:
+
+1. **Culture** -- How people on teams can work well together; document and share knowledge; priorizie technical, social, and business goals; cultivate a curious, open, and critical perspective on their work; and measure the benefits and costs of technical decisions.
+1. **Process** -- How to actually go about writing code, including coming up with style guides and coding conventions; how to conduct a code review; how to document your code; how to write different kinds of tests; how to deprecate features; and how to break down ideas into concrete features and tasks so that you can make incremental and manageable progress.
+1. **Tools** -- Using different software tools to improve how your team manages their codebase. This includes tools for version control; building and compiling your system (particularly for large systems); managing dependencies; and ensuring that you are continuously integrating and deploying code changes.
+
+By the end of this course, our hope is that you will view software engineering as set of tools and strategies for managing uncertainty, change, and competing priorities (versus a fixed list of rules that you follow religiously). How software development proceeds depends on your goals, the constraints you are under, and the tools you have at your disposal. Hence, the more holistically you think about evaluating different trade-offs and choices (given the information you have at your disposal), the more effective you will become.
+
+{% include schedule-very-simple.html %}
 
 ## Course Format
 The course format includes a mix of assigned readings, lectures, labs, and homework. We will generally try to use our Tuesday class time to discuss a "big idea" in software engineering, and our Thursday class time to complete hands-on labs. It is your responsibility to keep up-to-date on class material and announcements, as the schedule is subject to change. This includes material presented and announcements made in class, via email, or on Moodle.
@@ -27,7 +40,7 @@ The course format includes a mix of assigned readings, lectures, labs, and homew
 Class meetings will be in person. Most class sessions have accompanying readings, which you will be expected to complete before class. Please do your best to be physically and mentally present, and to share your knowledge and experience with one another. 
 
 ### Homework
-Over the course of the semester, you will be working with your classmates on a collaborative software development project. During the first half of the semester, you will be assigned 1-2 features that you will need to implement and deploy to the class's shared codebase. During the second half of the semester, you will be working with one or more of your classmates to design, build, and test a feature that you come up with as a team. 
+Over the course of the semester, you will be working with your classmates on a collaborative software development project. During the first half of the semester, you will be assigned 1-2 features that you will need to implement and deploy to the class's shared codebase (individual assignments). During the second half of the semester, you will be working with one or more of your classmates to design, build, and test a feature that you come up with as a team. 
 
 Our hope is that the experience will help you develop more perspective around how software teams organize their work, make decisions, onboard new developers, introduce new features, etc.
 
@@ -74,7 +87,7 @@ Labs will be graded according to the following scale (from 0-3 points):
 | 0pts | Not attempted | Assignment not submitted. |
 | 1pt | Check Minus | Assignment attempted but less than half of it was completed correctly. |
 | 2pts | Check | Most of the assignment was completed; works as expected. |
-| 3pts | Check Plus | assignment completed. Works as expected. |
+| 3pts | Check Plus | Assignment completed. Works as expected. |
 
 **Late labs will not be accepted.**
 
@@ -116,7 +129,7 @@ Helping other students with their in-class labs is allowed and encouraged, but e
 * Uploading materials from this course to websites that sell such content to students is prohibited by UNCA’s academic integrity policies, and may also put you at risk for violating copyright policies in UNCA’s Student Conduct Code.
 
 #### Using Outside Tools and Materials
-In this class, we encourage you to explore the broader Internet for tutorials, code samples, new coding techniques, libraries, etc. That said, you must *acknowledge all sources contributing to your work.*  If you receive any assistance from any source (Internet, peer, social media, ChatGPT, etc.), please describe your source and that source’s contribution(s). If you have any questions about this, please don't hesitate to contact me.
+In this class, we encourage you to explore the broader Internet for tutorials, code samples, new coding techniques, libraries, etc. That said, you must *acknowledge all sources contributing to your work.*  If you receive any assistance from any source (Internet, peer, social media, ChatGPT, etc.), please describe your source and that source’s contribution(s). If you have any questions about this, please don't hesitate to contact the instructors.
 
 Students violating the academic honesty policy on an assignment will receive a grade of 0 on that assignment for the first offense, and will receive a grade of "F" in the course for the second offense. This will apply to all students involved in the violation, including both the source student and the copying student. It is your responsibility to ensure that your work is not used by other students.
 

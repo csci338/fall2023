@@ -1,6 +1,6 @@
 ---
 layout: assignment-two-column
-title: "Continuous Integration / Continuous Delivery Lab?"
+title: "Continuous Integration / Continuous Delivery Lab"
 type: lab
 draft: 0
 points: 6

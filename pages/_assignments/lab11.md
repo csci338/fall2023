@@ -1,6 +1,6 @@
 ---
 layout: assignment-two-column
-title: "Operational and Product-Oriented Telemetry?"
+title: "Operational and Product-Oriented Telemetry"
 type: lab
 draft: 0
 points: 6

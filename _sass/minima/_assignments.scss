@@ -252,14 +252,17 @@ blockquote.quote {
 }
 
 div.schedule-simple {
+    margin: 20px 0;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    background-color: #F4F4F4;
     column-gap: 30px;
+    padding: 10px;
 
-    .group {
-        background-color: #F4F4F4;
-        padding: 10px;
-    }
+    // .group {
+    //     padding: 10px;
+    //     background-color: #F4F4F4;
+    // }
 
     .header {
         grid-column: 1 / span 2;
@@ -276,6 +279,15 @@ div.schedule-simple {
         }
     }
 }
+
+.syllabus article .course-overview {
+    li {
+        margin-bottom: 0;
+    }
+    ul {
+        margin-bottom: 10px;
+    }
+} 
 
 .schedule-simple ul, schedule-simple ol, .syllabus article {
     li {
