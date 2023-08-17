@@ -11,7 +11,21 @@ start_date: 2023-08-24
 due_date: 2023-08-27
 ---
 
-## Notes
+## Reference Materials
+Please review the following reference materials before class:
+1. [Video: Intro to Using VS Code Extensions](https://code.visualstudio.com/docs/introvideos/extend)
+
+## VS Code Extensions to Install
+* Live Server
+* Language Extensions -- JavaScript, HTML, CSS, Python
+* GitHub (handles the authentication for you so that you don't have to manage ssh public / private keys)
+* Prettier
+
+## Activities
+* [Configure "Format on Save" using Prettier](https://www.robinwieruch.de/how-to-use-prettier-vscode/)
+
+
+## Notes from Semmy <> Sarah Meeting
 * Code Editor – VS Code (strongly encouraged, but OK to also use emacs or vim).
 Plugins
 * Configurations
