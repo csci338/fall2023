@@ -55,9 +55,12 @@ section, article {
         font-size: 16px;
         color: #5c5962;
         line-height: 1.6em;
-        // line-height: 1.5em;
-        // margin-top: 5px;
-        margin: 0 0 10px 0;
+    }
+    p {
+        margin: 0 0 15px 0;
+    }
+    li {
+        margin: 0 0 3px 0;
     }
 }
 
