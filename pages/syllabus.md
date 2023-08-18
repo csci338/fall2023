@@ -23,14 +23,15 @@ catalog_description: "CSCI 338 is project-oriented course in which students work
 ---
 
 ## About the Course
-Welcome to CSCI 338! Taking this course gives you the opportunity to work on a collaborative software development project while learning some of the tools, methods, and processes that are widely used in industry. We will be using some specific programming languages, frameworks, and libraries to explore various "big ideas" in software engineering. That said, the focus of this course is on selected **processes and tool for building software that is scalable and maintainable over time**, as circumstances change. Drawing from <a href="https://abseil.io/resources/swe-book" target="_blank">Software Engineering at Google</a> (the book we will use in this course) we will explore three categories of considerations:
+Welcome to CSCI 338! Taking this course gives you the opportunity to work on a collaborative software development project while learning some of the tools, methods, and processes that are widely used in industry. We will be using some specific programming languages, frameworks, and libraries to explore various "big ideas" in software engineering. That said, this course focuses on the ***processes and tools that will enable you to build software that is scalable and maintainable over time***, as circumstances change. Drawing from <a href="https://abseil.io/resources/swe-book" target="_blank">Software Engineering at Google</a> (the book we will use in this course), we will explore three categories of considerations:
 
-1. **Culture** -- How people on teams can work well together; document and share knowledge; priorizie technical, social, and business goals; cultivate a curious, open, and critical perspective on their work; and measure the benefits and costs of technical decisions.
-1. **Process** -- How to actually go about writing code, including coming up with style guides and coding conventions; how to conduct a code review; how to document your code; how to write different kinds of tests; how to deprecate features; and how to break down ideas into concrete features and tasks so that you can make incremental and manageable progress.
-1. **Tools** -- Using different software tools to improve how your team manages their codebase. This includes tools for version control; building and compiling your system (particularly for large systems); managing dependencies; and ensuring that you are continuously integrating and deploying code changes.
+1. **Culture** -- How people on teams can work well together, document and share knowledge, priorizie technical, social, and business goals, cultivate a curious, open, and critical perspective on their work, and measure the benefits and costs of technical decisions.
+1. **Process** -- How to actually go about writing code, including coming up with style guides and coding conventions, doing code reviews, documenting your code, writing tests, deprecating features, and breaking down ideas into concrete features and tasks (so that you can make clear and manageable progress).
+1. **Tools** -- Using different software tools to improve how your team manages their codebase. This includes tools for version control, building and compiling your system (particularly important for larger systems), managing dependencies, and ensuring that you are continuously integrating and deploying code changes.
 
-By the end of this course, our hope is that you will view software engineering as set of tools and strategies for managing uncertainty, change, and competing priorities (versus a fixed list of rules that you follow religiously). How software development proceeds depends on your goals, the constraints you are under, and the tools you have at your disposal. Hence, the more holistically you think about evaluating different trade-offs and choices (given the information you have at your disposal), the more effective you will become.
+By the end of this course, our hope is that you will view software engineering as set of tools and strategies for managing uncertainty, change, and competing priorities -- versus a fixed list of rules that you follow religiously. How software development proceeds depends on your goals, the constraints you are under, and the information and tools you have at your disposal. Given this, the more holistically you think about evaluating different trade-offs and choices, the more effective you will become.
 
+<!-- topics and labs here -->
 {% include schedule-very-simple.html %}
 
 ## Course Format
@@ -46,9 +47,6 @@ Our hope is that the experience will help you develop more perspective around ho
 
 ### Labs
 Labs are intended to be completed during class on Thursdays (unless otherwise specified), so that we can help you with any questions (or configuration issues) you make have. Each lab is designed to give you practice with a tool, technique, or workflow relevant to building collaborative software.
-
-### Code Reviews
-Should we say something about how code reviews will work?
 
 ## Course Expectations
 * You will come to class prepared and ready to engage in an intellectual discussion about the readings.
@@ -86,22 +84,25 @@ Labs will be graded according to the following scale (from 0-3 points):
 
 | 0pts | Not attempted | Assignment not submitted. |
 | 1pt | Check Minus | Assignment attempted but less than half of it was completed correctly. |
-| 2pts | Check | Most of the assignment was completed; works as expected. |
-| 3pts | Check Plus | Assignment completed. Works as expected. |
+| 2pts | Check | Most of the assignment was completed. |
+| 3pts | Check Plus | Assignment fully completed and works as expected. |
 
 **Late labs will not be accepted.**
 
 ### Homework
-There will be roughly 6 homework assignments. Homework will be graded pass / fail. The workflow is as follows:
+There will be roughly 6 homework assignments. Homework will be graded pass / fail. We will be using a code review workflow to assess you. Here is how the process will work:
+
+#### Code Reviews
 1. You will submit your homework as a pull request (PR) on or before the due date.
 1. We will do a code review and either ask for changes or accept your changes. 
-    * If your PR is accepted, you're done.
-    * Otherwise, you will need to implement the requested changes and re-submit (which will initiate another code review cycle).
- 
-Questions: 
-* What do w/late submissions?
-* How long should we give students to address / fix their code?
+    * If your PR is accepted, you're done and will receive full credit for your work.
+    * Otherwise, you will need to implement the requested changes and re-submit within a week (which will initiate another code review cycle).
 
+#### Code Review Resubmissions and Late Work
+* All resubmissions are due one week after they are requested.
+* *Each* late submission (including the original submission) -- will incur a 15% penalty. Why? Because your work impacts everyone else's work (as we're building a collaborative system). 
+* If you anticipate not being able to complete your feature on time, please talk to the instructors as soon as possible (just as you would if this were your job).
+ 
 ### Participation
 In this class, participation is defined as:
 
@@ -129,17 +130,14 @@ Helping other students with their in-class labs is allowed and encouraged, but e
 * Uploading materials from this course to websites that sell such content to students is prohibited by UNCA’s academic integrity policies, and may also put you at risk for violating copyright policies in UNCA’s Student Conduct Code.
 
 #### Using Outside Tools and Materials
-In this class, we encourage you to explore the broader Internet for tutorials, code samples, new coding techniques, libraries, etc. That said, you must *acknowledge all sources contributing to your work.*  If you receive any assistance from any source (Internet, peer, social media, ChatGPT, etc.), please describe your source and that source’s contribution(s). If you have any questions about this, please don't hesitate to contact the instructors.
+In this class, we encourage you to explore the broader Internet for tutorials, code samples, new coding techniques, libraries, etc. That said, you must *acknowledge all sources contributing to your work.*  If you receive any assistance from any source (Internet, peer, social media, ChatGPT, etc.), please describe your source and that source’s contribution(s). If you have any questions about this, please don't hesitate to contact the.
 
 Students violating the academic honesty policy on an assignment will receive a grade of 0 on that assignment for the first offense, and will receive a grade of "F" in the course for the second offense. This will apply to all students involved in the violation, including both the source student and the copying student. It is your responsibility to ensure that your work is not used by other students.
 
 All cases of academic dishonesty will be reported to the Assistant Provost.
 
-
 ### Class Cancellation Policy
 If a class meeting is canceled or due dates are moved due to inclement weather or any other reason, we will inform you via campus email (ending with unca.edu).
-
-
 
 ## University Policies
 
