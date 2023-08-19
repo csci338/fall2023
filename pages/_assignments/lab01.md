@@ -29,9 +29,17 @@ Install VS Code
 #### Configuration Tasks
 * [Configure "Format on Save" using Prettier](https://www.robinwieruch.de/how-to-use-prettier-vscode/) by modifying `settings.json` file (CTRL+, or CMD+,).
 
-### 2. Vim / Emacs Activities
+### 2. Command Line Stuff
+
+
+### 3. Vim / Emacs Activities
 * Thoughts?
 * Students will also need support w/command line. Clarity for Windows users? Powershell? DOS prompt? Something else?
+  * Windows: **WSL Tutorial** (links)
+
+Open EMACs, Get out of EMACs. Open VIM, get out of VIM.
+  * Semmy Demo!
+  * "dot files" (configuration stuff)
 
 ## What to turn in?
 Nothing to turn in this week! Your lab grade will be based on participation.

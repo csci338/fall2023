@@ -23,9 +23,9 @@ catalog_description: "CSCI 338 is project-oriented course in which students work
 ---
 
 ## About the Course
-Welcome to CSCI 338! Taking this course gives you the opportunity to work on a collaborative software development project while learning some of the tools, methods, and processes that are widely used in industry. We will be using some specific programming languages, frameworks, and libraries to explore various "big ideas" in software engineering. That said, this course focuses on the ***processes and tools that will enable you to build software that is scalable and maintainable over time***, as circumstances change. Drawing from <a href="https://abseil.io/resources/swe-book" target="_blank">Software Engineering at Google</a> (the book we will use in this course), we will explore three categories of considerations:
+Welcome to CSCI 338! Taking this course gives you the opportunity to work on a collaborative software development project while learning some of the tools, methods, and processes that are widely used in industry. We will be using some specific programming languages and libraries to explore various "big ideas" in software engineering. That said, the focus of this course is on the ***processes and tools*** that will enable you to build software that is ***scalable and maintainable over time*** (versus learning particular languages / libraries). Drawing from <a href="https://abseil.io/resources/swe-book" target="_blank">Software Engineering at Google</a> (the book we will use in this course), we will explore three categories of considerations:
 
-1. **Culture** -- How people on teams can work well together, document and share knowledge, priorizie technical, social, and business goals, cultivate a curious, open, and critical perspective on their work, and measure the benefits and costs of technical decisions.
+1. **Culture** -- How people on teams can work well together; document and share knowledge; priorizie technical, social, and business goals; cultivate a curious, open, and critical perspective on their work; and measure the benefits and costs of technical decisions.
 1. **Process** -- How to actually go about writing code, including coming up with style guides and coding conventions, doing code reviews, documenting your code, writing tests, deprecating features, and breaking down ideas into concrete features and tasks (so that you can make clear and manageable progress).
 1. **Tools** -- Using different software tools to improve how your team manages their codebase. This includes tools for version control, building and compiling your system (particularly important for larger systems), managing dependencies, and ensuring that you are continuously integrating and deploying code changes.
 
@@ -41,6 +41,8 @@ The course format includes a mix of assigned readings, lectures, labs, and homew
 Class meetings will be in person. Most class sessions have accompanying readings, which you will be expected to complete before class. Please do your best to be physically and mentally present, and to share your knowledge and experience with one another. 
 
 ### Homework
+> Still figuring this out. 36 concrete tasks across front-end and back-end and 18 features? Ideally, very few of these things have dependencies.
+
 Over the course of the semester, you will be working with your classmates on a collaborative software development project. During the first half of the semester, you will be assigned 1-2 features that you will need to implement and deploy to the class's shared codebase (individual assignments). During the second half of the semester, you will be working with one or more of your classmates to design, build, and test a feature that you come up with as a team. 
 
 Our hope is that the experience will help you develop more perspective around how software teams organize their work, make decisions, onboard new developers, introduce new features, etc.
@@ -66,7 +68,7 @@ As this is a programming course, you will be installing and configuring many fre
 * <a href="https://github.com/git-guides/install-git" target="_blank">Git and the Github Client</a>
 
 ### Book
-* We will be reading selected chapters from <a href="https://abseil.io/resources/swe-book" target="_blank">Software Engineering at Google</a>. There is a free copy of the book online, or you can order a hardcopy book. 
+* We will be reading selected chapters from <a href="https://abseil.io/resources/swe-book" target="_blank">Software Engineering at Google</a>. There is a free copy of the book online, or you can order a hardcopy. 
 
 ### Acknowledgements
 These course materials were developed collaboratively by Sarah Van Wart and Semmy Purewal.

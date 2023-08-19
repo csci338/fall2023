@@ -1,13 +1,20 @@
 ---
 layout: two-column
-title: VS Code Resources
+title: VS Code
+parent: resources
+type: resource
 category: "Code Editors"
 ---
+
+## Download
+* [https://code.visualstudio.com/download](https://code.visualstudio.com/download)
 
 ## Useful Extensions
 * [Video: Intro to Using VS Code Extensions](https://code.visualstudio.com/docs/introvideos/extend)
 
 ## Keyboard Shortcuts
+
+### Cheatsheet
 
 |  | Windows | Mac |
 |--|--|--|
