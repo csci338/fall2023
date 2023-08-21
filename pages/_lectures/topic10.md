@@ -2,7 +2,7 @@
 layout: module
 title: "Continuous Integration / Continuous Delivery"
 type: module
-draft: 0
+draft: 1
 num: 10
 due_date: 2023-11-07
 ---

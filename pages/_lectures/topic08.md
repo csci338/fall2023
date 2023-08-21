@@ -3,7 +3,7 @@ layout: module
 title: Agile Engineering Practices
 type: module
 num: 8
-draft: 0
+draft: 1
 due_date: 2023-10-24
 ---
 

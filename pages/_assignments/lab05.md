@@ -2,7 +2,7 @@
 layout: assignment-two-column
 title: "Test-Driven Development with JavaScript: Part II"
 type: lab
-draft: 0
+draft: 1
 points: 6
 abbreviation: Lab 5
 show_schedule: 1

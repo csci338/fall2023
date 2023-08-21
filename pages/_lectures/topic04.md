@@ -3,7 +3,7 @@ layout: module
 title: Topics in Software Construction
 type: module
 num: 4
-draft: 0
+draft: 1
 due_date: 2023-09-12
 ---
 

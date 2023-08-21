@@ -3,7 +3,7 @@ layout: module
 title: HW1 Set-up and Introduction
 type: module
 num: 6
-draft: 0
+draft: 1
 due_date: 2023-10-03
 ---
 

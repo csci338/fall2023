@@ -2,7 +2,7 @@
 layout: assignment-two-column
 title: Intro to Python + Fast API
 type: lab
-draft: 0
+draft: 1
 points: 6
 abbreviation: Lab 8
 show_schedule: 1

@@ -2,7 +2,7 @@
 layout: assignment-two-column
 title: "Continuous Integration / Continuous Delivery Lab"
 type: lab
-draft: 0
+draft: 1
 points: 6
 abbreviation: Lab 10
 show_schedule: 1

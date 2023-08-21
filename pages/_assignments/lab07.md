@@ -2,7 +2,7 @@
 layout: assignment-two-column
 title: Database Lab
 type: lab
-draft: 0
+draft: 1
 points: 6
 abbreviation: Lab 7
 show_schedule: 1

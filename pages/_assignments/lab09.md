@@ -2,7 +2,7 @@
 layout: assignment-two-column
 title: Infrastructure as Code Lab
 type: lab
-draft: 0
+draft: 1
 points: 6
 abbreviation: Lab 9
 show_schedule: 1

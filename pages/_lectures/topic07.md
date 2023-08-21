@@ -3,7 +3,7 @@ layout: module
 title: "Design Patterns: MVC, REST, and Separation of Concerns"
 type: module
 num: 7
-draft: 0
+draft: 1
 due_date: 2023-10-12
 
 ---

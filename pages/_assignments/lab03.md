@@ -2,7 +2,7 @@
 layout: assignment-two-column
 title: Collaboration and Quality Control using GitHub
 type: lab
-draft: 0
+draft: 1
 points: 3
 abbreviation: Lab 3
 show_schedule: 1

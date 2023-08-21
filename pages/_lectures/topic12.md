@@ -2,7 +2,7 @@
 layout: module
 title: Last Day of Class (TBD)
 type: module
-draft: 0
+draft: 1
 num: 12
 due_date: 2023-12-05
 ---

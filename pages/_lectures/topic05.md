@@ -3,7 +3,7 @@ layout: module
 title: Code Reviews & Code Quality
 type: module
 num: 5
-draft: 0
+draft: 1
 due_date: 2023-09-26
 ---
 

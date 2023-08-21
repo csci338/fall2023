@@ -2,7 +2,7 @@
 layout: assignment-two-column
 title: Intro to React
 type: lab
-draft: 0
+draft: 1
 points: 6
 abbreviation: Lab 6
 show_schedule: 1
