@@ -3,7 +3,7 @@
 For your convenience, we have made you a little cheatsheet to help you get familiar with the command line. <a href="https://tutorial.djangogirls.org/en/intro_to_command_line/" target="_blank">Django Girls</a> is a good resource. Note: you will not be tested on this or anything, but navigating the command line can be useful. 
 
 {:.instructions}
-| | DOS (Windows) | Shell (Mac / Linux) |
+| | DOS (Windows) | Shell (Mac / Linux / WSL) |
 |--|--|--|
 | **What directory am I in?** | `> cd` | `$ pwd` |
 | **Change directories** | `> cd {{your_file_path}}` | `$ cd {{your_file_path}}` |

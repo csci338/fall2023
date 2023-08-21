@@ -4,10 +4,13 @@ title: Resources
 permalink: /resources/
 ---
 
+## The Command Line
+* [Command Line Cheatsheets](command-line)
+
 ## Code Editors
 * [VS Code](vs-code)
-* Vim (TBD)
-* Emacs (TBD)
+* [Vim](vim)
+* [Emacs](emacs)
 
 ## JavaScript Resources
 TBD

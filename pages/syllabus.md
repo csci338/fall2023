@@ -23,7 +23,7 @@ catalog_description: "CSCI 338 is project-oriented course in which students work
 ---
 
 ## About the Course
-Welcome to CSCI 338! Taking this course gives you the opportunity to work on a collaborative software development project while learning some of the tools, methods, and processes that are widely used in industry. We will be using some specific programming languages and libraries to explore various "big ideas" in software engineering. That said, the focus of this course is on the ***processes and tools*** that will enable you to build software that is ***scalable and maintainable over time*** (versus learning particular languages / libraries). Drawing from <a href="https://abseil.io/resources/swe-book" target="_blank">Software Engineering at Google</a> (the book we will use in this course), we will explore three categories of considerations:
+Welcome to CSCI 338! Taking this course gives you the opportunity to work on a collaborative software development project while learning some of the tools, methods, and processes that are widely used in industry. We will be using some specific programming languages and libraries to explore various "big ideas" in software engineering. That said, the focus of this course is on the ***processes and tools*** that will enable you to build software that is ***scalable and maintainable over time*** (versus learning particular languages / libraries). Drawing from <a href="https://abseil.io/resources/swe-book" target="_blank">Software Engineering at Google</a> (one of the books we will use in this course), we will explore three categories of considerations:
 
 1. **Culture** -- How people on teams can work well together; document and share knowledge; priorizie technical, social, and business goals; cultivate a curious, open, and critical perspective on their work; and measure the benefits and costs of technical decisions.
 1. **Process** -- How to actually go about writing code, including coming up with style guides and coding conventions, doing code reviews, documenting your code, writing tests, deprecating features, and breaking down ideas into concrete features and tasks (so that you can make clear and manageable progress).
@@ -35,20 +35,26 @@ By the end of this course, our hope is that you will view software engineering a
 {% include schedule-very-simple.html %}
 
 ## Course Format
-The course format includes a mix of assigned readings, lectures, labs, and homework. We will generally try to use our Tuesday class time to discuss a "big idea" in software engineering, and our Thursday class time to complete hands-on labs. It is your responsibility to keep up-to-date on class material and announcements, as the schedule is subject to change. This includes material presented and announcements made in class, via email, or on Moodle.
+The course format includes a mix of assigned readings, lectures, labs, homework, and quizzes. We will generally try to use our Tuesday class time to discuss a "big idea" in software engineering, and our Thursday class time to complete hands-on labs. It is your responsibility to keep up-to-date on class material and announcements, as the schedule is subject to change. This includes material presented and announcements made in class, via email, or on Moodle.
 
 ### Class Participation
 Class meetings will be in person. Most class sessions have accompanying readings, which you will be expected to complete before class. Please do your best to be physically and mentally present, and to share your knowledge and experience with one another. 
 
 ### Homework
-> Still figuring this out. 36 concrete tasks across front-end and back-end and 18 features? Ideally, very few of these things have dependencies.
-
 Over the course of the semester, you will be working with your classmates on a collaborative software development project. During the first half of the semester, you will be assigned 1-2 features that you will need to implement and deploy to the class's shared codebase (individual assignments). During the second half of the semester, you will be working with one or more of your classmates to design, build, and test a feature that you come up with as a team. 
 
 Our hope is that the experience will help you develop more perspective around how software teams organize their work, make decisions, onboard new developers, introduce new features, etc.
 
+{:.blockquote-no-margin}
+> **Note:** We are still figuring out how we will be organizing homework assignments.The current plan (described above) may change.
+
+
 ### Labs
 Labs are intended to be completed during class on Thursdays (unless otherwise specified), so that we can help you with any questions (or configuration issues) you make have. Each lab is designed to give you practice with a tool, technique, or workflow relevant to building collaborative software.
+
+### Quizzes
+There will also be 1-2 quizzes to assess your understanding of some of the methods we are learning about (e.g., Agile methods, test-driven design, managing trade-offs, navigating constraints and uncertainty, handling upgrades and deprecation, etc.).
+
 
 ## Course Expectations
 * You will come to class prepared and ready to engage in an intellectual discussion about the readings.
@@ -60,15 +66,21 @@ Labs are intended to be completed during class on Thursdays (unless otherwise sp
 
 ## Course Materials & Resources
 
+### Books
+We will be reading selected chapters from two different books:
+* <a href="https://abseil.io/resources/swe-book" target="_blank">Software Engineering at Google</a>. There is a free copy of the book online, or you can order a hardcopy. 
+* <a href="https://www.oreilly.com/library/view/the-agile-samurai/9781680500066/" target="_blank">The Agile Samurai</a>. How Agile masters deliver great software. Jonathan Rasmusson. 
+   * A digital version of this book can be accessed via the UNCA library. Just sign into <a href="https://www.oreilly.com" target="_blank">https://www.oreilly.com</a> with your UNCA email address and then search for the book. 
+
 ### Software
-As this is a programming course, you will be installing and configuring many free software programs, including the ones listed below. This software will probably require between 3-5GB of space on your hard drive. Installing and configuring programming software can be a hassle, but it is part of the process of developing your working computing knowledge. We will help you. 
+This course will utilize many different software packages, libraries, and tools (all free), including the ones listed below. You will probably need around 5GB of disk space to run these programs. Installing and configuring programming software can be a hassle, but it is part of the process of developing your working computing knowledge. We will help you. 
 
 {:.compact}
 * <a href="https://code.visualstudio.com/download" target="_blank">Visual Studio Code</a>
 * <a href="https://github.com/git-guides/install-git" target="_blank">Git and the Github Client</a>
 
-### Book
-* We will be reading selected chapters from <a href="https://abseil.io/resources/swe-book" target="_blank">Software Engineering at Google</a>. There is a free copy of the book online, or you can order a hardcopy. 
+### Other Course Resources
+We will also be compiling a list of cheatsheets, online tutorials, and documentation pages on the course [Readings and Resources](../resources/) page.
 
 ### Acknowledgements
 These course materials were developed collaboratively by Sarah Van Wart and Semmy Purewal.
@@ -77,9 +89,10 @@ These course materials were developed collaboratively by Sarah Van Wart and Semm
 Your course grade is calculated based on homework, labs, and attendance / participation:
 
 {:.small}
-| **Labs** | 40% |
+| **Labs** | 30% |
 | **Homeworks** | 40% |
 | **Attendance & Participation** | 20% |
+| **Quizzes** | 10% |
 
 ### Labs
 Labs will be graded according to the following scale (from 0-3 points):
@@ -113,6 +126,8 @@ In this class, participation is defined as:
 
 We will take attendance. You may miss **two** class sessions – no questions asked – without a grade penalty. Any additional absences (beyond your two “freebies”) will impact your participation grade (and more to the point, your capacity to productively engage with the class).
 
+### Quizzes
+Quizzes will be graded according to how thoroughly you answer the questions and drawing from the principles and readings covered of the course.
 
 ## Course Policies
 
