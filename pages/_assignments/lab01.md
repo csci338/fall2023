@@ -20,11 +20,10 @@ This lab requires you to interpret and apply various online cheatsheets, tutoria
 > ## Outline
 > Using the resources we have compiled for you, please complete the following tasks:
 >
-> 1. Install VS Code
-> 2. Install the VS Code Extensions and ensure that they run
-> 3. Complete the Command Line Exercises
-> 4. Configure your command line environment using the `.zshrc` file (or `.bashrc` if you're running an older Mac OS)
-> 5. Practice using either vim or emacs from the command line.
+> 1. Install VS Code and some useful extensions
+> 1. Complete the Command Line Exercises
+> 1. Configure your command line environment using the `.zshrc` file (or `.bashrc` if you're running an older Mac OS)
+> 1. Practice using either vim or emacs from the command line.
 
 ## 1. Install VS Code
 Please install VS Code. When you're done, please install the following VS Code Extensions
@@ -36,14 +35,41 @@ Please install VS Code. When you're done, please install the following VS Code E
 ### Configuration Tasks
 * [Configure "Format on Save" using Prettier](https://www.robinwieruch.de/how-to-use-prettier-vscode/) by modifying `settings.json` file (CTRL+, or CMD+,).
 
-## 3. Complete the Command Line Exercises
-TODO
+## 2. Complete the Command Line Exercises
 
-## 4. Configure your command line environment
-TODO
+```bash
+pwd
+cd
+ls      # optional "l" and "a" flags
+less
+cat
+mv
+rm  # optional "r" flags
+cp
+grep
+echo
+echo "hello world!" > readme.txt # Redirects and pipes
+```
 
-## 5. Vim / Emacs Activities
-TODO
+### Package manager stuff
+* brew
+* WLS2 + Ubuntu: 
+
+* https://ubuntu.com/tutorials/windows-and-ubuntu-interoperability-on-wsl2#1-overview
+* https://ubuntu.com/tutorials/install-ubuntu-on-wsl2-on-windows-10#1-overview
+
+
+
+
+
+## 3. Configure your command line environment
+Semmy will do a demo
+
+## 4. Vim / Emacs Activities
+
+* Opening a file
+* Editing a file
+* Exiting an app
 
 ## What to turn in?
 Nothing to turn in this week! Your lab grade will be based on participation.

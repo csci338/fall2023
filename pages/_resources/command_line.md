@@ -36,32 +36,32 @@ For your convenience, we have made you a little cheatsheet to help you get famil
 
 **For Windows users**: We recommend that you use WSL (as mentioned above), which you can start via PowerShell or the command prompt.
 
-{:.instructions}
-| | DOS (Windows) | Shell (Mac / Linux / WSL) |
-|--|--|--|
-| **What directory am I in?** | `> cd` | `$ pwd` |
-| **Change directories** | `> cd {{your_file_path}}` | `$ cd {{your_file_path}}` |
-| **List files & directories** | `> dir`<br> `> tree  # lists subdirectories` | `$ ls`<br>`$ ls -l` |
-| **Navigate to parent directory** | `> cd ..` | `$ cd  ..` |
-| **Navigate into child directory** | `> cd csci338` | `$ cd csci338` |
-| **Navigate into descendant directory** | `> cd lectures\lecture03` | `$ cd lectures/lecture03` |
-| **Navigate to sibling directory** | `> cd ..\lecture02` | `$ cd  ../lecture02` |
-| **Navigate to ancestor directory** | `> cd ..\..\` | `$ cd  ../../` |
-| **Navigate to home directory** |  | `$ cd` |
-| **Command history** | `> doskey /HISTORY` | `$ history` |
+{:.instructions.medium}
+| | Shell (Mac / Linux / WSL) |
+|--|--|
+| **What directory am I in?** | `$ pwd` |
+| **Change directories** | `$ cd {{your_file_path}}` |
+| **List files & directories** | `$ ls`<br>`$ ls -l` |
+| **Navigate to parent directory** |
+| **Navigate into child directory** | `$ cd csci338` |
+| **Navigate into descendant directory** | `$ cd lectures/lecture03` |
+| **Navigate to sibling directory** | `$ cd  ../lecture02` |
+| **Navigate to ancestor directory** | `$ cd  ../../` |
+| **Navigate to home directory** | `$ cd` |
+| **Command history** | `$ history` |
 
-Other optional commands you may find useful...
+Other commands you may find useful...
 
-{:.instructions}
-| | DOS (Windows) | Shell (Mac / Linux) |
+{:.instructions.medium}
+| | Shell (Mac / Linux) |
 |--|--|--|
-| **Create a new file** | `> echo . > my_file.txt` | `$ echo . > my_file.txt`<br> `$ touch my_file.txt` |
-| **Append to a file** | `> echo "some text" >> my_file.txt` | `$ echo "some text" > my_file.txt` |
-| **Save history to a file** | `> doskey /HISTORY > my_history.txt` | `$ history > my_history.txt` |
-| **Move a file** | `> move my_history.txt Documents/.` | `$ mv my_history.txt Documents/.` |
-| **Make a folder** | `> mkdir my_folder` | `$ mkdir my_folder` |
-| **Delete a file** | `> del my_history.txt` | `$ rm my_history.txt` |
-| **Delete a folder** | `> rmdir my_folder` | `$ rm -r my_folder` |
+| **Create a new file** | `$ echo . > my_file.txt`<br> `$ touch my_file.txt` |
+| **Append to a file** | `$ echo "some text" > my_file.txt` |
+| **Save history to a file** | `$ history > my_history.txt` |
+| **Move a file** | `$ mv my_history.txt Documents/.` |
+| **Make a folder** | `$ mkdir my_folder` |
+| **Delete a file** | `$ rm my_history.txt` |
+| **Delete a folder** | `$ rm -r my_folder` |
 
 ## What is sudo?
 <img src="https://imgs.xkcd.com/comics/sandwich.png" />

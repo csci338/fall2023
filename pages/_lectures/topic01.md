@@ -17,4 +17,12 @@ Software Engineering at Google:
 ## Slides
 Slides will be posted before class.
 
+<!-- ## Activities
+- List<Integers> return true if there are the same two integers anywhere in the list. Pairwise n^2 versus Linear.
+
+What is the big O / big theta.
+
+
+Design a system to create a URL shortener. -->
+
 <!-- 1. [Intro to the course](https://docs.google.com/presentation/d/13s8VK_rof1SkhaGAxLyXDuLfnfwJ0XxBZWJ0ZhJ6mSQ/edit?usp=sharing) -->
