@@ -15,14 +15,8 @@ Software Engineering at Google:
 * <a href="https://abseil.io/resources/swe-book/html/ch01.html" target="_blank">Chapter 1. What is Software Engineering?</a>
 
 ## Slides
-Slides will be posted before class.
-
-<!-- ## Activities
-- List<Integers> return true if there are the same two integers anywhere in the list. Pairwise n^2 versus Linear.
-
-What is the big O / big theta.
+* <a href="https://docs.google.com/presentation/d/13s8VK_rof1SkhaGAxLyXDuLfnfwJ0XxBZWJ0ZhJ6mSQ/edit?usp=sharing" target="_blank">Intro to the Course</a>
 
 
-Design a system to create a URL shortener. -->
-
-<!-- 1. [Intro to the course](https://docs.google.com/presentation/d/13s8VK_rof1SkhaGAxLyXDuLfnfwJ0XxBZWJ0ZhJ6mSQ/edit?usp=sharing) -->
+## Activities
+* <a href="https://docs.google.com/document/d/1QzRsyB9zfvE2WpuGss3zpptkjvK4N73DM9cyi01-hOw/edit?usp=sharing" target="_blank">Activity 1</a>
