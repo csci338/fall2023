@@ -7,8 +7,7 @@ category: "Code Editors"
 ---
 
 ## Why is important to know how to the command line?
-As you progress in your computer science journey, learning about the command line becomes more and more useful and important. Here is list of reasons for learning it (not exhaustive):
-* You can SSH (Secure Shell) into any server in the world and run any command you want (provided you have the permissions to do so).
+* You can SSH (Secure Shell) into any server in the world (without installing special software / clients).
 * It allows you greater control over your system's functions (creating files and folders, changing permissions, running executables, creating shortcuts / symlinks).
 * Many advanced system functions don't have a GUI interface (or the GUI isn't any easier to use!).
 * It's faster (once you get the hang of it).
@@ -16,25 +15,24 @@ As you progress in your computer science journey, learning about the command lin
 * It allows you to easily stop and start services and processes (e.g., database servers, web servers, system tasks).
 * Most package managers (e.g., `npm`, `pip`, `gem`, `brew`, `apt-get`, `yum`) require them for tracking / organizing dependencies (which you need when building software).
 
-## How do I run the command line
-
 
 ## Useful References
-
-### Environment files on Mac
-* [Bash startup files loading order](https://medium.com/@rajsek/zsh-bash-startup-files-loading-order-bashrc-zshrc-etc-e30045652f2e)
-* Sample `.zshrc` customizations you can make: Check out [Dr. Purewal's GitHub repo](https://github.com/semmypurewal/dotfiles/blob/master/zsh).
-
+In this course, we will be using bash. Bash is a Unix shell and command language that runs natively on Mac, Linux, and Unix operating systems. If you are a Windows user, you will be using WSL (see below) to run a GNU/Linux environment.
 
 ### Using Linux Commands on Windows via WSL
 The **Windows Subsystem for Linux** (WSL) lets Windows users run a GNU/Linux environment -- including most command-line tools, utilities, and applications -- directly on Windows, unmodified, without the overhead of a traditional virtual machine or dualboot setup.
 * [About](https://learn.microsoft.com/en-us/windows/wsl/about)
 * [Installation / Configuration](https://learn.microsoft.com/en-us/windows/wsl/basic-commands)
 
-## Cheatsheet of Useful DOS / Bash Commands
-For your convenience, we have made you a little cheatsheet to help you get familiar with the command line. <a href="https://tutorial.djangogirls.org/en/intro_to_command_line/" target="_blank">Django Girls</a> is a good resource. 
+### Environment files
+Environment files set environment variables on your operating system. This allows you to configure shortcuts and run scripts on startup. Here are some relevant resources for configuring these files:
+* [Bash startup files loading order](https://medium.com/@rajsek/zsh-bash-startup-files-loading-order-bashrc-zshrc-etc-e30045652f2e)
+* Sample `.zshrc` customizations you can make: Check out [Semmy's GitHub repo](https://github.com/semmypurewal/dotfiles/blob/master/zsh).
 
-**For Windows users**: We recommend that you use WSL (as mentioned above), which you can start via PowerShell or the command prompt.
+## Cheatsheet of Useful Bash Commands
+Online cheatsheets:
+* [https://github.com/RehanSaeed/Bash-Cheat-Sheet](https://github.com/RehanSaeed/Bash-Cheat-Sheet)
+
 
 {:.instructions.medium}
 | | Shell (Mac / Linux / WSL) |
