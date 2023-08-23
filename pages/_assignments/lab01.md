@@ -195,7 +195,7 @@ Semmy will walk you through some `.dot` file configuration tasks. Here is a samp
 * Add a new executable to your system path (e.g., node)
 
 {:#vim-emacs}
-## 4. Vim / Emacs Exercises]
+## 4. Vim / Emacs Exercises
 
 Using either [vim](../resources/vim) or [emacs](../resources/emacs):
 
