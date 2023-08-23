@@ -25,13 +25,15 @@ Welcome to your first CSCI 338 lab! The goal of today's lab is to get you a litt
 ## 1. VS Code Exercises
 
 ### 1.1. Installation
-Please install [VS Code](https://code.visualstudio.com/download). When you're done, please install the following VS Code Extensions
+Please install [VS Code](https://code.visualstudio.com/download). When you're done, please install the following VS Code Extensions:
+* Live Server (by Ritwick Dey)
+* Prettier (by Prettier should have the blue "verified" badge)
+* Prettier ESLint (by Rebecca Vest)
+* Remote - SSH (by Microsoft)
+
+To install VS Code Extensions:
 * Open the extensions window by either clicking the extensions icon (looks like 4 squares on the gray, left-hand bar) or use the keyboard shortcut (Shift+Cmd+X or Shift+Ctrl+X).
-* When you're done, install the following extensions (using the search textbox):
-    * Live Server (by Ritwick Dey)
-    * Prettier (by Prettier should have the blue "verified" badge)
-    * Prettier ESLint (by Rebecca Vest)
-    * Remote - SSH (by Microsoft)
+* Search for the extension name using the search textbox.
 
 ### 1.2. Configuration Tasks
 
