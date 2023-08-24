@@ -1,43 +1,40 @@
 ---
 layout: module
-title: "Writing Tests"
+title: Culture, Teamwork, and Collaboration
 type: module
-num: 3
+num: 4
 draft: 1
 due_date: 2023-09-05
 ---
 
-We're going to be practicing writing unit tests while also learning JavaScript. 
-
-## Learning Goals
-
-### Intro to JavaScript
-* JavaScript primer: Helping students get acquainted with JavaScript language features and concepts.
-
-### Intro to Testing
-* The "Beyonce Rule"
-* Principles of Test-Driven Design: 
-    * Write a failing test first. 
-    * Implement the feature that fixes the failing test. 
-    * Think about the kinds of things you want to test for (missing data, wrong data types, data out of range).
-* Types of tests: 
-    * unit tests
-    * integration tests, etc.
+"Culture" is a  big topic in tech, and can encompass many different ideas, including:
+* **Interpersonal stuff** -- e.g., how teams build software, make decisions, resolve conflicts, absorb shocks, etc. And also how cultural practices around race, class, gender, ethnicity, disability, etc. can affect how people are treated and the opportunities they can access.
+* **Organizational stuff** -- how companies are organized, how management makes decisions, etc.
+* **Societal stuff** -- how assumptions and beliefs that start in tech shops reverberate into society...and conversely how society shapes the kinds of technologies we build.
 
 ## Assigned Readings
 
-### Process Readings
-1. Reading from SWE at Google
+### Interpersonal & Organizational Stuff
+Software Engineering at Google:
+* <a href="https://abseil.io/resources/swe-book/html/ch02.html" target="_blank">Chapter 2. How to work well on teams</a>
+* <a href="https://www.theguardian.com/technology/2016/feb/12/women-considered-better-coders-hide-gender-github" target="_blank">Women considered better coders – but only if they hide their gender</a>. The Guardian
+* <a href="https://www.nytimes.com/2021/06/21/us/politics/big-tech-racial-wealth-gap.html" target="_blank">How Big Tech Allows the Racial Wealth Gap to Persist</a>. The New York Times.
+* <a href="https://hbr.org/1995/09/the-power-of-talk-who-gets-heard-and-why" target="_blank">The Power of Talk: Who Gets Heard and Why</a>
 
-### Technical Readings (for Lab 3)
-1. Installing Mocha: [https://mochajs.org/#installation](https://mochajs.org/#installation)
-1. Unit Testing Tutorial (TODO)
-1. Integration Testing Tutorial: [https://www.digitalocean.com/community/tutorials/how-to-test-a-node-js-module-with-mocha-and-assert](https://www.digitalocean.com/community/tutorials/how-to-test-a-node-js-module-with-mocha-and-assert)
-1. JavaScript primer: 
-    * Language Features
-    * Modules
-    * Functional Programming
-    * OOP
+### Societal Stuff
+* <a href="https://abseil.io/resources/swe-book/html/ch02.html" target="_blank">Chapter 4. Engineering for Equity</a> (a fairly "light" foray into equity).
+* <a href="https://www.technologyreview.com/2022/08/11/1056917/tech-fix-gender-problem/" target="_blank">Why can’t tech fix its gender problem?</a>. MIT Review
+
+### Managing Conflicts
+* [Managing Dev Team Conflicts](https://www.shakebugs.com/blog/managing-dev-team-conflicts/)
+* [Story #2](https://leaddev.com/culture-engagement-motivation/managing-conflict-engineering-teams)
+* [Games](https://s3.wp.wsu.edu/uploads/sites/2070/2016/08/The-big-book-of-Conflict-Resolution-Games.pdf)
+* [Scenarios #1](http://tchavezgsedp.weebly.com/conflict-scenarios.html)
+* [Challenges in group work](https://www.celt.iastate.edu/instructional-strategies/effective-teaching-practices/group-work/common-group-work-challenges-and-solutions/)
 
 ## Slides
 Slides will be posted before class.
+
+
+## Activities
+Activities will be published before class.

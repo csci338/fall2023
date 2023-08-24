@@ -1,20 +1,24 @@
 ---
 layout: module
-title: Code Reviews & Code Quality
+title: Topics in Software Construction
 type: module
 num: 5
 draft: 1
-due_date: 2023-09-26
+due_date: 2023-09-16
 ---
 
-TBD
+## Learning Goals
+Day 1:
+1. Introduce functional programming and why it's important
+2. Introduce the idea of good API design. What's the right level of abstraction?
+
+Day 2 (React Prep):
+1. How to select among different libraries and frameworks (i.e., Why React?)
+2. Managing state, side effects, etc.
 
 ## Assigned Readings
 
-1. Ch8. Style Guides
-1. Ch9. Code Review
-1. Ch16. Version Control & Branch Management
-1. GitHub reading
+1. Maybe this: [https://codeburst.io/a-beginner-friendly-intro-to-functional-programming-4f69aa109569](https://codeburst.io/a-beginner-friendly-intro-to-functional-programming-4f69aa109569)?
 
 ## Slides
 Slides will be posted before class.

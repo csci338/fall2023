@@ -1,10 +1,24 @@
 ---
 layout: module
-title: HW1 Set-up and Introduction
+title: Code Reviews & Code Quality
 type: module
 num: 6
 draft: 1
-due_date: 2023-10-03
+due_date: 2023-09-26
 ---
 
-In-class work to set up the software environment and ensure that everyone can make progress on their task.
+TBD
+
+## Assigned Readings
+
+1. Ch8. Style Guides
+1. Ch9. Code Review
+1. Ch16. Version Control & Branch Management
+1. GitHub reading
+
+## Slides
+Slides will be posted before class.
+
+
+## Activities
+Activities will be published before class.

@@ -1,10 +1,10 @@
 ---
 layout: module
-title: Build Systems
+title: Agile Engineering Practices
 type: module
 num: 9
 draft: 1
-due_date: 2023-10-31
+due_date: 2023-10-24
 ---
 
 TBD

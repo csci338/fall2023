@@ -1,29 +1,20 @@
 ---
 layout: two-column
-title: Culture, Teamwork, and Collaboration
+title: Version Control & Branch Management
 num: 2
 type: module
-draft: 1
+draft: 0
 due_date: 2023-08-29
 ---
 
-Text
-
 ## Assigned Readings
-Software Engineering at Google:
-* <a href="https://abseil.io/resources/swe-book/html/ch02.html" target="_blank">Chapter 2. How to work well on teams</a>
-* <a href="https://abseil.io/resources/swe-book/html/ch02.html" target="_blank">Chapter 4. Engineering for Equity</a> (don't love this chapter...maybe there's another source we could use).
+### From Last Tuesday
+* <a href="https://abseil.io/resources/swe-book/html/pr01.html" target="_blank">Preface</a>
+* <a href="https://abseil.io/resources/swe-book/html/ch01.html" target="_blank">Chapter 1. What is Software Engineering?</a>
 
-Other readings:
-* [Managing Dev Team Conflicts](https://www.shakebugs.com/blog/managing-dev-team-conflicts/)
-* [Story #2](https://leaddev.com/culture-engagement-motivation/managing-conflict-engineering-teams)
-* [Games](https://s3.wp.wsu.edu/uploads/sites/2070/2016/08/The-big-book-of-Conflict-Resolution-Games.pdf)
-* [Scenarios #1](http://tchavezgsedp.weebly.com/conflict-scenarios.html)
-* [Challenges in group work](https://www.celt.iastate.edu/instructional-strategies/effective-teaching-practices/group-work/common-group-work-challenges-and-solutions/)
+### For Today
+* <a href="https://abseil.io/resources/swe-book/html/ch16.html" target="_blank">Chapter 16. Version Control and Branch Management</a>
+
 
 ## Slides
 Slides will be posted before class.
-
-
-## Activities
-Activities will be published before class.

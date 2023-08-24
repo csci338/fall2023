@@ -1,10 +1,10 @@
 ---
 layout: module
-title: "Continuous Integration / Continuous Delivery"
+title: Build Systems
 type: module
-draft: 1
 num: 10
-due_date: 2023-11-07
+draft: 1
+due_date: 2023-10-31
 ---
 
 TBD

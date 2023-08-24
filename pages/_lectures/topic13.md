@@ -1,10 +1,10 @@
 ---
 layout: module
-title: "Continuous Integration / Continuous Delivery"
+title: Last Day of Class (TBD)
 type: module
 draft: 1
-num: 11
-due_date: 2023-11-07
+num: 13
+due_date: 2023-12-05
 ---
 
 TBD
