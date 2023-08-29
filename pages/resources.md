@@ -14,7 +14,7 @@ permalink: /resources/
 * [Emacs](emacs)
 
 ## Version Control & Collaboration
-* [Git & GitHub](git-github)
+* [Git & GitHub](github)
 
 ## JavaScript Resources
 TBD
