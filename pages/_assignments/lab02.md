@@ -11,7 +11,14 @@ start_date: 2023-08-31
 due_date: 2023-09-03
 ---
 
-## A bunch of resources that seem useful
-* [What is git rebase?](https://www.youtube.com/watch?v=_UZEXUrj-Ds)
-* [Collaborating using Git and GitHub / Branches, Pull Requests, Merging vs Rebasing](https://www.youtube.com/watch?v=_wQdY_5Tb5Q) (Video walkthrough)
-* [Article explaining how to rebase + handle merge conflicts](https://www.atlassian.com/git/tutorials/comparing-workflows)
+## Lab Readings
+
+### Required
+* <a href="https://www.youtube.com/watch?v=_wQdY_5Tb5Q" target="_blank">Collaborating using Git and GitHub</a>: Branches, Pull Requests, Merging vs Rebasing (Video walkthrough)
+
+### Recommended
+* <a href="https://www.youtube.com/watch?v=_UZEXUrj-Ds" target="_blank">What is git rebase?</a>
+* <a href="https://www.atlassian.com/git/tutorials/comparing-workflows" target="_blank">Article explaining how to rebase + handle merge conflicts</a>
+
+## Lab Activity
+Will be posted before class

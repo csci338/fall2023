@@ -1,6 +1,6 @@
 ---
 layout: two-column
-title: VS Code
+title: "VS Code"
 parent: resources
 type: resource
 category: "Code Editors"

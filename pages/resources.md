@@ -13,8 +13,8 @@ permalink: /resources/
 * [Vim](vim)
 * [Emacs](emacs)
 
-## Git and GitHub
-* [Pro Git Book](https://git-scm.com/book/en/v2): Great reference
+## Version Control & Collaboration
+* [Git & GitHub](git-github)
 
 ## JavaScript Resources
 TBD
