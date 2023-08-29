@@ -6,11 +6,15 @@ permalink: /resources/
 
 ## The Command Line
 * [Command Line Cheatsheets](command-line)
+* [Zsh/Bash startup files loading order](https://shreevatsa.wordpress.com/2008/03/30/zshbash-startup-files-loading-order-bashrc-zshrc-etc/)  (.bashrc, .zshrc etc.)
 
 ## Code Editors
 * [VS Code](vs-code)
 * [Vim](vim)
 * [Emacs](emacs)
+
+## Git and GitHub
+* [Pro Git Book](https://git-scm.com/book/en/v2): Great reference
 
 ## JavaScript Resources
 TBD

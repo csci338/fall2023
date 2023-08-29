@@ -17,4 +17,12 @@ due_date: 2023-08-29
 
 
 ## Slides
-Slides will be posted before class.
+* <a href="https://docs.google.com/presentation/d/1U-aDFuJ2hTWsYJ8MC0YMaMC934uSisVpqVlR77IIua0/edit?usp=sharing" target="_blank">Big Ideas in Software Engineering & Intro to Version Control</a>
+
+## Activities
+1. Bash + `.zshrc` practice (see slides)
+2. Coding exercise (see slides)
+3. Working with `.git` locally (see slides)
+
+**Don't forget to submit your commands to the Moodle for today's participation grade!**
+
