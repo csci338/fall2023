@@ -43,6 +43,8 @@ Before we get into the details of the GitHub workflow, let's set up a clone of *
 1. Issue the `git status` command. What happened?
 1. Stage your changes using `git add .` (the dot indicates that you want to stage all of the files that have been added / deleted / edited).
 1. Commit your changes using `git commit -am "adding my user directory"`.
+1. Push your branch to GitHub (`git push`).
+1. Create a pull request.
 
 {:#authentication}
 ### 3. Set up public / private key authentication for GitHub (and Arden)
