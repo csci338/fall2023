@@ -74,31 +74,33 @@ Read More here: <a href="https://kb.iu.edu/d/aews" target="_blank">https://kb.iu
 <a href="https://github.com/csci338/app" target="_blank">https://github.com/csci338/app</a>
     * Be sure you don't accidentially put `app` underneath `class-exercises-fall2023`.
 
-#### 4.2. Edit the main branch directly
+#### 4.2. Make a new branch
+1. Create a new branch called <your-username-readme> (e.g. Sarah would create a branch called `vanwars`: `git checkout -b vanwars-readme`)
 1. Open the existing `README.md` file. At the bottom, add an entry with your name and your GitHub username. Please add your information so that the table is sorted in alphabetical order by last name. 
-2. `add`, `commit`, and `push` your changes to the class repo.
-3. Did you get an error message? What did it say? Try to figure out what went wrong.
+2. `add`, `commit`, and `push` your changes to a remote branch of the same name.
+3. Create a pull request
 
 #### 4.3. Resolve push / pull conflicts
-1. If the `main` branch has changed since you last cloned, git won't let you push any changes until you pull them. So, before pushing, issue the `git pull` request first.
-1. Did you get an error message? Was it a merge conflict? 
-1. See if you can resolve it. Once you have, `add`, `commit`, and `push` your changes again.
+1. Once your branch is approved, check it to ensure that there are no conflicts with the `main` branch.
+1. If there are conflicts, follow the steps below:
 
 ##### Workflow for resolving conflicts
 ```bash
-git checkout main
-git pull
-git checkout vanwars-readme
-git rebase main
+git checkout main  # checkout the main branch again
+git pull # pull down the changes that have happened since you last pulled / cloned
+git checkout <your-username>-readme # switch back to your branch
+git rebase main # try to rebase
 
 # Manually resolve the conflict and then continue steps below...
 
 git status
-git rebase --continue  # or git rebase --abort
-git push
-git push --force
+git rebase --continue  # continue the process
+git push # should reject your change
+git push --force # force the change
 ```
 
+#### 4.4. Incorporate your changes to main
+When you're done, ask Semmy or Sarah to incorporate your changes to main.
 
 ## What to Turn In
 Make sure that the following are completed before Sunday at midnight:
