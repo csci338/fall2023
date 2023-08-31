@@ -8,7 +8,7 @@ abbreviation: Lab 2
 show_schedule: 2
 num: 2
 start_date: 2023-08-31
-due_date: 2023-09-03
+due_date: 2023-09-06
 ---
 
 ## Introduction
@@ -26,58 +26,78 @@ Today we will be practicing collaborating on code by using **git** and **GitHub*
 If you haven't already, please register for a GitHub account, and then add your full name and your GitHub username to <a href="https://docs.google.com/spreadsheets/d/1UYLm8ZoEivGhikw6pbh2CTGSh3lixfvceGENRD3z-No/edit?usp=sharing" target="_blank">this spreadsheet</a>. Semmy and I will invite you to be a contributor to the relevant repos.
 * Note that **you will have to confirm this invitation** via email.
 
-### 2. Set up your copy of the coursework repository
+{:#authentication}
+### 2. Set up public / private key authentication for GitHub (and Arden)
+While there are many ways of authenticating to GitHub, one of the most common ways of accessing a servers is by using public and private keys over SSH. The workflow is as follows:
+
+#### 2.1. Generate a public / private key pair
+Note: All of these commands should be run from the command line on your **local computer** (not ssh-ed into arden). If you're a Windows user, activate WSL.
+
+To generate a public / private key pair:
+
+* Type the following command: **`ssh-keygen`**
+* This will generate your private key inside the `.ssh` folder inside your home directory. Typically, the private key is  called `id_rsa` and the public key is called `id_rsa.pub`.
+* Verify that this worked by typing `ls -la ~/.ssh`. You should see both files (with today's timestamp).
+
+#### 2.2. Copy your public key to the appropriate place 
+
+##### On GitHub
+1. Follow the <a href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account" target="_blank">GitHub instructions</a>
+
+##### On Arden (Optional but Recommended)
+1. Copy your public key into your home directory on arden.
+    * One way of doing this is by using the **`rsync`** utility:<br>`rsync ~/.ssh/id_rsa.pub <your_arden_username>@arden.cs.unca.edu:~/.`
+1. Configure your public key on arden:
+    * ssh into arden: `ssh <your_arden_username>@arden.cs.unca.edu`
+    * Verify that the `id_rsa.pub` file is now in your home directory.
+    * If your home directory on the remote server doesn't already contain a `~/.ssh/authorized_keys` file, create oneas follows:
+        * `mkdir -p ~/.ssh`<br>`touch ~/.ssh/authorized_keys`
+    * Then, append your public key to the `authorized_keys` file: `cat ~/id_rsa.pub >> ~/.ssh/authorized_keys`
+    * Finally, delete your public key from your home directory on arden (you don't need it anymore):<br>`rm ~/id_rsa.pub`
+
+That should be it! Read More here: <a href="https://kb.iu.edu/d/aews" target="_blank">https://kb.iu.edu/d/aews</a>
+
+### 3. Set up a local copy of the coursework repository
 In this class, we're going to have two repositories:
 * **`class-exercises-fall2023`** -- For in-class exercises and labs.
 * **`app`** -- for our class project
 
 Before we get into the details of the GitHub workflow, let's set up a clone of **`class-exercises-fall2023`** on your laptop while practicing some basic git commands. Please complete the following tasks:
 
-1. Within your `csci338` directory, clone this repo:
-<a href="https://github.com/csci338/class-exercises-fall2023" target="_blank">https://github.com/csci338/class-exercises-fall2023</a>
+1. Within your `csci338` directory, clone the `class-exercises-fall2023` repo using the **ssh method** (while in the `csci338` directory on your local computer): <br>`git clone git@github.com:csci338/class-exercises-fall2023.git`
 1. Look at commit history (`git log`)
-1. Create a new branch called `<your-username>` (e.g. Sarah would create a branch called `vanwars`: `git checkout -b vanwars`)
+1. Create a new branch called `<your-username>`
+    * For instance, Sarah would create a branch called **vanwars**: `git checkout -b vanwars`
 1. Create a folder named `<your-github-username>` (e.g. Sarah would create a folder called `vanwars`) within the `class-exercises-fall2023` folder on your new branch.
 1. Within the `<your-github-username>` folder, create a text file called `README.md` (note the case). 
 1. Within the `README.md` file, add the sentence “hello world!” (or anything, really). You can use vim, VS Code, or another text editor.
 1. Issue the `git status` command. What happened?
 1. Stage your changes using `git add .` (the dot indicates that you want to stage all of the files that have been added / deleted / edited).
 1. Commit your changes using `git commit -am "adding my user directory"`.
-1. Push your branch to GitHub (`git push`).
+1. Push your branch to GitHub (`git push`)
+    * Note, typing `git push` will display an error with a suggested push command (e.g., `git push --set-upstream origin <your-branch-name>`).
 1. Create a pull request.
 
-{:#authentication}
-### 3. Set up public / private key authentication for GitHub (and Arden)
-While there are many ways of authenticating to GitHub, one of the most common ways of accessing a servers is by using public and private keys over SSH. The workflow is as follows:
+#### A note on your origin path
+Within git, your **`remote origin`** variable holds both the address and the protocol you will be using to interact with a remote server (like GitHub). Some of you are accessing the remote server using the **https** protocol while others are using the **ssh** protocol. For the sake of simplicity, let's all use **ssh**. To check your origin, type: `git remote show origin`.
 
-#### 3.1. Generate a public / private key pair
-* We will be doing this on the command line using the **`ssh-keygen`** program.
-* the program will generate your private key inside the `.ssh` folder inside your home directory. Typically, the private key is  called `id_rsa` and the public key is called `id_rsa.pub`.
+If it prints `git@github.com:csci338/class-exercises-fall2023`, you don't have to do anything. Otherwise, let's switch up your origin protocol to ssh as follows:
 
-#### 3.2. Copy your public key to the appropriate place 
-
-##### On GitHub
-1. Follow the <a href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account" target="_blank">GitHub instructions</a>
-
-Read More here: <a href="https://kb.iu.edu/d/aews" target="_blank">https://kb.iu.edu/d/aews</a>
-
-##### On Arden (Optional but Recommended)
-1. Copy your public key onto the server.
-    * Use a file copy program like scp: `scp ~/.ssh/id_rsa.pub svanwart@arden.cs.unca.edu/.`
-1. Configure your public key:
-    * If your home directory on the remote server doesn't already contain a `~/.ssh/authorized_keys` file, create oneas follows:
-        * `mkdir -p ~/.ssh`<br>`touch ~/.ssh/authorized_keys`
-    * Then, append your public key to the `authorized_keys` file: `cat ~/id_rsa.pub >> ~/.ssh/authorized_keys`
+```bash
+git remote rm origin  # removes current references
+git remote add origin git@github.com:csci338/class-exercises-fall2023.git  # adds new reference
+git remote show origin  # prints the new origin (which should be the correct one).
+```
 
 ### 4. Set up the course project repo
 
 #### 4.1. Clone app
-1. Within your `csci338` directory, clone the course app repo:
-<a href="https://github.com/csci338/app" target="_blank">https://github.com/csci338/app</a>
+1. Within your `csci338` directory, clone the course app repo **via ssh**:<br>`git clone git@github.com:csci338/class-exercises-fall2023.git`
     * Be sure you don't accidentially put `app` underneath `class-exercises-fall2023`.
 
 #### 4.2. Make a new branch
-1. Create a new branch called <your-username-readme> (e.g. Sarah would create a branch called `vanwars`: `git checkout -b vanwars-readme`)
+1. Create a new branch called `<your-username-readme>` 
+    * For instance, Sarah would create a branch called **vanwars-readme**: `git checkout -b vanwars-readme`
 1. Open the existing `README.md` file. At the bottom, add an entry with your name and your GitHub username. Please add your information so that the table is sorted in alphabetical order by last name. 
 2. `add`, `commit`, and `push` your changes to a remote branch of the same name.
 3. Create a pull request
@@ -105,7 +125,7 @@ git push --force # force the change
 When you're done, ask Semmy or Sarah to incorporate your changes to main.
 
 ## What to Turn In
-Make sure that the following are completed before Sunday at midnight:
+Make sure that the following are completed before Wednesday (9/6) at midnight:
 
 {:.checkbox-list}
 * You have successfully committed and pushed your **username** directory and `README.md` file to the `class-exercises-fall2023` repo (<a href="https://github.com/csci338/class-exercises-fall2023" target="_blank">https://github.com/csci338/class-exercises-fall2023</a>).
