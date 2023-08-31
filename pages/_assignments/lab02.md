@@ -17,8 +17,8 @@ Today we will be practicing collaborating on code by using **git** and **GitHub*
 ### Lab Readings
 
 | <span class="pj">required</span> | <a href="https://www.youtube.com/watch?v=_wQdY_5Tb5Q" target="_blank">Collaborating using Git and GitHub</a>: Branches, Pull Requests, Merging vs Rebasing (Video walkthrough) |
-| <span class="lab">recommended</span> | <a href="https://www.youtube.com/watch?v=_UZEXUrj-Ds" target="_blank">What is git rebase?</a> |
-| <span class="lab">recommended</span> | <a href="https://www.atlassian.com/git/tutorials/comparing-workflows" target="_blank">Article explaining how to rebase + handle merge conflicts</a> |
+| <span class="badge">recommended</span> | <a href="https://www.youtube.com/watch?v=_UZEXUrj-Ds" target="_blank">What is git rebase?</a> |
+| <span class="badge">recommended</span> | <a href="https://www.atlassian.com/git/tutorials/comparing-workflows" target="_blank">Article explaining how to rebase + handle merge conflicts</a> |
 
 ## Your Tasks
 
@@ -44,7 +44,7 @@ Before we get into the details of the GitHub workflow, let's set up a clone of *
 1. Commit your changes using `git commit -am "adding my user directory"`.
 
 {:#authentication}
-### 3. Authenticating to GitHub (or any server) via ssh
+### 3. Set up public / private key authentication for GitHub (and Arden)
 While there are many ways of authenticating to GitHub, one of the most common ways of accessing a servers is by using public and private keys over SSH. The workflow is as follows:
 
 #### 3.1. Generate a public / private key pair
