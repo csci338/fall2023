@@ -66,12 +66,12 @@ Read More here: <a href="https://kb.iu.edu/d/aews" target="_blank">https://kb.iu
 
 ## 4. Set up the course project repo
 
-### 4.1. Clone `app`
+### 4.1. Clone app
 1. Within your `csci338` directory, clone the course app repo:
 <a href="https://github.com/csci338/app" target="_blank">https://github.com/csci338/app</a>
     * Be sure you don't accidentially put `app` underneath ``
 
-### 4.2. Edit the `main` branch directly
+### 4.2. Edit the main branch directly
 1. Open the existing `README.md` file. At the bottom, add an entry with your name and your GitHub username. Please add your information so that the table is sorted in alphabetical order by last name. 
 2. `add`, `commit`, and `push` your changes to the class repo.
 3. Did you get an error message? What did it say? Try to figure out what went wront.
