@@ -36,7 +36,8 @@ Before we get into the details of the GitHub workflow, let's set up a clone of *
 1. Within your `csci338` directory, clone this repo:
 <a href="https://github.com/csci338/class-exercises-fall2023" target="_blank">https://github.com/csci338/class-exercises-fall2023</a>
 1. Look at commit history (`git log`)
-1. Create a folder named `<your-github-username>` (e.g. Sarah would create a folder called `vanwars`) within the `class-exercises-fall2023` folder.
+1. Create a new branch called `<your-username>` (e.g. Sarah would create a branch called `vanwars`: `git checkout -b vanwars`)
+1. Create a folder named `<your-github-username>` (e.g. Sarah would create a folder called `vanwars`) within the `class-exercises-fall2023` folder on your new branch.
 1. Within the `<your-github-username>` folder, create a text file called `README.md` (note the case). 
 1. Within the `README.md` file, add the sentence “hello world!” (or anything, really). You can use vim, VS Code, or another text editor.
 1. Issue the `git status` command. What happened?
@@ -82,6 +83,21 @@ Read More here: <a href="https://kb.iu.edu/d/aews" target="_blank">https://kb.iu
 1. If the `main` branch has changed since you last cloned, git won't let you push any changes until you pull them. So, before pushing, issue the `git pull` request first.
 1. Did you get an error message? Was it a merge conflict? 
 1. See if you can resolve it. Once you have, `add`, `commit`, and `push` your changes again.
+
+##### Workflow for resolving conflicts
+```bash
+git checkout main
+git pull
+git checkout vanwars-readme
+git rebase main
+
+# Manually resolve the conflict and then continue steps below...
+
+git status
+git rebase --continue  # or git rebase --abort
+git push
+git push --force
+```
 
 
 ## What to Turn In
