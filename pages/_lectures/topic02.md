@@ -13,7 +13,7 @@ due_date: 2023-08-29
 
 ## Slides
 * <a href="https://docs.google.com/presentation/d/1U-aDFuJ2hTWsYJ8MC0YMaMC934uSisVpqVlR77IIua0/edit?usp=sharing" target="_blank">Big Ideas in Software Engineering & Intro to Version Control</a> (8/29)
-<!-- * <a href="https://docs.google.com/presentation/d/1J1B26cenXIK7uhuX1MBr3KT1_GLrRfgKdsFmsHRF978/edit?usp=sharing" target="_blank">Version Control Continued</a> (9/5) -->
+* <a href="https://docs.google.com/presentation/d/1J1B26cenXIK7uhuX1MBr3KT1_GLrRfgKdsFmsHRF978/edit?usp=sharing" target="_blank">Version Control Continued</a> (9/5)
 
 ## Activities
 ### 8/29
