@@ -1,10 +1,10 @@
 ---
 layout: module
-title: User Testing and Getting Feedback
+title: Last Day of Class (TBD)
 type: module
 draft: 1
 num: 12
-due_date: 2023-11-14
+due_date: 2023-12-05
 ---
 
 TBD

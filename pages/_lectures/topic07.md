@@ -1,10 +1,24 @@
 ---
 layout: module
-title: HW1 Set-up and Introduction
+title: "Design Patterns: MVC, REST, and Separation of Concerns"
 type: module
 num: 7
 draft: 1
-due_date: 2023-10-03
+due_date: 2023-10-12
+
 ---
 
-In-class work to set up the software environment and ensure that everyone can make progress on their task.
+TBD
+
+## Assigned Readings
+
+1. MVC Reading
+2. REST Reading
+3. Ch 15. Deprecation
+
+## Slides
+Slides will be posted before class.
+
+
+## Activities
+Activities will be published before class.

@@ -1,43 +1,28 @@
 ---
 layout: module
-title: "Writing Tests"
+title: Topics in Software Construction
 type: module
-num: 5
+num: 4
 draft: 1
-due_date: 2023-09-12
+due_date: 2023-09-16
 ---
 
-We're going to be practicing writing unit tests while also learning JavaScript. 
-
 ## Learning Goals
+Day 1:
+1. Introduce functional programming and why it's important
+2. Introduce the idea of good API design. What's the right level of abstraction?
 
-### Intro to JavaScript
-* JavaScript primer: Helping students get acquainted with JavaScript language features and concepts.
-
-### Intro to Testing
-* The "Beyonce Rule"
-* Principles of Test-Driven Design: 
-    * Write a failing test first. 
-    * Implement the feature that fixes the failing test. 
-    * Think about the kinds of things you want to test for (missing data, wrong data types, data out of range).
-* Types of tests: 
-    * unit tests
-    * integration tests, etc.
+Day 2 (React Prep):
+1. How to select among different libraries and frameworks (i.e., Why React?)
+2. Managing state, side effects, etc.
 
 ## Assigned Readings
 
-### Process Readings
-1. Reading from SWE at Google
-
-### Technical Readings (for Lab 3)
-1. Installing Mocha: [https://mochajs.org/#installation](https://mochajs.org/#installation)
-1. Unit Testing Tutorial (TODO)
-1. Integration Testing Tutorial: [https://www.digitalocean.com/community/tutorials/how-to-test-a-node-js-module-with-mocha-and-assert](https://www.digitalocean.com/community/tutorials/how-to-test-a-node-js-module-with-mocha-and-assert)
-1. JavaScript primer: 
-    * Language Features
-    * Modules
-    * Functional Programming
-    * OOP
+1. Maybe this: [https://codeburst.io/a-beginner-friendly-intro-to-functional-programming-4f69aa109569](https://codeburst.io/a-beginner-friendly-intro-to-functional-programming-4f69aa109569)?
 
 ## Slides
 Slides will be posted before class.
+
+
+## Activities
+Activities will be published before class.

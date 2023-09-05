@@ -1,6 +1,6 @@
 ---
 layout: assignment-two-column
-title: "Testing and Test-Driven Development"
+title: "Intro to Docker + Lab"
 type: lab
 draft: 1
 points: 6

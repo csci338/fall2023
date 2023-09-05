@@ -1,10 +1,10 @@
 ---
 layout: module
-title: "Continuous Integration / Continuous Delivery"
+title: User Testing and Getting Feedback
 type: module
 draft: 1
 num: 11
-due_date: 2023-11-07
+due_date: 2023-11-14
 ---
 
 TBD

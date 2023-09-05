@@ -1,20 +1,18 @@
 ---
 layout: module
-title: "Design Patterns: MVC, REST, and Separation of Concerns"
+title: Agile Engineering Practices
 type: module
 num: 8
 draft: 1
-due_date: 2023-10-12
-
+due_date: 2023-10-24
 ---
 
 TBD
 
 ## Assigned Readings
 
-1. MVC Reading
-2. REST Reading
-3. Ch 15. Deprecation
+1. A
+2. B
 
 ## Slides
 Slides will be posted before class.
