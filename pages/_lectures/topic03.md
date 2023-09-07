@@ -4,7 +4,7 @@ title: "Package & Dependency Management"
 type: module
 num: 3
 draft: 0
-due_date: 2023-09-07
+due_date: 2023-09-12
 ---
 
 ## Assigned Readings
@@ -17,10 +17,8 @@ due_date: 2023-09-07
 * Intro to apt (Ubuntu) -->
 
 ## Slides
-Slides will be posted before class
+* <a href="https://docs.google.com/presentation/d/1mHWz-llPLb-V-O3VNutWpXyfqx2fwtfUCrpet_zqT5k/edit?usp=sharing" target="_blank">Package & Dependency Management</a>
 
-<!-- <a href="https://docs.google.com/presentation/d/13iXBRocXrfjnTDmUJDamLwIbpkziDbVxNxuYsfUfH3M/edit?usp=sharing" target="_blank">Package & Dependency Management</a>
- -->
 
 <!-- ## Activity: Install Node Manually
 * Overview of Poetry
