@@ -1,10 +1,10 @@
 ---
 layout: module
-title: Topics in Software Construction
+title: Testing
 type: module
 num: 4
 draft: 1
-due_date: 2023-09-16
+due_date: 2023-09-14
 ---
 
 ## Learning Goals
