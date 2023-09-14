@@ -81,4 +81,4 @@ git push            # try this first (you may not need the force flag)
 git push --force    # if you get an error, use the force flag
 ```
 
-Why do you need the force flag? If the lineage of your local `my-feature` branch differs from the remote version of the branch (because of the rebase), then it will refuse the push. But you can just override the warning and do it anyway (as this is expected behavior).  
+Why do you need the force flag? If the lineage of your local `my-feature` branch differs from the remote version of the branch (because of the rebase), then GitHub will refuse the push. But you can just override the branch protection default and push anyway by using `--force` (as this is expected behavior).  
