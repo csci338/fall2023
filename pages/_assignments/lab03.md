@@ -196,8 +196,8 @@ node_modules
 
 ### 4.3. Submit
 To submit this lab:
-1. Stage, commit, and push your **lab03-your-username** branch to GitHub.
-2. Create a PR with steps 1-3 of the tutorial completed as well as the `.dockerignore` file. 
+1. Stage, commit, and push your **lab03-your-username** branch to GitHub. The branch should include all of the files from your `getting-started-app`, as well as the `.dockerignore` file you just created.
+2. Create a PR.
+4. On the course moodle, submit a screenshot of your running TODO app on port 5000.
 3. Once your PR has been approved, you can rebase / merge your changes into the main branch.
-4. On the course moodle, submit a screenshot of your running TODO app on port 5000
 
