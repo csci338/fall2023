@@ -27,7 +27,7 @@ In this lab you will be doing a few things:
     * Implementing a "rock paper scissors" function
     * Writing "vanilla" unit tests for your function
     * Re-writing your tests using the `mocha` module (a testing framework)
-* Doing some Python tasks -- doing the same stuff you did in JavaScript, butin Python ([described below](#5-python-tasks)), including:
+* Doing some Python tasks -- doing the same stuff you did in JavaScript, but in Python ([described below](#5-python-tasks)), including:
     * Implementing the same "rock paper scissors" function
     * Writing "vanilla" unit tests
     * Re-writing your tests using the `unittest` module
