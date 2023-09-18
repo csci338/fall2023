@@ -91,7 +91,7 @@ git remote show origin  # prints the new origin (which should be the correct one
 ### 4. Set up the course project repo
 
 #### 4.1. Clone app
-1. Within your `csci338` directory, clone the course app repo **via ssh**:<br>`git clone git@github.com:csci338/class-exercises-fall2023.git`
+1. Within your `csci338` directory, clone the course app repo **via ssh**:<br>`git clone git@github.com:csci338/app.git`
     * Be sure you don't accidentially put `app` underneath `class-exercises-fall2023`.
 
 #### 4.2. Make a new branch
