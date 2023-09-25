@@ -26,10 +26,23 @@ From within your `class-exercises-fall2023` repo on your local computer:
 * You will notice a new folder called `lab05`.
 * From the `main` branch, create a new branch called `lab05-your-username` 
     * `git checkout -b lab05-your-username`
-* Copy the `lab05` directory into `your-username` folder.
+* Copy the `lab05` directory into `your-username` folder. When When you’re done, you shoud have a folder structure that looks something like this (within your-username folder):
+
+```
+class-exercises-fall2023
+...
+├── lab04           # original copy
+├── lab05           # original copy
+...
+└── your-username
+    ├── README.md
+    ├── getting-started-app
+    ├── lab04       # your copy -- you will edit the files in this folder
+    └── lab05       # your copy -- you will edit the files in this folder
+```
 
 ### Install the dependencies
-Navigate into the `src` folder and install the python dependencies using poetry:
+On the CLI, navigate to your copy of `lab05` and then into the `src` folder. Then, install the python dependencies using poetry:
 
 ```
 $ poetry install
