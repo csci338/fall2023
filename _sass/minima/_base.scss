@@ -218,12 +218,18 @@ pre.highlight {
 blockquote {
     border-left: solid 7px $lightgrey;
     background: #F6F6F6;
-    padding: 10px;
+    padding: 20px;
     margin: 0px;
     margin-top: 30px;
     margin-bottom: 20px;
+    border-left: solid 7px $br1;
+
     p {
         margin: 0px;
+    }
+    * {
+        margin: 2px 0 !important;
+        padding: 0 !important;
     }
 }
   
