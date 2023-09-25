@@ -24,7 +24,7 @@ From within your `class-exercises-fall2023` repo on your local computer:
 * Checkout the `main` branch.
 * Pull down the lastest updates from the `class-exercises-fall2023`
 * You will notice a new folder called `lab05`.
-* From the `main` branch, reate a new branch called `lab05-your-username` 
+* From the `main` branch, create a new branch called `lab05-your-username` 
     * `git checkout -b lab05-your-username`
 * Copy the `lab05` directory into `your-username` folder.
 
