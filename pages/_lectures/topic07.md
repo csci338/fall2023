@@ -1,6 +1,6 @@
 ---
 layout: module
-title: "Design Patterns: MVC, REST, and Separation of Concerns"
+title: "Code Reviews & Code Quality"
 type: module
 num: 7
 draft: 1
@@ -12,9 +12,10 @@ TBD
 
 ## Assigned Readings
 
-1. MVC Reading
-2. REST Reading
-3. Ch 15. Deprecation
+1. Ch8. Style Guides
+1. Ch9. Code Review
+1. Ch16. Version Control & Branch Management
+1. GitHub reading
 
 ## Slides
 Slides will be posted before class.
@@ -22,3 +23,4 @@ Slides will be posted before class.
 
 ## Activities
 Activities will be published before class.
+
