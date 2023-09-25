@@ -312,7 +312,46 @@ $ poetry run uvicorn server:app --reload
 
 This should start your webserver on this address: <a href="http://127.0.0.1:8000" target="_blank">http://127.0.0.1:8000</a>. Go check it out.
 
-### TODO: Tasks
+### Walkthrough of Existing Endpoints
+TODO:
+* `/`
+* `/items/{item_id}`
+* `/ui/yelp`
+* `/data/yelp`
+* `/ui/spotify`
+* `/data/spotify`
+
+
+### Your Task
+For your Lab 5 submission, you will be creating a RESTful API using FastAPI for managing a list of tasks. The requirements are as follows:
+
+#### 1. Implement Endpoints
+
+Create a FastAPI application with the following endpoints:
+
+* `GET /tasks`: Retrieve a list of all tasks.
+* `GET /tasks/{task_id}`: Retrieve details of a specific task by its `task_id`.
+* `POST /tasks`: Create a new task with a JSON request body containing a `title` and description.
+* `PUT /tasks/{task_id}`: Update an existing task's title and description using a JSON request body.
+* `DELETE /tasks/{task_id}`: Delete a task by its `task_id`.
+
+#### 2. Data Storage
+Implement data storage using an in-memory data structure (e.g., a Python list or dictionary) to store tasks. You don't need to use a database for this assignment.
+
+#### 3. Validation
+Implement validation for request payloads:
+
+* Ensure that the title and description fields are present and non-empty when creating or updating a task.
+* Return appropriate error responses with clear error messages for invalid requests.
+* Provide interactive API documentation using FastAPI's built-in Swagger UI or ReDoc. The documentation should include details of all endpoints, request/response formats, and example requests and responses.
+
+#### 4. Bonus (Optional):
+* Add features like task priority, due dates, and status (e.g., "completed" or "in progress") to the task model.
+* Implement query parameters to filter tasks based on their status, priority, or other attributes.
+
+#### 5. Testing
+* Write unit tests to ensure the functionality and correctness of your API endpoints.
+
 
 ## 5. What to Turn In
 TBD
