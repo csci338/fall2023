@@ -12,9 +12,9 @@ due_date: 2023-10-05
 ---
 
 ## 1. Reading & Reference Materials
-* AsyncIO
-* Python Reference
-* FastAPI
+* <a href="https://realpython.com/async-io-python/" target="_blank">AsyncIO</a>
+* <a href="https://www.pythoncheatsheet.org/cheatsheet/basics" target="_blank">Python Reference</a>
+* <a href="https://fastapi.tiangolo.com/" target="_blank">FastAPI</a>
 
 ## 2. Setup
 
