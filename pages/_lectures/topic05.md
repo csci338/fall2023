@@ -13,4 +13,6 @@ due_date: 2023-09-26
 * <a href="https://abseil.io/resources/swe-book/html/ch11.html" target="_blank">Chapter 11. Testing Overview</a>
 
 ## Slides
-Slides will be posted before class.
+* <a href="https://docs.google.com/presentation/d/1aG-tQJL0L1FKAEiM21JVAPm63Ai0sevQQHdfugEyjds/edit?usp=sharing" target="_blank">Testing</a>
+
+
