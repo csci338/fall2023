@@ -196,6 +196,30 @@ loop.close()
 > #### Your Turn
 > **See demo file:** `lab05/asyncio-exercises/demo1_coroutine.py`
 
+
+#### To test your python files from Docker, you need to activate the docker shell. To do this:
+
+List the containers:
+
+```bash
+docker container ls -a     
+```
+
+Open the Docker shell:
+
+```bash
+docker exec -it <container-id> /bin/bash
+```
+
+Activate the poetry shell (virtual environment) and run the tests:
+
+```bash
+poetry shell # activates virtual environment
+pwd # check that you're in the app directory
+cd asyncio-exercises
+python demo1_coroutine.py
+```
+
 {:#step5}
 ### 5. Running multiple asynchronous coroutines at once
 You can create and run tasks concurrently:
