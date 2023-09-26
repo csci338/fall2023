@@ -18,7 +18,7 @@ due_date: 2023-10-05
 
 ## 2. Setup
 
-### Get the latest files & make a new branch
+### 1. Get the latest files & make a new branch
 From within your `class-exercises-fall2023` repo on your local computer:
 * Make sure you're at a stopping point and commit all of your current changes.
 * Checkout the `main` branch.
@@ -41,7 +41,7 @@ class-exercises-fall2023
     └── lab05       # your copy -- you will edit the files in this folder
 ```
 
-### Create the Docker image and container
+### 2. Create the Docker image and container
 **Credit:** Taken from Hayden's Docker file `README.md`
 
 Make sure docker is installed and the daemon is running.
@@ -77,7 +77,33 @@ docker run -d -p 8000:8000 -v ./src:/app csci338-lab05
 
 Visit `http://localhost:8000` and behold! The app running in a container!
 
-#### Stopping and starting the container
+
+### 3. Activate the Docker Shell
+To run and test individual python files using your Docker container, you need to activate the docker shell, and then run your python files from within the Docker environment. To do this:
+
+List the containers:
+
+```bash
+docker container ls -a     
+```
+
+Open the Docker shell for your container of interest:
+
+```bash
+docker exec -it <container-id> bash
+```
+
+Activate the poetry shell (virtual environment) and run the tests:
+
+```bash
+poetry shell # activates the python virtual environment
+pwd # check that you're in the app directory
+```
+
+
+#### Other Useful Docker Commands (just FYI)
+
+##### Stopping and starting the container
 You do not need to run a new container each time you want to work on the code. Instead, you can restart a stopped container using `docker start` followed by the container name or container id. Some helpful commands:
 
 List all of the containers and their ids:
@@ -97,9 +123,6 @@ Start the container using `docker start` followed by the container name or id.
 ```bash
 docker start <container-id>
 ```
-
-
-#### Other Useful Commands (just FYI)
 
 ##### Remove old images
 When a new version of the Dockerfile is available you will need to build the
@@ -137,6 +160,7 @@ by container name or id.
 ```bash
 docker container rm <container-id>
 ```
+
 
 ## 3. AsyncIO Walkthrough
 
