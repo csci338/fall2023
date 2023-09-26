@@ -41,21 +41,102 @@ class-exercises-fall2023
     └── lab05       # your copy -- you will edit the files in this folder
 ```
 
-### Install the dependencies
-On the CLI, navigate to your copy of `lab05` and then into the `src` folder. Then, install the python dependencies using poetry:
+### Create the Docker image and container
+**Credit:** Taken from Hayden's Docker file `README.md`
 
-```
-$ poetry install
-```
+Make sure docker is installed and the daemon is running.
 
-Then, activate the virtual shell as follows:
-
-```
-$ poetry shell
+```bash
+docker --version
 ```
 
-Finally, navigate to the `asyncio-exercises` folder so that you can run the various python files from the command line (you'll be walked through how each file works below).
+Build the container image. You only need to do this once:
 
+```bash
+docker build -t csci338-lab05:latest .
+```
+
+#### Run the FastAPI app (Lab 5) using Docker
+Run the container using `docker run` followed by any options and the image
+name.
+
+The `-d` option runs the container in "Detached" mode, which frees up your terminal.
+
+The `-p 8000:8000` option maps port 8000 on your host machine to the
+container's port 8000. Without this option you will not be able to see the app
+from the browser on your host machine.
+
+The `-v ./src:/app` option tells docker to map the `./src` directory on your
+host machine to the `/app` directory inside the container. This allows you to
+edit the code on your machine and see the updates in the container without
+restarting the container.
+
+```bash
+docker run -d -p 8000:8000 -v ./src:/app csci338-lab05
+```
+
+Visit `http://localhost:8000` and behold! The app running in a container!
+
+#### Stopping and starting the container
+You do not need to run a new container each time you want to work on the code. Instead, you can restart a stopped container using `docker start` followed by the container name or container id. Some helpful commands:
+
+List all of the containers and their ids:
+
+```bash
+docker container ls -a
+```
+
+Stop the container using `docker stop` followed by the container name or id.
+
+```bash
+docker stop <container-id>
+```
+
+Start the container using `docker start` followed by the container name or id.
+
+```bash
+docker start <container-id>
+```
+
+
+#### Other Useful Commands (just FYI)
+
+##### Remove old images
+When a new version of the Dockerfile is available you will need to build the
+image again using `docker build` and run a new container using `docker run`.
+
+After a while you may end up with old versions of the image on your system.
+These can take up quite a bit of disk space, so it is good to check every so
+often and remove old images from your system.
+
+To show the images on your local machine use `docker image ls`.
+
+```bash
+docker image ls
+```
+
+Remove any unneeded images using `docker image rm` followed by a list of one or
+more image ids or image names.
+
+```bash
+docker image rm <image-id>
+```
+
+##### Remove old containers
+You may want to remove old containers after building and running a new image.
+List the containers on your system using `docker container ls`. This will only
+show running containers, add the `-a' flag to see stopped containers as well.
+
+```bash
+docker container ls -a
+```
+
+You can remove any containers you need by using `docker container rm` followed
+by container name or id.
+
+```bash
+docker container rm <container-id>
+```
 
 ## 3. AsyncIO Walkthrough
 
@@ -152,11 +233,12 @@ loop.close()
 ```
 
 * `asyncio.gather` -- a function in the asyncio library -- allows you to concurrently execute multiple coroutines and collect their results. It's a way to run multiple asynchronous tasks concurrently and wait for all of them to complete.
-* `asyncio` also has an event loop that manages coroutine execution:
+* `asyncio` also has an event loop that manages coroutine execution.
+* `await` -- used if you don't want the next statement in your current execution block to start until your asynchronous task completes.
 
 {:.blockquote-no-margin}
 > #### Your Turn
-> **See demo file:** `lab05/asyncio-exercises/demo1_two_coroutines.py`
+> **See demo file:** `lab05/asyncio-exercises/demo2_two_coroutines.py`
 
 
 {:#step6}
@@ -199,6 +281,9 @@ loop.close()
 ```
 
 Certain kinds of tasks -- like File I/O, database calls, and queries over the network -- are slow. Given this, if you execute these kinds of commands serially, where they block other processes, this can be inefficient. Hence, running I/O processes as coroutines conserves resources.
+
+Sidebar:
+* You can also do this with threads, but then you have to manage the shared memory (which can be complicated, and is overkill for webdev).
 
 {:.blockquote-no-margin}
 > #### Your Turn
@@ -276,7 +361,9 @@ loop.close()
 
 {:.blockquote-no-margin}
 > #### Your Turn
-> **See demo file:** `lab05/asyncio-exercises/demo4_remote_data.py`
+> **See demo files:** 
+> * `lab05/asyncio-exercises/demo4_remote_data.py`
+> * `lab05/asyncio-exercises/demo5_remote_data_timed.py` (times the sequential v. parallel to see which one is faster)
 
 For those of you who are new to Python:
 
@@ -289,6 +376,7 @@ tasks = []
 for url in urls:
     tasks.append(fetch_url(url, url))
 ```
+
 
 {:#step11}
 ### 11. Conclusion and Further Resources
@@ -304,30 +392,79 @@ This Fast API walkthrough will use the same poetry environment as the **app** ap
 * `asyncio` was introduced to Python in version 3.5.
 * `uvicorn` was introduced in Python 3.8 (it's a method to manage asyncronous loops via our web server)
 
-To run the Fast API server, make sure that you are in **your version** of the `lab05/src` folder and run the following command on the command line:
-
-```
-$ poetry run uvicorn server:app --reload
-```
+To run the Fast API server, make sure that you are in **your version** of the `lab05/src` folder on the CLI. Then run your Docker container using the commands described above in the Docker section.
 
 This should start your webserver on this address: <a href="http://127.0.0.1:8000" target="_blank">http://127.0.0.1:8000</a>. Go check it out.
 
 ### Walkthrough of Existing Endpoints
-TODO:
-* `/`
-* `/items/{item_id}`
-* `/ui/yelp`
-* `/data/yelp`
-* `/ui/spotify`
-* `/data/spotify`
+Please open `server.py` in the `src` directory and take a look at it. In this file, there are 6 "endpoints" defined that can be accessed through <a href="http://127.0.0.1:8000" target="_blank">http://127.0.0.1:8000</a>
 
+| Route | Address |
+|--|--|
+| / | <a href="http://127.0.0.1:8000" target="_blank">http://127.0.0.1:8000</a> |
+| /items/{item_id} | <a href="http://127.0.0.1:8000/items/123?search_term=chocolate" target="_blank">http://127.0.0.1:8000/items/123?search_term=chocolate</a> |
+| /data/yelp | <a href="http://127.0.0.1:8000/data/yelp" target="_blank">http://127.0.0.1:8000/data/yelp</a> |
+| /data/spotify | <a href="http://127.0.0.1:8000/data/spotify" target="_blank">http://127.0.0.1:8000/data/spotify</a> |
+| /ui/yelp | <a href="http://127.0.0.1:8000/ui/yelp" target="_blank">http://127.0.0.1:8000/ui/yelp</a> |
+| /ui/spotify | <a href="http://127.0.0.1:8000/ui/spotify" target="_blank">http://127.0.0.1:8000/ui/spotify</a> |
+
+
+Note that the last 4 endpoints fetch data over the network (remote calls), which present some unique challenges for testing -- something we will discuss in more detail when we get to integration testing.
+
+#### Run the starter tests
+
+To run the tests, you will need to navigate to the Docker shell and run `pytest` (our Python testing framework). To to this:
+
+Find your container id:
+
+```bash
+docker container ls -a     
+```
+
+Open the Docker shell:
+
+```bash
+docker exec -it <container-id> /bin/bash
+```
+
+Activate the poetry shell (virtual environment) and run the tests: 
+
+```bash
+poetry shell # activates virtual environment
+pwd # check that you're in the app directory
+pytest --disable-warnings
+```
 
 ### Your Task
-For your Lab 5 submission, you will be creating a RESTful API using FastAPI for managing a list of tasks. The requirements are as follows:
+For your Lab 5 submission, you will be creating a few additional endpoints for managing a list of tasks. 
+Begin by doing the following:
+1. rename the current `server.py` file to `server_old.py`
+1. rename the current `test_server.py` file to `test_server_old.py`
+1. create a brand new `server.py` file
+1. create a brand new `test_server.py` file
+
+The requirements are as follows:
 
 #### 1. Implement Endpoints
 
-Create a FastAPI application with the following endpoints:
+Start by adding the relevant code and import statements into your new `server.py` file:
+
+```python
+from fastapi import FastAPI
+from fastapi.responses import HTMLResponse
+
+import aiohttp
+import json
+
+app = FastAPI()
+
+
+@app.get("/", response_class=HTMLResponse)
+async def root():
+    return 'Hello world!'
+```
+
+Then, create a FastAPI application with the following endpoints:
 
 * `GET /tasks`: Retrieve a list of all tasks.
 * `GET /tasks/{task_id}`: Retrieve details of a specific task by its `task_id`.
@@ -345,13 +482,14 @@ Implement validation for request payloads:
 * Return appropriate error responses with clear error messages for invalid requests.
 * Provide interactive API documentation using FastAPI's built-in Swagger UI or ReDoc. The documentation should include details of all endpoints, request/response formats, and example requests and responses.
 
-#### 4. Bonus (Optional):
-* Add features like task priority, due dates, and status (e.g., "completed" or "in progress") to the task model.
-* Implement query parameters to filter tasks based on their status, priority, or other attributes.
-
-#### 5. Testing
+#### 4. Testing
 * Write unit tests to ensure the functionality and correctness of your API endpoints.
 
 
+#### 5. Bonus (Optional)
+* Add features like task priority, due dates, and status (e.g., "completed" or "in progress") to the task model.
+* Implement query parameters to filter tasks based on their status, priority, or other attributes.
+
+
 ## 5. What to Turn In
-TBD
+Please create a pull request with all of your `lab05` files.

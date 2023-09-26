@@ -11,11 +11,14 @@ def test_homepage_up():
 
 
 def test_yelp_api_up():
+    # should you mock it or depend on the external service?
+    # "flakey tests"
     response = client.get("/data/yelp")
     assert response.status_code == 200  # OK
 
 
 def test_yelp_ui_up():
+    # should you mock it or depend on the external service?
     response = client.get("/ui/yelp")
     assert response.status_code == 200  # OK
 
