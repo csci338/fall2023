@@ -37,7 +37,7 @@ class-exercises-fall2023
 └── your-username
     ├── README.md
     ├── getting-started-app
-    ├── lab04       # your copy -- you will edit the files in this folder
+    ├── lab04       # your copy -- you may not have this one yet if your changes have not yet been reviewed
     └── lab05       # your copy -- you will edit the files in this folder
 ```
 
