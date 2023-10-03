@@ -11,6 +11,9 @@ start_date: 2023-09-28
 due_date: 2023-10-05
 ---
 
+> ## Lab 5 Hints
+> Here are some [slides](https://docs.google.com/presentation/d/1VEV7xnxnW_oA-XVCumJL5L7ooYo4DDzqwtWIm3DeMZs/edit?usp=sharing) to help you with your tasks. We have also created a new [hints directory](https://github.com/csci338/class-exercises-fall2023/tree/main/lab05/src/hints) in the `main` branch.
+
 ## 1. Reading & Reference Materials
 * <a href="https://realpython.com/async-io-python/" target="_blank">AsyncIO</a>
 * <a href="https://www.pythoncheatsheet.org/cheatsheet/basics" target="_blank">Python Reference</a>
