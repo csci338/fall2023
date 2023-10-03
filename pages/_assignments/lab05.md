@@ -8,11 +8,14 @@ abbreviation: Lab 5
 show_schedule: 1
 num: 5
 start_date: 2023-09-28
-due_date: 2023-10-05
+due_date: 2023-10-12
 ---
 
 > ## Lab 5 Hints
-> Here are some [slides](https://docs.google.com/presentation/d/1VEV7xnxnW_oA-XVCumJL5L7ooYo4DDzqwtWIm3DeMZs/edit?usp=sharing) to help you with your tasks. We have also created a new [hints directory](https://github.com/csci338/class-exercises-fall2023/tree/main/lab05/src/hints) in the `main` branch.
+> Resources from Tuesday's class (10/03/2023) to help you get started on Lab 5:
+> * [Slides](https://docs.google.com/presentation/d/1VEV7xnxnW_oA-XVCumJL5L7ooYo4DDzqwtWIm3DeMZs/edit?usp=sharing)
+> * [Hints directory](https://github.com/csci338/class-exercises-fall2023/tree/main/lab05/src/hints) in the `main` branch.
+> * <a href="https://drive.google.com/drive/folders/10fr-iDlzEn2Oh06HdUCvhU73sg2sg32C">Video Walkthrough</a>
 
 ## 1. Reading & Reference Materials
 * <a href="https://realpython.com/async-io-python/" target="_blank">AsyncIO</a>

@@ -7,8 +7,8 @@ points: 6
 abbreviation: Lab 6
 show_schedule: 1
 num: 6
-start_date: 2023-10-05
-due_date: 2023-10-12
+start_date: 2023-10-12
+due_date: 2023-10-19
 
 ---
 Introduce React framework. 
