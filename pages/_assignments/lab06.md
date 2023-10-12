@@ -27,10 +27,14 @@ To become familiar with client-side software engineering considerations, we need
 
 Therefore, in this lab, you will learn a bit about HTML, CSS, and JavaScript. Please refer to the web resources below to familiarize yourself with these languages. We will also be doing a very brief "crash course" of these languages during class.
 
-## 1. Readings and Resources (TBD)
-* HTML
-* CSS
+## 1. Background Readings and Resources
+* [CSCI 344 HTML Resources](https://csci344.github.io/spring2023/lectures/topic03)
+* [CSCI 344 CSS Resources](https://csci344.github.io/spring2023/lectures/topic04)
 * JavaScript
+    * [Language Features & the DOM](https://csci344.github.io/spring2023/lectures/topic05)
+    * [Looping, Iteration, & Higher-Order Functions](https://csci344.github.io/spring2023/lectures/topic06)
+    * [The Fetch API](https://csci344.github.io/spring2023/lectures/topic07)
+* Slides: Intro to Client-Side Web Tech
 
 ## 2. Set-up
 > ### Note: Lab 6 builds on Lab 5
