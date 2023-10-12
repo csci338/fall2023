@@ -1,22 +1,27 @@
 ---
 layout: module
-title: Agile Engineering Practices
+title: Challenges in Client-Side Engineering
 type: module
 num: 8
-draft: 1
-due_date: 2023-10-24
+draft: 0
+due_date: 2023-10-12
 ---
 
-TBD
+In this unit, we're going to explore some software engineering ideas that are specific to client-side engineering. To do this, we're going to learn some HTML, CSS, JavaScript, and React concepts ***as a means of learning*** various client-side SWE principles (starting with [Lab 6](../assignments/lab06)).
+
+Please complete the assigned readings for this unit, as they provide a nice overview of the client-side considerations and challenges we'll be exploring.
 
 ## Assigned Readings
-
-1. A
-2. B
+**[Due 10/17]** <a href="https://nextjs.org/learn/foundations/about-nextjs" target="_blank">NextJS overview of client-side technologies</a>. Please read the following sections:
+1. About Next.js
+1. From JavaScript to React
+1. From React to Next.js
+1. How Next.js works
 
 ## Slides
-Slides will be posted before class.
+* Lecture 10: <a href="https://docs.google.com/presentation/d/1Ax5ayU0BX4f8pyMN7K8xz7m0mmAYjSiOUrfDdGavoG4/edit?usp=sharing" target="_blank">Challenges in Client-Side Engineering (Part I)</a>
 
 
 ## Activities
-Activities will be published before class.
+* [In-Class Exercises](https://csci344.github.io/spring2023/course-files/lectures/lecture07.zip) (Thursday, 10/12)
+* [Lab 6](../assignments/lab06)
