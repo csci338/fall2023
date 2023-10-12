@@ -20,10 +20,12 @@ due_date: 2023-10-19
     .img-sm {
         width: 50%;
         border: solid 1px black;
+        margin: 5px auto;
+        display: block;
     }
 </style>
 
-To become familiar with client-side software engineering considerations, we need a concrete example to work with. Given this, we have decided to delve into client-side web programming -- mostly because web clients are accessible and ubiquitous (and client-side web programming is a valuable and lucrative skillset). 
+To become familiar with client-side software engineering considerations, we need a concrete example to work with. Given this, we have decided to delve into client-side web programming -- mostly because web clients are accessible and ubiquitous (and client-side web programming is a valuable skillset). 
 
 Therefore, in this lab, you will learn a bit about HTML, CSS, and JavaScript. Please refer to the web resources below to familiarize yourself with these languages. We will also be doing a very brief "crash course" of these languages during class.
 
@@ -38,7 +40,7 @@ Therefore, in this lab, you will learn a bit about HTML, CSS, and JavaScript. Pl
 
 ## 2. Set-up
 > ### Note: Lab 6 builds on Lab 5
-> In order to begin Lab 6, your Lab 5 code needs to be working correctly. If you haven't yet finished it, please make it a priority.
+> In order to begin Lab 6, your Lab 5 code needs to be working correctly. If you haven't yet finished Lab 5, please make it a priority.
 
 
 After completing [Lab 5](lab05), you will create a new branch from your existing `lab05-your-username` branch (from within your `class-exercises-fall2023` repository) as follows:
@@ -46,11 +48,11 @@ After completing [Lab 5](lab05), you will create a new branch from your existing
 ```sh
 git status  # make sure you've committed all of your files
 git branch  # verify that you're on the lab05-your-username branch
-git checkout -b lab05-your-username  # should create a new branch based on your lab05 branch
+git checkout -b lab06-your-username  # should create a new branch based on your lab05 branch
 git branch  # verify that you're on your new branch
 ```
 
-When you're done, please make the following modifications to your code:
+By branching from your `lab05-your-username` branch, your Lab 5 code will be included in your `lab06-your-username` branch (so that your client can interact with it). When you're done, please make the following modifications to your code:
 
 ### 1. Edit server.py
 At the top of `server.py`, add the following import statement:
@@ -64,7 +66,7 @@ Then, at the very bottom of `server.py`, add this line:
 app.mount("/", StaticFiles(directory="ui", html=True), name="ui")
 ```
 
-This code allows us to server static files from the `ui` directory as if they were coming from the root of the website. Verify that you did it correctly by trying to access these static files via FastAPI:
+This code allows us to server static files from the `ui` directory as if they were coming from the root of the website. Verify that you did it correctly by trying to access these static files via FastAPI (note that the Docker container you made in Lab 5 must be running):
 
 * <a href="http://localhost:8000/js/main.js" target="_blank">http://localhost:8000/js/main.js</a>
 * <a href="http://localhost:8000/css/styles.css" target="_blank">http://localhost:8000/css/styles.css</a>
@@ -230,20 +232,24 @@ If you see something like this in your web browser, you're all set up:
 <img class="img" src="../assets/images/lab06-setup.png" alt="Screenshot of what your starter client should look like" />
 
 ## 3. Your Tasks
-Now that you've set up your "starter client," your job is to get your client to interact with the server routes that you implemented in [Lab 5](lab05) using the browser's built-in `fetch` API. Since this is not a webdev class, we're just going to ask you to interact with three of the routes:
+Now that you've set up your "starter client," your job is to get your client to interact with the server routes that you implemented in [Lab 5](lab05) using the browser's built-in `fetch` API. 
+
+{:.blockquote-no-margin}
+> When you are finished with all of the tasks described in this section, your client should function like this:
+>
+> <img class="img-sm" src="../assets/images/lab06-demo-client.gif" alt="Animation of what the final product should look like" />
+
+Since this is not a webdev class, we're just going to ask you to interact with three of the routes you made in Lab 5:
 
 | Route | Method | Description |
 |--|--|--|
-| `/tasks` | GET | Pulls down a list of tasks that you will display to the screen when the page first loads |
-| `/tasks` | POST | Sends a task to the server in the following format:<br> `{ "name": "Task 1", "description": "Some description." }` |
-| `/tasks/<id>` | DELETE | Deletes the task stored in the `id` slot of the array. Example:<br>`/tasks/3` will delete the task stored in array position 3.  |
+| `/tasks` | GET | Reads (downloads) the task list from the server |
+| `/tasks` | POST | Creates (adds) a new task on the server in the following format:<br> `{ "name": "Task 1", "description": "Some description." }` |
+| `/tasks/<id>` | DELETE | Deletes the task stored in the `id` slot of the array. Example:<br>`/tasks/3` will delete the task stored in array position 3. |
 
-When you're done, your client will look like this:
 
-<img class="img-sm" src="../assets/images/lab06-demo-client.gif" alt="Animation of what the final product should look like" />
-
-### 1. Display all of the tasks
-To display all of the tasks to the client, you are going to create some JavaScript functions. Before you begin, take a look at `index.html`. Note that at the top of the file, there's a link to `main.js`:
+### 1. Read (download) and display all of the tasks
+To display all of the tasks on the client, you are going to create some JavaScript functions. Before you begin, take a look at `index.html`. Note that at the top of the file, there's a link to `main.js`, which indicates that the webpage will have access to all of the logic in the `main.js` file.
 
 ```html
     <script src="/js/main.js" type="text/javascript" defer></script>
@@ -253,15 +259,17 @@ The "defer" attribute indicates that the script will only run after the entire H
 
 
 #### Get the tasks
-Your first job is to create a JavaScript function to fetch all of the server tasks, and then display them to the screen. To do this, add the following function to `main.js`:
+Your first job is to create a JavaScript function to fetch all of the server tasks, and then display them to the screen. To do this, add the following function definition and invocation to `main.js`:
 
 ```js
+// definition
 async function getTasks() {
     const response = await fetch("/tasks");
     const tasks = await response.json();
     console.log(tasks);
 }
 
+// invocation
 getTasks();
 ```
 
@@ -269,13 +277,13 @@ Now, refresh your web browser and take a look at the console. It should have out
 
 * Like with Python's asyncio, fetching is asynchronous.
 * Fetching data is a two step process: 
-    * The first function invocation -- `fetch("/tasks")` -- returns a response from the server
+    * The first function invocation -- `fetch("/tasks")` -- returns the response headers from the server.
     * The second function invocation -- `response.json()` -- returns the actual response payload (data). 
 * The `await` keywords means that the next statement will not execute until the asynchronous function resolves.
 
 
 #### Display a task
-Now that you know how to get data back from the server using fetch, your next step is to display the tasks in a human readable form. To do this, we need to build some HTML. Let's create a function that converts a task object to an HTML snippet:
+Now that you know how to get data back from the server using fetch, your next step is to display the tasks in a visual form on the browser screen. To do this, we need to build some HTML. Let's create a function that converts a task object to an HTML snippet:
 
 ```js
 function taskToHTML(task) {
@@ -288,7 +296,11 @@ function taskToHTML(task) {
 }
 ```
 
-This function takes a task objet as an argument and returns an HTML representation of the task.
+This function takes a task objet as an argument and returns an HTML representation of the task. A few notes about this code:
+* In JavaScript, a template literal (everything surrounded by the "backtick" character) is evaluated as a "smart string" (linebreaks OK).
+* Within the template literal, anything surrounded by the `${ }` symbol is treated like a JavaScript expression. Any expression inside of this symbol -- within a template literal -- will be evaluated. For example:
+    * `${ 2 + 2 }` evaluates to 4.
+    * `${ foo }` evaluates to the value stored inside of `foo`.
 
 #### Display all of the tasks
 Finally, you're going to modify the `getTasks()` function you just made so that it iterates through the task array and appends each HTML representation of the task to the screen. 
@@ -333,8 +345,9 @@ getTasks();
 
 This code should display all of the tasks to the screen.
 
-> #### Pro Tip
-To test, add some tasks to `taskdb` in the `server.py` file (see below).
+> #### Pro Tips
+> * Before moving on to the next section, make sure you can follow the logic of the code above (as you'll need to understand it for Homework 2).
+> * To test the code, add some hard-coded tasks to `taskdb` in the `server.py` file (see below).
 
 ```py
 taskdb = [{
@@ -346,7 +359,7 @@ taskdb = [{
 }]
 ```
 
-### 2. Add a task
+### 2. Create new tasks on the server from the web client
 We can now fetch and display tasks (from the server). But how do we create new tasks? Well, we can use fetch for this too! 
 
 #### Creating a hard-coded task
@@ -384,11 +397,15 @@ createTask();
 ```
 
 After adding this code, refresh your browser. You should see that a new task has been created. Refresh your browser again. You should see another new task (with the same name and description).
+* Each time you refresh your browser, a new task is created, because the `createTask()` always runs once (when the page first loads).
+* This is obviously not how we ultimately want the program to function, but it's a start!
 
-Please study the code above carefully. Note that unlike with a GET request, a POST request typically has a payload -- stored in a data field called `body`. Also note that the header of the request specifies the data format that's being sent (in this case, we're sending JSON over the network).
+Please study the code above carefully:
+* Note that unlike with a GET request, a POST request typically has a payload -- stored in a data field called `body`. 
+* Also note that the header of the request specifies the data format that's being sent (in this case, we're sending JSON over the network).
 
 #### Creating a task when the user clicks the add button
-But how do you only create a new task when the user actually clicks a button (not on pageload)? Well, to do this, we need to add an event handler to our form, and override the default action that the browser takes when a form gets submitted.
+Hopefully you're asking yourself: how do I only create a new task when I actually click the "Add" button (versus when the page loads)? Well, to do this, we need to add an **event handler** to our form, and override the default action that the browser takes when a form gets submitted.
 
 ##### HTML Edit
 Please add an event handler to the form tag of `index.html`. The event handler tells your browser that when the user submits the form, it should invoke the `createTask` function:
@@ -425,8 +442,8 @@ async function createTask(ev) {
     ev.preventDefault();
 
     // modify the name and description variables to read from the DOM (instead of using hard-coded values):
-    const name = document.querySelector("#name").value;
-    const description = document.querySelector("#description").value;
+    const name = document.getElementById("name").value;
+    const description = document.getElementById("description").value;
 
     // everything else stays the same
     ...
@@ -434,8 +451,8 @@ async function createTask(ev) {
 
 
     // at the very end, clear out the form:
-    document.querySelector("#name").value = "";
-    document.querySelector("#description").value = "";
+    document.getElementById("name").value = "";
+    document.getElementById("description").value = "";
 
 }
 ```
@@ -445,7 +462,7 @@ Now test again by filling in actual values into the form fields. Hopefully, you 
 ### 3. Delete a task
 You've now created a bunch of tasks! But how do you delete them? To answer this question, we need to both add a new `deleteTask()` function and also modify the `taskToHTML()` function so that each task has a corresponding delete button. Please make the following modifications:
 
-#### taskToHTML() changes
+#### A. taskToHTML() changes
 Modify the `taskToHTML()` function as follows:
 
 ```js
@@ -463,7 +480,7 @@ function taskToHTML(task, idx) {
 * Note that the function now accepts a second argument, `idx`
 * Note that a new HTML tag -- a button -- has been added to the HTML snippet. When the button is clicked, it will invoke the `deleteTask()` function and pass it the position (index) of the task to be removed.
 
-#### deleteTask()
+#### B. deleteTask()
 To complete this tutorial, you will add a `deleteTask()` function:
 
 ```js
