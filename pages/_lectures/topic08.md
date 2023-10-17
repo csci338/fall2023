@@ -20,8 +20,9 @@ Please complete the assigned readings for this unit, as they provide a nice over
 
 ## Slides
 * Lecture 10: <a href="https://docs.google.com/presentation/d/1Ax5ayU0BX4f8pyMN7K8xz7m0mmAYjSiOUrfDdGavoG4/edit?usp=sharing" target="_blank">Challenges in Client-Side Engineering (Part I)</a>
+* Lecture 11: <a href="https://docs.google.com/presentation/d/1-ALSq8ZmCLhqyIA_2uLOouIa3XihtFLMf4F7ChmCOPY/edit?usp=sharing" target="_blank">Fetch & Building HTML from Data</a>
 
 
 ## Activities
-* [In-Class Exercises](https://csci344.github.io/spring2023/course-files/lectures/lecture07.zip) (Thursday, 10/12)
+* [In-Class Exercises](../course-files/lectures/lecture11.zip) (Tuesday, 10/19)
 * [Lab 6](../assignments/lab06)
