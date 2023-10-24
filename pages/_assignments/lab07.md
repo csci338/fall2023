@@ -24,24 +24,6 @@ due_date: 2023-11-02
         display: block;
     }
 
-    /* .container {
-        display: grid;
-        grid-template-columns: 4fr 3fr;
-        column-gap: 20px;
-        align-items: flex-start;
-    }
-    .container img {
-        width: 100%
-    }
-
-    @media screen and (max-width: 1100px) { 
-        .container {
-            grid-template-columns: auto;
-        }
-        .container img {
-            width: 80%
-        }
-    } */
 </style>
 
 In Lab 6, you built a client-side web app using "Vanilla JavaScript." In this lab, you will be building the same client using React. 
@@ -54,7 +36,7 @@ In Lab 6, you built a client-side web app using "Vanilla JavaScript." In this la
 {:.blockquote-no-margin}
 > ### Tips before you begin
 > In this version of the task list app, you are using React and Parcel. React is a client-side framework that will ultimately need to be transpiled to HTML, CSS, and JavaScript. Parcel is a tool that helps you transpile / bundle your code everytime you save. Given this:
-> * We recommend that you disable the Auto Save for this lab, because you don't want to activate your bundler on every keystroke (which may be invalid JavaScript...which could trigger transpiler errors that aren't really errors).
+> * We recommend that you **disable VS Code's Auto Save feature** for this lab, because you don't want to activate your bundler on every keystroke (which may be invalid JavaScript...which could trigger transpiler errors that aren't really errors).
 > * Conversely, if you think the transpiler got confused and you want to trigger the build process again, just add a blank line to your code and save (all saves trigger the build process).
 
 ### 2.1. Create a lab07-your-username branch
@@ -70,7 +52,7 @@ git branch  # verify that you're on your new branch
 When you're done, please make the following modifications to your code:
 
 ### 2.2. Modify existing files and add some new ones
-In order to run React, we're going use two different Docker images -- one for Python + Fast API, and one for Node.js. To do this, please open VS Code and make the following changes to your code files in your version of the `lab05` folder:
+In order to run your Task app using React, we're going use two different Docker images -- one for Python + Fast API, and one for Node.js + React. To do this, please open VS Code and make the following changes (within your `lab07-your-username` branch) to your version of `lab05`:
 
 #### 2.2.1. Dockerfile
 Replace the contents of your current Dockerfile (within the `app` directory) with this:
@@ -89,10 +71,11 @@ COPY --from=0 /ui/dist /app/ui/dist
 WORKDIR /app
 RUN pip install poetry
 RUN poetry install
-CMD ["poetry", "run", "uvicorn", "server:app", "--host", "0.0.0.0"]
 ```
 
-Note that there are now two images: one for the client that uses Node (top), and one for the server that uses Python (bottom).
+Note that there are now two images: 
+* One for the client that uses Node (Lines 1-5), and 
+* One for the server that uses Python (Lines 7-13).
 
 #### 2.2.2. compose.yaml
 Also in the `app` directory -- on the same level as your Docker file -- create a new file called `compose.yaml` that contains the following:
@@ -190,7 +173,7 @@ docker exec -it <container_id> sh
 ```
 
 
-### 2.4. Setup React to work with Parcel
+### 2.4. Setup your app to work with React
 Finally, now that your new Docker instance is configured, you're ready to rewrite your code using react. Please make the following changes:
 
 #### 2.4.1. Server-Side Updates
@@ -233,7 +216,7 @@ Rename your current `main.js` file (in `ui/js`) to `main-vanilla.js`. You'll be 
 You are now ready to build your React app.
 
 ## 3. Implement Your React Application
-React -- and client-side frameworks in general -- offer many convenient features including:
+React and other client-side frameworks offer many convenient features including:
 * A way to encapsulate smaller snippets of functionality into components
 * A set of design patterns that other developers are likely also familiar with (so you can hit the ground running)
 * A set of convenience functions for managing common tasks (like DOM Manipulation and managing state)
