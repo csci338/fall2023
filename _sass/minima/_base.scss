@@ -173,6 +173,36 @@ code.highlighter-rouge {
     height: 350px;
 }
 
+.highlight table {
+    margin: 0 !important;
+    border: 0 !important;
+}
+.highlight table td, .highlight table th {
+    border-bottom: 0;
+    padding: 0px;
+}
+
+pre.highlight {
+    padding: 0 10px;
+}
+
+.highlight table td, .highlight table th {
+    
+    font-size: 1.1em;
+    line-height: 1.1em;
+}
+
+.rouge-gutter.gl {
+    width: 25px;
+}
+pre.highlight {
+    margin: 0;
+}
+
+.rouge-gutter {
+    padding-right: 5px !important;
+}
+
 .desktop { display: flex; }
 .mobile {
     display: none;
