@@ -143,7 +143,7 @@ Inside of `src/ui`, create a new file called `package.json` with the following c
   "scripts": {
     "lint": "html-validate *.html && stylelint **/*.css && eslint *.js",
     "build": "npm install && parcel build index.html",
-    "watch": "npm install && parcel watch index.html -no-hmr",
+    "watch": "npm install && parcel watch index.html --no-hmr",
     "format": "prettier -w */**.js"
   },
   "devDependencies": {
