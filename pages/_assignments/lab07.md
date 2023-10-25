@@ -751,7 +751,7 @@ export default function Form() {
 ```
 
 Some notes here:
-* In the React documentation, they suggest that each form data field should be mapped to its own state variable. Since we have two form inputs, let's make two state variables (name and description). The state variables are set on lines 4-5, and are updated on lines 39 and 39 via `onChange` event handlers. That means that every keystroke triggers a state change so that the state variable and the form input control are always in sync. This is weird, but it's what the docs suggest.
+* In the React documentation, they suggest that each form data field should be mapped to its own state variable. Since we have two form inputs, let's make two state variables (name and description). The state variables are set on lines 4-5, and are updated on lines 32 and 39 via `onChange` event handlers. That means that every keystroke triggers a state change so that the state variable and the form input control are always in sync. This is weird, but it's what the docs suggest.
 * The `handleSubmit` function gets triggered on the form submit (see line 25). At this point, the form data are posted to the server (**POST** request to `/tasks`) and a new task should be created on the server.
 
 Navigate to <a href="http://localhost:8000/index.html" target="_blank">http://localhost:8000/index.html</a> and try to add a new task. Then refresh your browser. You should see the new task. However, your screen didn't redraw! 
