@@ -29,7 +29,31 @@ due_date: 2023-11-02
 In Lab 6, you built a client-side web app using "Vanilla JavaScript." In this lab, you will be building the same client using React. 
 
 ## 1. Background Readings and Resources
-* TBD
+Some useful React readings:
+* <a href="https://nextjs.org/learn/foundations/about-nextjs" target="_blank">NextJS overview of client-side technologies</a>. Please read the following sections:
+    * About Next.js
+    * From JavaScript to React
+    * From React to Next.js
+    * How Next.js works
+* <a href="https://beta.reactjs.org/learn" target="_blank">Quick Start</a>
+* <a href="https://beta.reactjs.org/learn/thinking-in-react" target="_blank">Thinking in React</a>. Make note of the steps:
+    * Break the UI into a component hierarchy
+    * Build a static version in React 
+    * Find the minimal but complete representation of UI state (noting the difference between "props" and "state"
+    * Identify where your state should live
+    * Adding "inverse data flow"
+    {:.compact}
+* <a href="https://beta.reactjs.org/learn/sharing-state-between-components" target="_blank">Sharing state between components</a>
+* <a href="https://beta.reactjs.org/learn/tutorial-tic-tac-toe" target="_blank">Tic Tac Toe</a>
+    * You are strongly encouraged to do this on your own (see [Tic Tac Toe](../activities/react-get-started))
+
+### Other References (As Needed)
+* <a href="https://beta.reactjs.org/learn/synchronizing-with-effects" target="_blank">Synchronizing with effects</a>
+* <a href="https://beta.reactjs.org/learn/you-might-not-need-an-effect" target="_blank">You might not need an effect</a>
+
+### Slides & Video Recordings
+* <a href="https://docs.google.com/presentation/d/1HehB3NsYtJ8oKenTI1AKN1rIjmG0hXxMbJrNfumUIgg/edit#slide=id.p" target="_blank">React Slides from Class</a> + <a href="https://drive.google.com/file/d/1Q-jBMgt22UUpIKsNE7SlbW8j0fggb4O1/view?usp=sharing" target="_blank">Lecture Recording</a> (10/24/2023)
+
 
 ## 2. Set-up
 
@@ -695,8 +719,8 @@ export default function Form() {
                 "Content-Type": "application/json",
             },
             body: JSON.stringify({
-                name: name,
-                description: description,
+                name: name, // read from state variable
+                description: description, // read from state variable
             }),
         });
         const data = await response.json();
@@ -727,8 +751,8 @@ export default function Form() {
 ```
 
 Some notes here:
-* In the React documentation, they suggest that each form data field should be mapped to its own state variable. Since we have two form inputs, let's make two state variables (name and description). The state variables are set on lines 4-5, and are updated on lines 39 and 39 via `onChange` event handlers. That means that every keystroke triggers a state change. This is weird, but it's what the docs suggest.
-* The `handleSubmit` function gets triggered on the form submit (see line 25). At this point, the form data are posted to the server and a new task should be created.
+* In the React documentation, they suggest that each form data field should be mapped to its own state variable. Since we have two form inputs, let's make two state variables (name and description). The state variables are set on lines 4-5, and are updated on lines 39 and 39 via `onChange` event handlers. That means that every keystroke triggers a state change so that the state variable and the form input control are always in sync. This is weird, but it's what the docs suggest.
+* The `handleSubmit` function gets triggered on the form submit (see line 25). At this point, the form data are posted to the server (**POST** request to `/tasks`) and a new task should be created on the server.
 
 Navigate to <a href="http://localhost:8000/index.html" target="_blank">http://localhost:8000/index.html</a> and try to add a new task. Then refresh your browser. You should see the new task. However, your screen didn't redraw! 
 

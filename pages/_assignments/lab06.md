@@ -471,7 +471,7 @@ function taskToHTML(task, idx) {
         <div class="item">
             <strong>${task.name}</strong>
             <p>${task.description}</p>
-            <button onclick="deleteTask(${idx})">Delete</delete>
+            <button onclick="deleteTask(${idx})">Delete</button>
         </div>
     `;
 }
