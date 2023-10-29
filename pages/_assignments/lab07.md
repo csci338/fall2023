@@ -353,7 +353,7 @@ The `Task` component's job is to:
 
 <img class="img-sm" src="../assets/images/lab07/task.png" alt="Screenshot of a task" />
 
-Create a `Task.js` file inside of the `ui/js` directory.  Paste the code shown below into `Form.js`, which returns a JSX representation of a task with hardcoded data. 
+Create a `Task.js` file inside of the `ui/js` directory.  Paste the code shown below into `Task.js`, which returns a JSX representation of a task with hardcoded data. 
 
 ```jsx
 import { React } from "react";
