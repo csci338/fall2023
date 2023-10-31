@@ -42,3 +42,6 @@ To enter the postgreSQL shell, type: `psql -U postgres` (connecting as the postg
 
 ## Slides
 * Lecture 9: <a href="https://docs.google.com/presentation/d/1PTFnOHjnZShjloXJGN2kvmFvy4f4AKCEzM27FG86tzE/edit?usp=sharing" target="_blank">Intro to Relational Databases & ORMs</a>
+
+## Activities
+* Today's Repo: <a href="https://github.com/csci338/orm-demo" target="_blank">https://github.com/csci338/orm-demo</a>
