@@ -93,7 +93,7 @@ dist
 ```
 
 ### 1.2. Create a Database script
-At the root of your copy of the `lab05` directory, create a new file called `db_setup.sh` with the following information:
+Within the `app` directory of your copy of the `lab05` directory, create a new file called `db_setup.sh` with the following information:
 
 ```bash
 # read environment variables from .env file and use them to create a new database (with custom username, password, etc.)
