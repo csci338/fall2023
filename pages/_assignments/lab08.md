@@ -585,6 +585,8 @@ services:
       - "1234:1234"
     volumes:
       - ./src/ui:/app
+      - /app/.parcel-cache
+      - /app/node_modules
     working_dir: /app
     healthcheck:
       test: "ls dist"
