@@ -624,7 +624,7 @@ A few things have been added here:
 1. A new container to test that your database is running
 1. Also note that your docker file is reading from the `.env` file at the root of your `lab05` folder.
 
-## 4. Run your server
+## 4. Run your server and experiment
 Now that you have made the updates, verify that everything worked as follows:
 
 ### 4.1. Build your docker image
@@ -944,11 +944,22 @@ print(result)  # None
 ```
 
 
+## 5. Start the Lab
+We will post more instructions describing how to complete this lab next week. In the meantime, see if you can update your endpoints so that they interact with the database on your own, instead of using the in-memory list. Use the SQLAlchemy queries above and the new code you added to `server.py` as a model:
 
-## What to turn in
-To submit Tutorial 10, upload a zip file with the following two files:
+**Relevant code from server.py**
+```python
+@app.get("/api/tasks")
+async def get_tasks():
+    async with async_session() as session:
+        async with session.begin():
+            query = select(Task).order_by(Task.id)
+            tasks = await session.scalars(query)
 
-1. answers.sql
-1. A text file that answers the following questions:
-    * What is a join (just in your own words) and why is it useful?
-    * Consider the structure of the `posts` table: why would you want to use a foreign key (`user_id`) to the `users` table instead of storing the `username`, `first_name`, and `last_name` in the `posts` table?
+            # Convert each SQLAlchemy Object into a JSON object
+            # so that you can send it over HTTP:
+            return [task.to_dict() for task in tasks]
+```
+
+## 6. What to turn in
+Before you submit, ensure that your react version of the lab successfully reads, deletes, and adds tasks to and from your database; and that the screen redraws to reflect any task data changes. When you're done, please create a pull request with the fully implemented web client (which should be completed inside of your version of your `lab05` folder).
