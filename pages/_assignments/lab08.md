@@ -12,17 +12,34 @@ due_date: 2023-11-09
 
 
 <style>
-    table.admin th:first-child, 
-    table.admin td:first-child {
+
+    td ul {
+        margin-top: 10px !important;
+    }
+    table th:first-child, 
+    table td:first-child {
         width: auto;
-        min-width:200px;
+        max-width: 200px;
+        /* min-width:200px; */
     }
 
-    table.admin th:last-child, 
-    table.admin td:last-child {
+    table th:last-child, 
+    table td:last-child {
         width: auto;
-        min-width:180px;
+        min-width:130px !important;
     }
+
+    table th:nth-child(3), 
+    table td:nth-child(3) {
+        width: auto;
+        min-width:200px !important;
+    }
+
+    table code {
+        font-weight: 600;
+        font-size: 1.1em;
+    }
+
 </style>
 
 ## Introduction
@@ -128,6 +145,8 @@ This bash script does the following:
 Now that you've set up your database initialization script, we're going to add logic that enables python to easily communicate with the database. 
 
 ### 2.1. Add new python dependencies
+Because we are adding new python dependencies, we first need to delete the `.poetry.lock` file if you have one (it should be in the same directory as your `pyproject.toml` file). The lock file will regenerate when we install our new python dependencies via poetry. 
+
 Within your `pyproject.toml` file (inside the `src` directory), please add the following dependencies below the `pytest` dependency:
 
 ```
@@ -947,9 +966,84 @@ print(result)  # None
 
 
 ## 5. Start the Lab
-We will post more instructions describing how to complete this lab next week. In the meantime, see if you can update your endpoints so that they interact with the database on your own, instead of using the in-memory list. Use the SQLAlchemy queries above and the new code you added to `server.py` as a model:
+Last Thursday, you configured your `lab08` branch to work with SQLAlchemy and the PostgreSQL database. You are now ready to complete the lab. 
 
-**Relevant code from server.py**
+### 5.1. Data Model Notes
+Before implementing your endpoints, a few notes:
+
+* Since we are now building a system where multiple users can have tasks, we have a new table called `users`. Each record in the user table represents a different user of your system. The JSON represention of the `User` model is shown below.
+* Each `Task` object also needs to be extended to account for the user to which the task belongs. The JSON represention of the `Task` model is shown below.
+
+#### User Model
+Below is a sample JSON representation of the `User` model:
+```json
+{
+    "id": 1,
+    "username": "jane_doe",
+    "first_name": "Jane",
+    "last_name": "Doe",
+    "email": "jane_doe@gmail.com"
+}
+```
+
+#### Task Model
+Below is a sample JSON representation of the `Task` model. Note that there are two new data fields: 
+
+* `done` -- flag indicating whether the task has been completed, and 
+* `user_id` -- foreign key to the `User` model:
+
+```json
+{
+    "id": 4,
+    "name": "jane_doe",
+    "description": "Jane",
+    "done": false,
+    "user_id": 1
+}
+```
+
+### 5.2. New Helper functions in server.py
+Now that we are (a) using a database and (b) assumping that a user is logged into your system, we will need to make three modifications to `server.py`:
+
+#### 5.2.1. Session Function
+First, we will create a function to generate a reusable session object, which we will use to connect to our PostgreSQL database. Please add this code directly below the `app = FastAPI()` statement in your `server.py` file:
+
+```py
+_session = None
+
+async def get_session():
+    global _session
+    if _session is None:
+        _session = async_session()
+        await _session.begin()
+    return _session
+```
+
+#### 5.2.2. Logged In User Function
+Second, create a function that spoofs a logged in user (let's just assume that the user with `id=1` is the user logged into the system). Add this code directly below the session function you just added:
+
+```py
+_user = None
+
+async def get_current_user():
+    global _user
+    if _user is None:
+        user_id = 1
+        session = await get_session()
+        query = select(User).where(User.id == user_id)
+        result = await session.execute(query)
+        record = result.fetchone()
+        if record:
+            _user = record[0]
+        else:
+            raise Exception(f'No User in database with id={user_id}')
+    return _user
+```
+
+#### 5.2.3. Modify get_tasks()
+Finally, now that we have a simpler way to create a database session and a way to access the logged in user, we will replace the `get_tasks()` function as follows:
+
+**Replace this code...**
 ```python
 @app.get("/api/tasks")
 async def get_tasks():
@@ -963,5 +1057,149 @@ async def get_tasks():
             return [task.to_dict() for task in tasks]
 ```
 
+**...with this code (simplified session syntax with only the current user's tasks)**
+```python
+@app.get("/api/tasks")
+async def get_tasks():
+    session = await get_session()
+    # get the (fake) current user:
+    user = await get_current_user()
+    user_id = user.id
+    query = (
+        select(Task)
+        .where(Task.user_id == user_id)
+        .order_by(Task.id)
+    )
+    tasks = await session.scalars(query)
+    return [task.to_dict() for task in tasks]
+```
+
+The updated function uses the reusable database session, and filters the task  list according to the user who is logged into the system.
+
+### 5.3. Create new REST endpoints to interact with the database
+You are now ready to create the following endpoints:
+
+<table>
+<thead>
+    <tr>
+        <th>Method/Route</th>
+        <th>Description and Examples</th>
+        <th>Parameters</th>
+        <th>Response Type</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>GET /api/tasks</td>
+        <td>Returns all of the tasks in the database that belong to the current user. If the user specifies a <code>status</code> parameter, then only return the tasks that correspond to the status (open or closed).
+            <ul>
+                <li><a href="http://localhost:8000/api/tasks">http://localhost:8000/api/tasks</a>
+                    <br>Returns all tasks associated with the current user
+                </li>
+                <li><a href="http://localhost:8000/api/tasks?status=open">http://localhost:8000/api/tasks?status=open</a>
+                    <br>Returns open tasks associated with the current user
+                </li>
+                <li><a href="http://localhost:8000/api/tasks?status=closed">http://localhost:8000/api/tasks?status=closed</a> <br>Returns completed tasks associated with the current user
+                </li>
+            </ul>
+            Note that this endpoint is already partially implemented for you.
+        </td>
+        <td>
+            <ul>
+                <li><code>status (string, optional)</code> Specifies whether to return open or closed tasks. If not set, return all tasks.</li>
+            </ul>
+        </td>
+        <td>List of Task objects</td>
+    </tr>
+    <tr>
+        <td>POST /api/tasks/</td>
+        <td>Creates a new user (database insert).
+            Note that tasks now require a user. Before inserting into the DB, make sure you assign the user to the current user logged into the system (using the <code>get_logged_in_user()</code> function).
+            <br><br>
+            If invalid data is posted, return a 400 error with a JSON message that says something like:<br><code>{"error": "actual description of the error"}</code>. 
+        </td>
+        <td>
+            <ul>
+                <li><code>name (string, required)</code> Name of the task</li>
+                <li><code>description (string, required)</code> Description of the task</li>
+                <li><code>done (boolean, required)</code> Whether or not the task is completed.</li>
+            </ul>
+        </td>
+        <td>Task object that was just created</td>
+    </tr>
+    <tr>
+        <td>GET /api/tasks/{task_id}</td>
+        <td>Returns the task associated with the <code>task_id</code>.
+            <br><br>
+            If the task does not belong to the current user or if it doesn't exist, throw a 404 error with a JSON message that says:<br><code>{"error": "task does not exist"}</code>
+        </td>
+        <td></td>
+        <td>Single task object</td>
+    </tr>
+    <tr>
+        <td>DELETE /api/tasks/{task_id}</td>
+        <td>Deletes the task associated with the <code>task_id</code> from the database. 
+            <br><br>
+            If the task does not belong to the current user or if it doesn't exist, throw a 404 error with a JSON message that says:<br><code>{"error": "task does not exist"}</code>. 
+        </td>
+        <td></td>
+        <td>Empty object <code>{}</code></td>
+    </tr>
+    <tr>
+        <td>GET /api/user</td>
+        <td>Returns the current user who is logged into the system
+            <br><br>
+        This is an easy one: just return a JSON representation of the user returned by the <code>get_logged_in_user()</code> function.</td>
+        <td></td>
+        <td>User object</td>
+    </tr>
+        <tr>
+        <td><strong>OPTIONAL</strong>: PATCH /api/tasks/{task_id}</td>
+        <td>
+            Updates the task associated with the <code>task_id</code>. 
+            <ul>
+                <li>If the task does not belong to the current user or if it doesn't exist, throw a 404 error (same as GET).
+                </li>
+                <li>
+                    If invalid data is posted, return a 400 error (same as POST). 
+                </li>
+            </ul>
+        </td>
+        <td>Same as POST</td>
+        <td>Single task object</td>
+    </tr>
+</tbody>
+</table>
+
+### 5.4. Modifying your REACT Client to interact with new Endpoints
+Once you have implemented all of the required endpoints, update your React app so that it interacts with your new endpoints.
+
 ## 6. What to turn in
-Before you submit, ensure that your react version of the lab successfully reads, deletes, and adds tasks to and from your database; and that the screen redraws to reflect any task data changes. When you're done, please create a pull request with the fully implemented web client (which should be completed inside of your version of your `lab05` folder).
+Before you submit, please verify that you have completed all of the tasks:
+
+**Task Routes**
+
+{:.checkbox-list}
+* GET (List) - Only shows the current user's tasks (filtered by whether the tasks are closed or open if applicable). Examples:
+    * /api/tasks
+    * /api/tasks?status=open
+    * /api/tasks?status=closed
+* GET (Detail) - Shows the corresponding task (if it exists and belongs to the current user). Example:
+    * /api/tasks/3
+* DELETE - Deletes task if it exists and belongs to the current user). Example:
+    * /api/tasks/3
+* POST - Adds a task if valid information is submitted (and handles invalid data with an appropriate error message)
+    * /api/tasks
+
+**User Route**
+
+{:.checkbox-list}
+* GET - Shows the current user. Example:
+    * /api/user
+
+**React App**
+
+{:.checkbox-list}
+* React App interacts with the **database version of the endpoints,** including listing, creating, and deleting tasks belonging to the current logged in user. 
+
+When you're done, please create a pull request with the fully implemented web client (which should be completed inside of your version of your `lab05` folder).
