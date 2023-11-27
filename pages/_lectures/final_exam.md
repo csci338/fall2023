@@ -2,9 +2,21 @@
 layout: two-column
 title: "Final Exam"
 type: exam
-draft: 1
+draft: 0
 due_date: 2023-12-08
 ---
 
-## Do I need to take the final exam?
-The final exam is a mixture of in-class and take-home activities. If you are already satified with your quiz score, **you do not need to take the final exam.**
+The final exam is a comprehensive assessment that will be worth 10% of your grade. Our exam time is scheduled for Friday, 12/8 from 3PM-5:30PM. It will be a written exam that will cover the following topics:
+
+1. [Trade-offs](/fall2023/lectures/topic01)
+2. [Distributed version control](/fall2023/lectures/topic02)
+3. [Dependency Management](/fall2023/lectures/topic03)
+4. Infrastructure as code (Docker, GitHub Actions, etc.)
+5. [Automated Testing](/fall2023/lectures/topic05)
+6. [Asyncio / FastAPI / Python](/fall2023/assignments/lab05)
+7. [Client-Side Engineering Challenges](/fall2023/lectures/topic08) (User Interfaces)
+8. [UX/UI & Product Design](/fall2023/lectures/topic11) (User Interfaces)
+9. [Server-Side Engineering Challenges](/fall2023/lectures/topic09) (MVCs, working with databases and ORMs)
+10. [Scalability](/fall2023/lectures/topic12)
+
+Please review the slides and readings from the topics we've covered, and be prepared to write about some of the big ideas relating to each topic.
