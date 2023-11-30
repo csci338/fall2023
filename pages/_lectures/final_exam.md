@@ -3,10 +3,10 @@ layout: two-column
 title: "Final Exam"
 type: exam
 draft: 0
-due_date: 2023-12-08
+due_date: 2023-12-12
 ---
 
-The final exam is a comprehensive assessment that will be worth 10% of your grade. Our exam time is scheduled for Friday, 12/8 from 3PM-5:30PM. It will be a written exam that will cover the following topics:
+The final exam is a comprehensive assessment that will be worth 10% of your grade. Our exam time is scheduled for Tuesday, 12/12 from 8:00AM – 10:30AM. It will be a written exam that will cover the following topics:
 
 1. [Trade-offs](/fall2023/lectures/topic01)
 2. [Distributed version control](/fall2023/lectures/topic02)
