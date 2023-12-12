@@ -6,6 +6,15 @@ draft: 0
 due_date: 2023-12-12
 ---
 
+## Final Exam Instructions
+Please make a copy of <a href="https://docs.google.com/document/d/1lBnv2hWmdeME3Gt76cQHlFGAqhB4Kcor_nmzojIE6Ug/edit?usp=sharing" target="_blank">the final exam document</a> and answer the questions.
+
+### Ground Rules
+* You may not use the Internet for this exam. These answers should all come from memory.
+* We will drop your two lowest scoring answers.
+
+
+## Final Exam Study Guide
 The final exam is a comprehensive assessment that will be worth 10% of your grade. Our exam time is scheduled for Tuesday, 12/12 from 8:00AM – 10:30AM. It will be a written exam that will cover the following topics:
 
 1. [Trade-offs](/fall2023/lectures/topic01)
